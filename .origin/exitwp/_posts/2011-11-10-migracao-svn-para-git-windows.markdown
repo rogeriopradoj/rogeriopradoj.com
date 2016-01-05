@@ -1,0 +1,122 @@
+---
+author: rogeriopradoj
+comments: true
+date: 2011-11-10 02:53:10+00:00
+layout: post
+slug: migracao-svn-para-git-windows
+title: Migração do SVN para GIT em Windows no escritório
+wordpress_id: 71
+categories:
+- Versionamento
+- Windows
+tags:
+- git
+- github
+- msysgit
+- svn
+- tortoisegit
+- versionamento
+- windows
+---
+
+Olá, pessoal.
+
+Estava devendo uma nova abordagem sobre versionamento aqui, depois de começar o assunto [nesse post anterior](http://rogeriopradoj.com/2010/10/16/versionamento-svn-e-git/).
+
+Agora vou mostrar como fiz para implementar a utilização do GIT lá no escritório.
+
+
+## Motivação
+
+
+Já venho estudando a utilização do GIT faz tempo, desde meados de 2010. Mas ainda não havia me sentido a vontade para começar a implementar nos projetos do escritório que são compartilhados com a equipe.
+
+Mas em casa, nos projetos particulares, e em alguns que não eram utilizados por mais ninguém, comecei a fazer os "git inits".
+
+Após a ideia da criação do meu domínio na internet (Blog e Empresa), apostei que o desenvolvimento de web apps com a disponibilização de seus código-fonte seria uma ótima forma de treinar a utilização do GIT, e foi mesmo.
+
+No entanto, o que me fez tomar a iniciativa de migrar totalmente nossos repositórios no escritório para GIT foram os constantes problemas no computador que servia para armazenar nossos repositórios SVN.
+
+A cada momento que ele precisava ser levada para manutenção aconteciam esses problemas:
+
+- os colegas paravam de colaborar de forma estruturada: pois o servidor central estava indisponível, não se permitia commits nem updates
+
+- perdia-se o histórico de versionamento do código novo, pois eles começavam a trocar arquivos de um lado para outro (como fazíamos antes de implantar o SVN), sem nenhum método
+
+- eu gastava um tempo muito grande migrando o diretório de repositórios para um novo lugar, e tendo que ensinar o pessoal, mais uma vez, a fazer o svn relocate nas suas cópias locais, além de fazer o mesmo em todos os diretórios de produção manualmente (eu sei, deveria usar alguma ferramenta de deploy, build, integração contínua etc., deixem sugestões nos comentários).
+
+[caption id="" align="aligncenter" width="552"][![git logo 2](http://git-scm.com/images/header.gif)](http://git-scm.com/) Fonte: http://git-scm.com/[/caption]
+
+Outro problema constante que faziam o SVN ser uma opção inferior eram:
+
+- tempo de resposta horrível na rede para tudo!!! Isso mesmo, tudo que tínhamos que fazer no SVN depende da rede, e nossa rede do escritório não é uma maravilha. Todo commit, update, log e qualquer outro comando. Era coisa de você literalmente apertar o botão, ir pegar o cafezinho e voltar depois.
+
+E nessa última manutenção, segunda seguida em menos de uma semana, decidi que era gota d'água: mandei um e-mail para todo mundo e "vendi o peixe" do GIT.
+
+
+## Como migrar contando com a resistência natural das pessoas
+
+
+[caption id="" align="alignnone" width="300"]![teimoso](http://shopping.tray.com.br/theme/4/img/loja/4091/ofertas/583537g.jpg) Lembram desse?!?[/caption]
+
+Lembro como foi para implementar o SVN: além de ter que conhecer o conceito e as ferramentas, o mais importante que é convencer todo mundo a usar com você. Faz bem pouco tempo que o último dos colegas instalou a ferramenta para acessar os repositórios. Muitas aplicações legadas que estão em produção estão sequer versionadas (principalmente aqueles códigos VBA que nunca vi os códigos-fonte).
+
+Mesmo assim, depois de bastante tempo o SVN virou padrão e se tornou um dos nossos pilares para desenvolver nossas aplicações no escritório, aqui em São Paulo. Foi até uma vitória quando consegui implantar ele num projeto que participei na matriz, em Brasília, com um pessoal que foi desde o começo super-resistente a novas ferramentas (torço que ainda esteja funcionando com controle de versões).
+
+Percebi que com o tempo, com você e a equipe tendo mais prática, fica mais simples de mostrar os pontos chave do conceito, e é mais fácil de mostrar que aquilo que propôs é uma boa opção.
+
+E foi dessa forma que consegui converser o pessoal a tentar a migração do SVN. Esse foi um resumo dos argumentos que usei para a utilização do GIT:
+
+- Conceito já maduro, com bastante material para consulta
+
+- Ferramentas com interface gráfica para gerenciar os repositórios (TortoiseGit, o pessoal já usava o TortoiseSvn)
+
+- Os comandos são muito mais rápidos, pois não precisam de acessar a rede nem o repositório central.
+
+- Estou aqui para ajudar!!!
+
+Esse de ajudar o que eu fiz:
+
+- Consegui um monte de material para o pessoal (depois vou colocar os links aqui, mas tinha [help do github](http://help.github.com/), [bitbucket](http://confluence.atlassian.com/display/BITBUCKET/Getting+Started+with+Bitbucket), etc.). Com o SVN, mas só [com o livro oficial](http://code.google.com/p/svnbook-pt-br/)
+
+- Baixei os dois programas básicos para eles começarem a utilizar ([msysgit](http://code.google.com/p/msysgit/downloads/list) e [TortoiseGit](http://code.google.com/p/tortoisegit/)). No SVN era só o [TortoiseSvn](http://tortoisesvn.net/)
+
+
+
+![logo msysgit](http://code.google.com/p/msysgit/logo)![logo tortoise git](http://code.google.com/p/tortoisegit/logo)![logo msysgit](http://code.google.com/p/msysgit/logo)![logo tortoise git](http://code.google.com/p/tortoisegit/logo)
+
+- Acompanhei-os na instalação, mostrei exemplos rápidos de git clone, git init, git push, git pull (lógico que tudo pela interface gráfica do TortoiseGit).
+
+Acho que de tudo a coisa que mais impressionou os colegas foi a rapidez do git. Para mostrar quão rápido ele é (gostei de frisar que muito mais rápido que o Windows), foi numa operação de copiar um diretório versionado na rede para o computador deles. Peguei uma aplicação que montada em cima do Codeigniter, que mesmo não sendo pesada em MBs, tem muitos arquivos, e para transferir isso na nossa rede é uma dureza. Na primeira tentativa mostrei fazendo a "cópia" usando o git clone. E na segunda usei o Windows Explorer, copia cola mesmo. Posso dizer que não deu nem pro cheiro: o git foi muitas vezes mais rápido (não cronometrei mas tenho testemunhas, certo Nelson?).
+
+
+## Futuro
+
+
+Agora é fazer com que a equipe continue utilizando o GIT nos projetos.
+
+Continuar estudando, aprender melhor todos os conceitos envolvidos (sei que tem um monte) deve fazer essa transição e utilização ser mais tranquila, espero pelo menos do que foi no começo com o SVN.
+
+Acho que a migração de vários projetos de código aberto que utilizamos estarem sendo migrados para GIT, e principalmente para o GitHub deve ser um incentivo ainda maior para continuar mantendo o pessoal focado.
+
+Quem sabe não é até uma forma de ajudar a fazer da equipe uma contribuidora no mundo do software livre, hein?
+
+Até mais.
+
+P.S.0: Estou lendo um livro sobre GIT que estou achando muito bom, dá todos os fundamentos: [ProGit](http://progit.org/) - [PDF](http://progit.org/ebook/progit.pdf), [EPUB](https://github.s3.amazonaws.com/media/progit.epub), [MOBI](http://progit.org/ebook/progit.mobi) (gratuitos) ou [Amazon](http://www.amazon.com/gp/product/1430218339?ie=UTF8&tag=prgi-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1430218339) (pago).
+
+[![capa do livro Pro Git](http://progit.org/images/book-big.jpg)](http://progit.org/)
+
+P.S.1: Visitem [minha conta no GitHub](https://github.com/rogeriopradoj), tem alguns repositórios lá que eu criei e outros forkados
+
+[caption id="" align="alignnone" width="194"][![octocat](http://octodex.github.com/images/plumber.jpg)](http://octodex.github.com/plumber/) Fonte: http://octodex.github.com/plumber/[/caption]
+
+P.S.2: [Minha empresa (Pradoj.com)](http://pradoj.com), meus apps ([Jana](http://pradoj.com/apps/jana/), [Tati](http://pradoj.com/apps/tati/) e [Cppc](http://pradoj.com/apps/cppc/)).
+
+[![logo Pradoj.com](http://pradoj.com/images/logo-800x300-transparente.png)](http://pradoj.com)
+
+
+
+---
+
+Este artigo foi publicado originalmente em [RogerioPradoJ.com](http://rogeriopradoj.com).

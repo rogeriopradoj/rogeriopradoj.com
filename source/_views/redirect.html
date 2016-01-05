@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% spaceless %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url={{ site.url|trim('/') ~'/'~ page.destination.url|trim('/') }}" />
+</head>
+</html>
+{% endspaceless %}

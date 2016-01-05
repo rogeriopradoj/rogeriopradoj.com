@@ -1,0 +1,26 @@
+{
+  "name": "rogeriopradoj.com",
+  "homepage": "https://rogeriopradoj.com",
+  "authors": [
+    "Rogerio Prado de Jesus <rogeriopradoj@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flags": "https://www.flag-sprites.com/get/flags.zip?set=gosquared-large&countries=br,es,gb",
+    "bootstrap": "~3.3.6",
+    "bootstrap-social": "~4.12.0",
+    "highlightjs": "~9.0.0"
+  }
+}

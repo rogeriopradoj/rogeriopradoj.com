@@ -1,0 +1,60 @@
+---
+layout: default
+title: Contato
+permalink: contato/
+---
+{% block content %}
+<div class="container">
+    <span class="col-md-1 col-md-offset-2">&nbsp;</span>
+ <h1 class="col-md-4 center-block text-center">Contato</h1>   
+</div>
+
+<hr>
+<form id="contact-form" class="form-horizontal" method="post">
+  <fieldset>
+      <div class="form-group">
+          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+          <div class="col-md-8">
+              <input id="fname" name="name" type="text" placeholder="(*) Nome" class="form-control" required>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+          <div class="col-md-8">
+              <input id="email" name="_replyto" type="email" placeholder="(*) E-mail" class="form-control" required>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+          <div class="col-md-8">
+              <input id="phone" name="phone" type="tel" placeholder="Telefone" class="form-control">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+          <div class="col-md-8">
+              <textarea class="form-control" id="message" name="message" placeholder="(*) Digite sua mensagem para nós." rows="7" required></textarea>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <span class="col-md-2 col-md-offset-2">&nbsp;</span>
+          <button type="submit" class="btn btn-primary btn-lg col-md-6 center-block text-center">Enviar</button>          
+      </div>
+  </fieldset>
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="hidden" name="_next" value="/contato/obrigado.html" />
+  <input type="hidden" name="_subject" value="RogerioPradoJ.com - site contato" />
+</form>
+<script>
+  var contactForm =  document.getElementById('contact-form');
+  contactForm.setAttribute('action', '//formspree.io/' + 'contato' + '@' + 'rogeriopradoj' + '.' + 'com');
+</script>
+{% endblock %}
+
+{% block post_js %}
+
+{% endblock %}

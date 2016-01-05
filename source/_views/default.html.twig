@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{{ site.title }} &mdash; {{ site.subtitle }}{% endblock %}</title>
+
+        <base href="{{ site.url}}/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ site.title }} &mdash; {{ site.subtitle }}">
+        {% block meta %}
+            <meta property="og:title" content="{{ site.title }} &mdash; {{ site.subtitle }}" />
+            <meta property="og:type" content="development" />
+            <meta property="og:url" content="{{ site.url }}/" />
+            <meta property="og:image" content="{{ site.url }}/assets/images/rogerio/700x700.jpg" />
+        {% endblock %}
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
+    </head>
+    <body>
+        <header>
+            {% include 'partials/nav.html.twig' %}
+        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="{{ site.url }}/">{{ site.title }}</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        {% include 'partials/sidebar.html.twig' %}
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            {% include 'partials/footer.html.twig' %}
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+        {% block post_js %}
+        {% endblock %}
+
+        {% if site.google_analytics_tracking_id %}
+            <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', '{{ site.google_analytics_tracking_id }}']);
+                _gaq.push(['_trackPageview']);
+
+                (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+            </script>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "rogeriopradoj/rogeriopradoj.github.io",
+    "require": {
+        "mavimo/sculpin-redirect-bundle": "@dev"
+    },
+    "config": {
+        "component-dir": "source/assets/components"
+    },
+    "autoload": {
+        "psr-0": {
+            "AndrewShell": "app/src",
+            "Acelaya": "app/src"
+        }
+    }
+}
