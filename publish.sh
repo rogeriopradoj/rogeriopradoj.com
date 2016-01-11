@@ -1,13 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env sh
+# make the script fail for any failed command
+set -e
+# make the script display the commands it runs to help debugging failures
+set -x
 
-# Replace "sculpin generate" with "php sculpin.phar generate" if sculpin.phar
-# was downloaded and placed in this directory instead of sculpin having been
-# installed globally.
+# Go to the output directory
+cd output_prod
 
-sculpin generate --env=prod
-if [ $? -ne 0 ]; then echo "Could not generate the site"; exit 1; fi
+# Remove the existing repo if it exists
+if [ -d ".git" ]; then
+    rm -rf .git
+fi
 
-# Add --delete right before "output_prod" to have rsync remove files that are
-# deleted locally from the destination too. See README.md for an example.
-rsync -avze 'ssh -p 4668' output_prod/ username@yoursculpinsite:public_html
-if [ $? -ne 0 ]; then echo "Could not publish the site"; exit 1; fi
+# Create a repo for the built website for the master branch
+git init
+
+# configure env (locally)
+git config user.email 'rogeriopradoj@gmail.com'
+git config user.name 'RogerioPradoJ.com bot'
+
+# commit build
+git add .
+git commit -m "Build website"
+
+# push to GitHub Pages
+git push "https://github.com/rogeriopradoj/rogeriopradoj.github.io" -f master

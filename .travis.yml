@@ -1,0 +1,15 @@
+language: php
+php: 5.6
+sudo: false
+branches:
+  only:
+    - source
+before_install:
+    - echo -e "machine github.com\n  login $GH_TOKEN" >> ~/.netrc
+script:
+    - sh build.sh
+after_success:
+    - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh publish.sh; fi
+env:
+  global:
+    secure: kUZMQkHQYJAFY1QTdWnKS8rG+ITsxtH2nZLp7ayIi/aGJCmvQjkjXovF5dNYOO1ohsj53iXk39jArJLj6Qx1HRjVOVNNVqlaNfGmC1L8CygYvC3/1tmdUs2bUSa48DYEFjAACK9tAWFfXvYgMJ6LMegcvjg0QMoPGd4aGEkNo9WazeyroMAUZ8dsAzdKpSiVQq8v2hCHtmIfQz1HXKgUDn2OXvfq6uiFeaUvM+cj9dOoVuNq5RFGbHZkzXrzsSIARYXfH5G27v9PxGSeu6tVAMtlrw4zzLHPkhdCyjMWlnRfJHY81YRK3kV4Y30nk/0n7qrXiSCCNj+O4tJFTHfGz8bqRq+yKTjXWd0wixkWiVH34sNWeZvR0HA2zVr0hTVoVLidtiOuBV917ktOy4hCe7ObLgU/nf1IDE/drvc+MFwGw+oc+aaONW2VpiyN8HXt20PvpG2O97czlrUTeB7/o8R36qeQI3km5mJQfJV4aXQovHvW1/rf7hQFwhGc+XeiR0Wwrd9giAX/EUCrTyi0fPOToXsspqmZeKdKGCmnV3iflmS3KYyl1na7TdYA+TzyaSoMHu4aBI8Q4jxYDgLIkr/IN7WMZvMEUPG7b2cZ+JWeWPKdD+Tfg9r3PodTqAuLuDoZ46cAypShBDmB1dk0XsNmiVqEVQT5tAOC9VgDnr4=
