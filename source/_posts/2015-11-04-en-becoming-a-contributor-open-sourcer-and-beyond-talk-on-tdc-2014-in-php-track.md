@@ -24,7 +24,7 @@ Hello, everyone!
 On August 8, 2014 I gave a presentation on contributing with open source projects and software development communities as well, focusing on that OSS hosted on GitHub.
 
 ![GitHub logo](assets/images/2015/11/github-logo.jpg)
-*Fonte da imagem: http://www.sourcinghacks.com/*
+*Image source: http://www.sourcinghacks.com/*
 
 ---
 
