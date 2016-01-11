@@ -1,0 +1,9 @@
+.flag {
+	width: 32px;
+	height: 32px;
+	background:url(flags.png) no-repeat
+}
+
+.flag.flag-br {background-position: -32px 0}
+.flag.flag-es {background-position: 0 -32px}
+.flag.flag-gb {background-position: -32px -32px}
