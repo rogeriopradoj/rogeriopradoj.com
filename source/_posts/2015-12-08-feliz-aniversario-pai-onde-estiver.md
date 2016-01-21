@@ -9,7 +9,8 @@ tags:
 
 Na noite de quarta-feira, dia 18 de novembro de 2015, o mundo ficou um pouco mais triste, mas ganhou mais um anjo olhando por nós: Wanderlei de Jesus.
 
-![Rogerio e Pai, 2015-11-02](assets/images/2015/12/IMG_20151102_151343358.jpg) Rogerio e Pai, 2015-11-02
+![Rogerio e Pai, 2015-11-02](assets/images/2015/12/IMG_20151102_151343358.jpg)
+*Rogerio e Pai, 2015-11-02*
 
 E hoje, 08 de dezembro de 2015, seria seu aniversário de 61 anos. Pai, feliz aniversário para você, onde estiver!
 
