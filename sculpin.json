@@ -1,7 +1,8 @@
 {
     "name": "rogeriopradoj/rogeriopradoj.github.io",
     "require": {
-        "mavimo/sculpin-redirect-bundle": "@dev"
+        "mavimo/sculpin-redirect-bundle": "@dev",
+        "sharkpp/sculpin-calendarian-bundle": "dev-master"
     },
     "config": {
         "component-dir": "source/assets/components"

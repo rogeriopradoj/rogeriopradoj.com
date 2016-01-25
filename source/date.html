@@ -1,0 +1,16 @@
+---
+layout: default
+generator: calendarian
+---
+
+<h2>
+{% if page.calendarian.year %}{{ page.calendarian.year }}-{% endif %}
+{% if page.calendarian.month %}{{ page.calendarian.month }}-{% endif %}
+{% if page.calendarian.day %}{{ page.calendarian.day }}-{% endif %}
+</h2>
+
+<ul>
+    {% for item in page.calendarian.items %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+</ul>
