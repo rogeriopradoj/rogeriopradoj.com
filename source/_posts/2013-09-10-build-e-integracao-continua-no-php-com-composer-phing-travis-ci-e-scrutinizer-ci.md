@@ -27,17 +27,17 @@ Foi aí que pensei: porque não dar uma relembrada no assunto, e também atualiz
 
 ### Phing???
 
-[![Logo Phing](http://www.phing.info/trac/chrome/site/logo.gif)](http://www.phing.info/)
+[![Logo Phing](https://www.phing.info/trac/chrome/site/logo.gif)](https://www.phing.info/)
 
-Muita coisa ainda não havia tocado, caso do [Phing](http://www.phing.info/), que o [Hussani](https://speakerdeck.com/hussani/automacao-e-deploy-com-phing) e o [Duodraco](http://www.slideshare.net/duodraco/phing-14008532) já haviam apresentado mais de uma vez em palestras. Também não estava muito habituado com as ferramentas para geração de relatórios de métricas, como o [PHPMD](http://phpmd.org/), ou o [PDepend](http://pdepend.org/).
+Muita coisa ainda não havia tocado, caso do [Phing](https://www.phing.info/), que o [Hussani](https://speakerdeck.com/hussani/automacao-e-deploy-com-phing) e o [Duodraco](http://www.slideshare.net/duodraco/phing-14008532) já haviam apresentado mais de uma vez em palestras. Também não estava muito habituado com as ferramentas para geração de relatórios de métricas, como o [PHPMD](http://phpmd.org/), ou o [PDepend](http://pdepend.org/).
 
 Mas aí estava a graça, um bom desafio! E com a ótima estrutura que o Dohms e o Pascutti haviam deixado, não foi tão difícil começar.
 
 ### Composer
 
-[![Composer logo](http://getcomposer.org/img/logo-composer-transparent.png)](http://getcomposer.org/)
+[![Composer logo](https://getcomposer.org/img/logo-composer-transparent.png)](http://getcomposer.org/)
 
-A primeira coisa que fiz foi usar o [Composer](http://getcomposer.org/) para gerenciar as dependências do projeto.
+A primeira coisa que fiz foi usar o [Composer](https://getcomposer.org/) para gerenciar as dependências do projeto.
 
 Aqui uma decisão tinha que ser tomada: o projeto foi todo baseado em PHP 5.2+, e eu poderia continuar deixando essa versão como a mínima necessária. Só que muitas das ferramentas de métricas e o próprio PHPUnit que hoje está disponível via Composer é apenas 5.3+. Então decidi subir para 5.3 a dependência mínima.
 
@@ -74,7 +74,7 @@ Então foi um passo para criar um arquivo de configuração para o PHPUnit, já 
 
 ### PHP CodeSniffer
 
-Uma task do Phing que não estava sendo executada era a de verificação do padrão de codificação, com o [phpcs](https://github.com/squizlabs/PHP_CodeSniffer). Pensei em colocar o padrão [PSR2](http://www.php-fig.org/psr/2/) logo de cara, mas como o projeto foi feito a muito tempo, muitos erros iriam aparecer. Preferi deixar com o padrão [Zend](http://framework.zend.com/manual/1.12/en/coding-standard.coding-style.html) que foi provavelmente o que o Dohms e o Pascutti usaram.
+Uma task do Phing que não estava sendo executada era a de verificação do padrão de codificação, com o [phpcs](https://github.com/squizlabs/PHP_CodeSniffer). Pensei em colocar o padrão [PSR2](http://www.php-fig.org/psr/psr-2/) logo de cara, mas como o projeto foi feito a muito tempo, muitos erros iriam aparecer. Preferi deixar com o padrão [Zend](http://framework.zend.com/manual/1.12/en/coding-standard.coding-style.html) que foi provavelmente o que o Dohms e o Pascutti usaram.
 
 Na minha lista de tarefas está evoluir o padrão para PSR2.
 
@@ -84,7 +84,7 @@ Todas as ferramentas que estão sendo usadas para métricas, testes e build est�
 
 ### README
 
-E no LEIAME do projeto a principal mudança foi trocar o formato para [Markdown](http://daringfireball.net/projects/markdown/) (na verdade o [GFM](https://help.github.com/articles/github-flavored-markdown)) que é uma beleza para escrever e o GitHub já faz a renderização muito bem para HTML.
+E no LEIAME do projeto a principal mudança foi trocar o formato para [Markdown](https://daringfireball.net/projects/markdown/) (na verdade o [GFM](https://help.github.com/articles/github-flavored-markdown)) que é uma beleza para escrever e o GitHub já faz a renderização muito bem para HTML.
 
 ### Ferramentas de Integração Contínua Online (Travis e Scrutinizer)
 
@@ -102,7 +102,7 @@ Mas por que não ser [um pouco poser e colocar um monte de badges no projeto](ht
 
 Comecei pela mais conhecida, o [Travis-CI](https://travis-ci.org/), que já tinha usado em outros projetos. Nele começei colocando o PHPUnit para rodar, nas 3 últimas grandes versões do PHP, 5.3, 5.4 e 5.5.
 
-O Travis conta com um conceito interessante de [matriz de build](http://about.travis-ci.org/docs/user/build-configuration/#The-Build-Matrix), onde você cruza algumas configurações e o build é feito em todas as combinações dela. Isso me ajudou no passo seguinte.  O Travis já tem um executável do PHPUnit disponível para usarmos, mas eu gostaria de rodar o PHPUnit instalado pelo Composer também. Fácil: criei uma variável de ambiente RUN, que no primeiro momento era definida como phpunit, e no segundo momento como vendor/bin/phpunit. E o Travis se encarregou de rodar os builds 6 vezes (3 versões do PHP x 2 PHPUnit diferentes).
+O Travis conta com um conceito interessante de [matriz de build](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix), onde você cruza algumas configurações e o build é feito em todas as combinações dela. Isso me ajudou no passo seguinte.  O Travis já tem um executável do PHPUnit disponível para usarmos, mas eu gostaria de rodar o PHPUnit instalado pelo Composer também. Fácil: criei uma variável de ambiente RUN, que no primeiro momento era definida como phpunit, e no segundo momento como vendor/bin/phpunit. E o Travis se encarregou de rodar os builds 6 vezes (3 versões do PHP x 2 PHPUnit diferentes).
 
 No fim, coloquei mais uma definição para a variável de ambiente RUN como vendor/bin/phing, e o Phing inteiro foi rodado lá no Travis, muito bacana!
 
@@ -125,7 +125,7 @@ Depois de bater um pouco de cabeça, consegui fazer a maioria das métricas sere
 
 ---
 
-E para renderizar o README um pouco melhor, e lógico que usando outra ferramenta online, fui de [DocumentUp](http://documentup.com/rogeriopradoj/manowars).
+E para renderizar o README um pouco melhor, e lógico que usando outra ferramenta online, fui de [DocumentUp](https://documentup.com/rogeriopradoj/manowars).
 
 ---
 
@@ -137,4 +137,4 @@ Até mais!
 
 ---
 
-Este artigo foi publicado originalmente em [RogerioPradoJ.com](http://rogeriopradoj.com).
+Este artigo foi publicado originalmente em [RogerioPradoJ.com](https://rogeriopradoj.com).
