@@ -10,7 +10,7 @@ use:
 {% for post in page.pagination.items %}
     <article class="post">
         <header>
-            <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a> <span class="badge">{{ post.date|date("Y-m-d") }}</span></h2>
         </header>
 
         <ul class="list-unstyled">
