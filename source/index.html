@@ -12,12 +12,6 @@ use:
         <header>
             <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a></h2>
         </header>
-        <div>
-            {{ post.blocks.content | truncatehtml(600) | raw }}
-        </div>
-        <div style="margin-bottom: 10px;">
-            <a href="{{ site.url }}{{ post.url }}/"><b>Leia mais...</b></a>
-        </div>
 
         <ul class="list-unstyled">
             {% if post.meta.categories %}
