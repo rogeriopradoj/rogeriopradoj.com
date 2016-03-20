@@ -34,7 +34,7 @@ Para participar, o pessoal precisou precisa acessar um [formulário no Google Fo
 
 Tivemos um apoio muito forte da comunidade compartilhando a iniciativa, e temos muito que agradecer pelo sucesso da empreitada! Aqui também vai um agradecimento especial para o [Elton Minetto](http://eltonminetto.net/), responsável pela newsletter [A semana: PHP](http://www.asemanaphp.com.br/) que nos divulgou na [edição 74](http://www.asemanaphp.com.br/edicoes/edicao74.html) e nos colocou em contato com a [Umbler](https://www.umbler.com/br), que forneceu mais alguns ingressos para a ação; ao [Rodrigo "Pokemaobr" Cardoso](https://github.com/pokemaobr) que ajudou demais o Hussani e eu na organização e ao [Rafael Reis](https://reisraff.github.io/dist/#!/home) que deu um tapa no layout do [site da ação](https://30contribs.github.io/phpx2016/).
 
-![Página da ação #30contribs/phpx2016](assets/images/2016/03/_30contribs_phpx2016_-_Consulte_suas_contribuições_para_a_ação_and_phpx2016__Git_.png)
+![Página da ação #30contribs/phpx2016](assets/images/2016/03/30contribs_phpx2016.png)
 
 ### Evolução
 
