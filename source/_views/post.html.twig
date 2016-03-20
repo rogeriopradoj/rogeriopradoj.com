@@ -8,9 +8,16 @@
 {% block content_wrapper %}
     <article class="post">
         <header>
-            <h2 class="post-title">{{ page.title }} <span class="badge">{{ post.date|date("Y-m-d") }}</span></h2>
+            <h2 class="post-title">{{ page.title }}</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="{{ site.url }}/about">Rogerio Prado de Jesus</a> em <time datetime="{{ page.date|date('c') }}" pubdate><span>{{ page.date|date('d/m/Y') }}</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
         </header>
-        <div>
+        <div class="post-content">
             {{ page.blocks.content | raw }}
         </div>
 
