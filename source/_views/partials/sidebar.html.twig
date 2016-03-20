@@ -43,7 +43,24 @@
 <div class="well">
     <h4>Arquivo</h4>
     <ul class="nav">
-        <li><a href="{{ site.url }}/categories/">Categorias</a></li>
-        <li><a href="{{ site.url }}/tags/">Tags</a></li>
+        <li><a class="btn btn-block btn-xs btn-info" href="{{ site.url }}/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                {% for category,posts in data.posts_categories %}
+                    <a class="label label-info" href="{{ site.url }}/category/{{ category | url_encode(true) }}/">{{ category }}</a>
+                {% endfor %}
+            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="{{ site.url }}/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                {% for tag,posts in data.posts_tags %}
+                    <a class="label label-primary" href="{{ site.url }}/tag/{{ tag | url_encode(true) }}/">{{ tag | replace('-', ' ') }}</a>
+                {% endfor %}
+            </li>
+            <li class="clearfix"></li>
+        </ul></li>
     </ul>
 </div>

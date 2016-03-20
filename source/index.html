@@ -6,6 +6,8 @@ pagination:
     max_per_page: 5
 use:
     - posts
+    - posts_categories
+    - posts_tags
 ---
 {% for post in page.pagination.items %}
     <article class="post">
