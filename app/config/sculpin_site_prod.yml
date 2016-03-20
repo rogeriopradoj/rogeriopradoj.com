@@ -1,0 +1,11 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+title: ROGERIO PRADO J | rogeriopradoj.com
+subtitle: Desenvolvimento e TI em geral
+my_full_name: Rogerio Prado de Jesus
+url: https://rogeriopradoj.com
+
+disqus_shortname: rogeriopradojcom
+
+google_analytics_tracking_id: UA-23860787-1
