@@ -1,6 +1,6 @@
 ---
 date: 2016-03-14T02:00:00-03:00
-title: '#30contribs/phpx2016 - Eu contribuo e quero ir na faixa para a PHP Experience 2016'
+title: 'Resultado da ação #30contribs/phpx2016 - Eu contribuo e quero ir na faixa para a PHP Experience 2016'
 categories:
     - 30contribs
 tags:
@@ -9,6 +9,8 @@ tags:
     - phpexperience
     - phpx2016
     - phpx
+redirect:
+    - 2016/03/14/30contribs-phpx-eu-contribuo-e-quero-ir-na-faixa-para-a-php-experience-2016/
 ---
 
 ![PHP Experience capa](assets/images/2016/03/phpexperience-capa.jpg)
