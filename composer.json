@@ -2,7 +2,8 @@
     "name": "rogeriopradoj/rogeriopradoj.github.io",
     "require": {
         "mavimo/sculpin-redirect-bundle": "@dev",
-        "sharkpp/sculpin-calendarian-bundle": "dev-master"
+        "sharkpp/sculpin-calendarian-bundle": "dev-master",
+        "sculpin/sculpin": "~2.1@dev"
     },
     "config": {
         "component-dir": "source/assets/components"
@@ -12,5 +13,7 @@
             "AndrewShell": "app/src",
             "Acelaya": "app/src"
         }
-    }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }

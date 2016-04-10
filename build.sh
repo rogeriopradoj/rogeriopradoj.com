@@ -5,6 +5,6 @@ set -e
 set -x
 
 # build site
-[ ! -e "sculpin.phar" ] && curl -O https://download.sculpin.io/sculpin.phar
-php sculpin.phar install
-php sculpin.phar generate --env=prod
+composer selfupdate
+composer install
+./vendor/bin/sculpin generate --env=prod
