@@ -26,6 +26,9 @@ After that:
 # install the dependencies
 composer install
 
+# or if it as long time since the last run, update the dependencies
+# composer update
+
 # run sculpin
 ./vendor/bin/sculpin generate --watch --server
 ```
