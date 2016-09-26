@@ -16,6 +16,15 @@ tags:
     - software-livre
     - tdc2014
     - trilha-php
+---
+
+**Update**: February 25th, 2016, [PHPSP UG](http://phpsp.org.br/) organized an [event supported by UOL](https://joind.in/event/phpsp--uol-2016-fevereiro), I spoke there again, and the presentation was completely recorded on video!
+
+You can watch it [in Brazilian Portuguese]:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QU7Ne_-SJCc" frameborder="0" allowfullscreen style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px"></iframe>
+
+*Youtube Video: <https://youtu.be/QU7Ne_-SJCc> - Slides: <http://www.slideshare.net/rogeriopradoj/becoming-a-contributor-open-sourcer-and-beyond-phpsp-uol>*
 
 ---
 

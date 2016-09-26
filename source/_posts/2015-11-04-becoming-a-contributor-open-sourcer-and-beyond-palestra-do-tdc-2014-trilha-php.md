@@ -18,6 +18,16 @@ tags:
     - trilha-php
 ---
 
+**Atualização**: Em 25/02/2016 o [PHPSP](http://phpsp.org.br/) fez um [evento com apoio do UOL](https://joind.in/event/phpsp--uol-2016-fevereiro), palestrei lá de novo, e a apresentação foi gravada por inteiro!
+
+Você pode assistir aqui:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QU7Ne_-SJCc" frameborder="0" allowfullscreen style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px"></iframe>
+
+*Youtube Video: <https://youtu.be/QU7Ne_-SJCc> - Slides: <http://www.slideshare.net/rogeriopradoj/becoming-a-contributor-open-sourcer-and-beyond-phpsp-uol>*
+
+---
+
 Olá, pessoal!
 
 No dia 08 de agosto de 2014 fiz uma apresentação sobre contribuição em projetos open source, e um pouco de comunidades de desenvolvimento também, com foco naqueles softwares de código aberto que estão hospedados no GitHub.
