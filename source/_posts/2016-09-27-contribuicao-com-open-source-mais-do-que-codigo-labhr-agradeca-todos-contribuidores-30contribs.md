@@ -60,17 +60,17 @@ Você pode automatizar essa descoberta dos contribuidores para agradecer pelo tr
 
 #### Em português
 
-- [Contribuição com Open Source: Mais Do Que Código - #LABHR - Agradeça a Todos os Contribuidores - #30contribs]({{ page.url }})
+- <a href="{{ site.url }}/{{ page.url }}">Contribuição com Open Source: Mais Do Que Código - #LABHR - Agradeça a Todos os Contribuidores - #30contribs</a>
 
 ### Palestras
 
-- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=iAu7Xw9lFt0) presented at [PyCon US](https://us.pycon.org/2016/schedule/presentation/1584/)
-- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=wQxFKxbWcFM) presented at [Kiwi PyCon](https://nzpug.org/kiwipycon/christchurch-2015/)
-- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=yQGrLrLgT-M) presented at [/dev/world/](http://2015.devworld.com.au/)
-- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=wNWrr19gE0Y) presented at [PyCon AU](http://2015.pycon-au.org/schedule/30023/view_talk?day=saturday)
-- Mentioned in [FOSS Lessions from building the KSP-CKAN](https://www.youtube.com/watch?v=dkMFoo60d0s) by Paul Fenwick at OSDC
-- Mentioned in [Keynote](https://opbeat.com/events/duth/) by Dr Russell Keith-Magee at Django Under the Hood
-- Lightning Talks have been presented at: [SydPHP](http://www.meetup.com/SydPHP/events/220312809/), [DevOps Sydney](http://www.meetup.com/devops-sydney/events/219153444/), [SyPy](http://www.meetup.com/sydneypython/events/221908406/), /dev/world, [PHP Conference NZ](http://2015.phpconference.org.nz/conference-warm-up/), [OSDC](https://2015.osdc.com.au/), [linux.conf.au](https://linux.conf.au/), and [DjangoCon Europe](https://2016.djangocon.eu/)
+- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=iAu7Xw9lFt0) apresentada na [PyCon US](https://us.pycon.org/2016/schedule/presentation/1584/)
+- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=wQxFKxbWcFM) apresentada na [Kiwi PyCon](https://nzpug.org/kiwipycon/christchurch-2015/)
+- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=yQGrLrLgT-M) apresentada na [/dev/world/](http://2015.devworld.com.au/)
+- [Build A Better Hat Rack - All Contributions Welcome](https://www.youtube.com/watch?v=wNWrr19gE0Y) apresentada na [PyCon AU](http://2015.pycon-au.org/schedule/30023/view_talk?day=saturday)
+- Mencionada na [FOSS Lessions from building the KSP-CKAN](https://www.youtube.com/watch?v=dkMFoo60d0s) pelo Paul Fenwick na OSDC
+- Mencionada na [Keynote](https://opbeat.com/events/duth/) pelo Dr Russell Keith-Magee na Django Under the Hood
+- Lightning Talks foram apresentada na: [SydPHP](http://www.meetup.com/SydPHP/events/220312809/), [DevOps Sydney](http://www.meetup.com/devops-sydney/events/219153444/), [SyPy](http://www.meetup.com/sydneypython/events/221908406/), /dev/world, [PHP Conference NZ](http://2015.phpconference.org.nz/conference-warm-up/), [OSDC](https://2015.osdc.com.au/), [linux.conf.au](https://linux.conf.au/), and [DjangoCon Europe](https://2016.djangocon.eu/)
 
 ### Evangelistas
 
@@ -84,7 +84,7 @@ Você pode automatizar essa descoberta dos contribuidores para agradecer pelo tr
 
 ### Além do LABHR
 
-Foi criado também um projeto no GitHub, do [Kent C. Dodds](https://github.com/kentcdodds), chamado [github://kentcdodds/all-contributors](https://github.com/kentcdodds/all-contributors) e a chamada dele é: :sparkles: Recognize all contributors, not just the ones who push code :sparkles:.
+Foi criado também um projeto no GitHub, do [Kent C. Dodds](https://github.com/kentcdodds), chamado [github://kentcdodds/all-contributors](https://github.com/kentcdodds/all-contributors) e a chamada dele é: *Recognize all contributors, not just the ones who push code*.
 
 ![kentcdodds all-contributors github repo](assets/images/2016/09/kentcdodds-all-contributors.png)
 *GitHub repo: <https://github.com/kentcdodds/all-contributors>*
