@@ -3,6 +3,9 @@ layout: default
 author: rogeriopradoj
 date: 2010-09-16 13:39:44+00:00
 title: Sobre/About/Acerca
+redirect:
+    - sobre/
+    - acerca/
 ---
 
 <link rel="stylesheet" href="assets/components/flags/flags.css">
