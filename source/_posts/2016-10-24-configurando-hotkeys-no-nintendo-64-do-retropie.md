@@ -15,7 +15,12 @@ tags:
 
 Olá pessoal!
 
-Essa dica é para quem usa o Retropie para emular videogames antigos no Raspberry Pi e está tendo problemas para sair de um jogo dentro do emulador de Nintendo 64, e também não consegue salvar um momento do jogo e carregá-lo posteriormente. 
+Essa dica é para quem usa o Retropie para emular videogames antigos no Raspberry Pi e está tendo problemas para sair de um jogo dentro do emulador de Nintendo 64 e também não consegue salvar seu progresso para carregá-lo posteriormente.
+
+[![Logo Retropie](assets/images/2016/10/RetroPieWebsiteLogo.png)](https://retropie.org.uk/)
+*Fonte: <https://retropie.org.uk/>*
+
+---
 
 Por padrão, o Retropie tem uma lista de hotkeys (que são os atalhos especiais feitos no joystic para alguma ação do emulador):
 
