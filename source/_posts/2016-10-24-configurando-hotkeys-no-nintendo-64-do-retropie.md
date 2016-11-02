@@ -22,7 +22,7 @@ Essa dica é para quem usa o Retropie para emular videogames antigos no Raspberr
 
 ---
 
-Por padrão, o Retropie tem uma lista de hotkeys (que são os atalhos especiais feitos no joystic para alguma ação do emulador):
+Por padrão, o Retropie tem uma lista de hotkeys (que são os atalhos especiais feitos no joystick para alguma ação do emulador):
 
 [![tabela hotkeys retropie](assets/images/2016/10/hotkeys-retropie.png)](https://retropie.org.uk/)
 *Fonte: <https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#default-joypad-hotkeys>*
@@ -35,7 +35,7 @@ Agora que já sabemos da história, vamos ver como resolver esse imbróglio:
 
 1. Entre na linha de comando do seu Retropie (apertando F4 num teclado conectado, ou [acessando via SSH](https://github.com/retropie/retropie-setup/wiki/ssh))
 
-1. Verifique no seu controle principal qual é o botão número correspondente ao botões que você vai usar como hotkey, usando o comando `jstest /dev/input/jsX`, onde X é o índice referente ao seu joystic. Exemplo, onde descobri que o SELECT é o botão 8 e o START é o botão 9:
+1. Verifique no seu controle principal qual é o número correspondente ao botões que você vai usar como hotkey, usando o comando `jstest /dev/input/jsX`, onde X é o índice referente ao seu joystick. Exemplo, onde descobri que o SELECT é o botão 8 e o START é o botão 9:
 
 ```
 $ jstest /dev/input/js0
