@@ -10,6 +10,7 @@ tags:
     - bacalhau
     - ovos
     - frigideira
+social_image: /assets/images/2016/12/bacalhau-com-ovos-wanderlei-capa.jpg
 ---
 
 Olá, olá, pessoal! Último post de 2016! Boas festas para todos, que o novo ano seja ótimo para todos nós.

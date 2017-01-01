@@ -1,9 +1,34 @@
 {% extends "default" %}
 {% block meta %}
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.blocks.content|raw|striptags|split(' ')|slice(0,50)|join(' ') }} ...{% endif %}">
+    <meta name="keywords" content="rogeriopradoj, {% for tag in page.tags %}{% if loop.first %}, {% endif %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}" />
+
+    <!-- Facebook -->
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
+{% if page.social_image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.social_image }}" />
+{% else %}
     <meta property="og:image" content="{{ site.url }}/assets/images/rogerio/700x700.jpg" />
+{% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.blocks.content|raw|striptags|split(' ')|slice(0,50)|join(' ') }} ...{% endif %}" />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+{% if page.social_image %}
+    <meta name="twitter:image:src" content="{{ site.url }}{{ page.social_image }}">
+{% elseif page.cover_image %}
+    <meta name="twitter:image:src" content="{{ site.url }}{{ page.cover_image }}">
+{% else %}
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/images/rogerio/700x700.jpg">
+{% endif %}
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.blocks.content|raw|striptags|split(' ')|slice(0,50)|join(' ') }} ...{% endif %}" />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
 {% endblock %}
 {% block content_wrapper %}
     <article class="post">
