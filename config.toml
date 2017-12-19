@@ -48,3 +48,19 @@ disqusShortname = "rogeriopradojcom" #delete or comment to disable Disqus commen
   name = "Archives"
   url = "/post/"
   weight = -180
+[[menu.main]]
+  name = "Sobre/About/Acerca"
+  url = "/about/"
+  weight = -160
+[[menu.main]]
+  name = "Slides"
+  url = "/slides/"
+  weight = -140
+[[menu.main]]
+  name = "PradoJ.com"
+  url = "/pradoj-com/"
+  weight = -120
+[[menu.main]]
+  name = "Contato/Contact"
+  url = "/contato/"
+  weight = -100
