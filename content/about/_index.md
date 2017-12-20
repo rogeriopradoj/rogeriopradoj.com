@@ -1,3 +1,12 @@
++++
+date = "2010-09-16T13:39:44+00:00"
+title = "Sobre/About/Acerca"
+layout = "default"
+
+[menu.main]
+    weight = 1
++++
+
 <link rel="stylesheet" href="assets/components/flags/flags.css">
 
 # Sobre / About / Acerca
