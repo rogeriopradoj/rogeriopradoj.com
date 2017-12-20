@@ -1,15 +1,7 @@
 ---
 layout: default
 title: Contato
-permalink: contato/
 ---
-{% block content %}
-<div class="container">
-    <span class="col-md-1 col-md-offset-2">&nbsp;</span>
- <h1 class="col-md-4 center-block text-center">Contato</h1>   
-</div>
-
-<hr>
 <form id="contact-form" class="form-horizontal" method="post">
   <fieldset>
       <div class="form-group">
@@ -46,15 +38,10 @@ permalink: contato/
       </div>
   </fieldset>
   <input type="text" name="_gotcha" style="display:none" />
-  <input type="hidden" name="_next" value="/contato/obrigado.html" />
+  <input type="hidden" name="_next" value="/" />
   <input type="hidden" name="_subject" value="RogerioPradoJ.com - site contato" />
 </form>
 <script>
   var contactForm =  document.getElementById('contact-form');
   contactForm.setAttribute('action', '//formspree.io/' + 'contato' + '@' + 'rogeriopradoj' + '.' + 'com');
 </script>
-{% endblock %}
-
-{% block post_js %}
-
-{% endblock %}

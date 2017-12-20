@@ -20,7 +20,7 @@ disqusShortname = "rogeriopradojcom" #delete or comment to disable Disqus commen
   name = "Rogerio Prado de Jesus"
 
 [params]
-  DateForm = "Dom, 02/01/2006"
+  DateForm = "02/01/2006"
   Description = "Desenvolvimento e TI em geral"
   Author = "Rogerio Prado de Jesus"
   email = "contato@rogeriopradoj.com" #Remove this line if you would prefer not to use an email button in the footer.
@@ -58,5 +58,5 @@ disqusShortname = "rogeriopradojcom" #delete or comment to disable Disqus commen
   weight = -120
 [[menu.main]]
   name = "Contato/Contact"
-  url = "/contato/"
+  url = "/contact/"
   weight = -100
