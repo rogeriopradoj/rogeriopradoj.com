@@ -1,0 +1,63 @@
+{{ partial "header.html" .}}
+
+    <!-- Page Header -->
+    <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/home-bg.jpg')">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+           <div class="site-heading">
+             <h1>404 - Página não encontrada</h1>
+           </div>
+         </div>
+       </div>
+     </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <style type="text/css">
+                #goog-wm { }
+                #goog-wm h3.closest-match { }
+                #goog-wm h3.closest-match a { }
+                #goog-wm h3.other-things { }
+                #goog-wm ul li { }
+                #goog-wm li.search-goog { display: block; }
+                #goog-wm-qt {
+                color: black;
+                }
+                </style>
+                <div class="well error-not-found text-center">
+                    <h3>A página que você procurou não foi encontrada.</h3>
+                    <script type="text/javascript">
+                    var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),
+                        GOOG_FIXURL_SITE = location.host;
+                    </script>
+                    <script type="text/javascript" 
+                    src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+                    <hr>
+                    <a class="btn btn-primary btn-lg" href="{{ .Site.BaseURL }}">
+                        <span class="fa fa-home"></span> Voltar para tela inicial
+                    </a>
+                </div>
+
+                <script>
+                (function() {
+                    var element = $('#goog-wm-sb');
+                    element.val('Pesquisa Google');
+                    element.addClass("btn btn-xs btn-default");
+
+                    element = $('.other-things > b');
+                    element.text('Quer tentar a busca?')
+
+                    var element = $('.search-goog');
+                    element.html(element.html().replace('Search', 'Pesquisar em'));
+
+                })();
+                </script>
+            </div>
+        </div>
+    </div>
+
+{{ partial "footer.html" .}}

@@ -1,4 +1,4 @@
-baseurl = "http://rogeriopradoj.com"
+baseurl = "https://rogeriopradoj.com"
 title = "RogerioPradoJ.com"
 canonifyurls = true
 paginate = 10
@@ -6,8 +6,8 @@ theme = "startbootstrap-clean-blog"
 # languageCode = "en-us"
 languageCode = "pt-br"
 copyright = "(c) 2017 - Rogerio Prado de Jesus"
-googleAnalytics = "UA-23860787-1" # delete or comment to disable Google Analytics JS generation
-disqusShortname = "rogeriopradojcom" #delete or comment to disable Disqus comments
+googleAnalytics = "UA-23860787-1"
+disqusShortname = "rogeriopradojcom"
 
 [permalinks]
   post = "/:year/:month/:day/:title/"
