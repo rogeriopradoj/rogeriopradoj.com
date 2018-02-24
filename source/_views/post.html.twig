@@ -9,7 +9,7 @@
 {% if page.social_image %}
     <meta property="og:image" content="{{ site.url }}{{ page.social_image }}" />
 {% else %}
-    <meta property="og:image" content="{{ site.url }}/assets/images/rogerio/700x700.jpg" />
+    <meta property="og:image" content="{{ site.url }}/assets/images/rogerio/rogerio-1920x1920.jpg" />
 {% endif %}
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.blocks.content|raw|striptags|split(' ')|slice(0,50)|join(' ') }} ...{% endif %}" />
@@ -23,7 +23,7 @@
 {% elseif page.cover_image %}
     <meta name="twitter:image:src" content="{{ site.url }}{{ page.cover_image }}">
 {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}/assets/images/rogerio/700x700.jpg">
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/images/rogerio/rogerio-1920x1920.jpg">
 {% endif %}
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ page.blocks.content|raw|striptags|split(' ')|slice(0,50)|join(' ') }} ...{% endif %}" />
