@@ -1,12 +1,13 @@
 ---
-date: 2017-03-20 10:30:00-03:00
+date: 2018-03-20 10:30:00-03:00
 title: Estou no Glitch.com
 categories:
     - Geral
 tags:
-    - steve-jobs
-    - apple
-    - quote
+    - glitch
+    - pwa
+    - workbox
+    - react
 social_image: /assets/images/2018/03/20-estou-no-glitch-01.jpg
 ---
 
