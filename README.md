@@ -1,6 +1,6 @@
 # RogerioPradoJ's blog
 
-[![Build Status](https://travis-ci.org/rogeriopradoj/rogeriopradoj.github.io.svg)](https://travis-ci.org/rogeriopradoj/rogeriopradoj.github.io)
+[![Build Status](https://travis-ci.org/rogeriopradoj/rogeriopradoj.com.svg)](https://travis-ci.org/rogeriopradoj/rogeriopradoj.com)
 
 It's available on http://rogeriopradoj.com/
 
