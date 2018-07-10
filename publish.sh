@@ -24,4 +24,4 @@ git add .
 git commit -m "Build website"
 
 # push to GitHub Pages
-git push "https://github.com/rogeriopradoj/rogeriopradoj.github.io" -f master
+git push "https://github.com/rogeriopradoj/rogeriopradoj.com" -f master

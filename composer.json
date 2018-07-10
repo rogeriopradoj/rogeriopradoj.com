@@ -1,5 +1,5 @@
 {
-    "name": "rogeriopradoj/rogeriopradoj.github.io",
+    "name": "rogeriopradoj/rogeriopradoj.com",
     "require": {
         "mavimo/sculpin-redirect-bundle": "@dev",
         "sharkpp/sculpin-calendarian-bundle": "dev-master",
