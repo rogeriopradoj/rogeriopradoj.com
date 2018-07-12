@@ -15,5 +15,8 @@
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "scripts": {
+        "serve": "sculpin generate --watch --server"
+    }
 }

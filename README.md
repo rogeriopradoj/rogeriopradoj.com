@@ -29,8 +29,11 @@ composer install
 # or if it as long time since the last run, update the dependencies
 # composer update
 
-# run sculpin
-./vendor/bin/sculpin generate --watch --server
+# run sculpin via composer script alias
+composer serve
+
+# or via actual script
+# ./vendor/bin/sculpin generate --watch --server
 ```
 
 So visit [http://localhost:8000/](http://localhost:8000/) on your browser.
