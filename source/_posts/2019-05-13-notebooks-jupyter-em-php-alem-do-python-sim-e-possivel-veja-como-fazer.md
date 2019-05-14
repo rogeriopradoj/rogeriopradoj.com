@@ -62,6 +62,11 @@ No site oficial, <https://litipk.github.io/Jupyter-PHP-Installer/>, tem mais inf
 * baixar o instalador .phar, <https://litipk.github.io/Jupyter-PHP-Installer/dist/jupyter-php-installer.phar>;
 * entrar na pasta onde baixou, pelo terminal, e executar: `php jupyter-php-installer.phar install`.
 
+<figure>
+    <img title="Resultado da instalação do Juptyer-notebook" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-03.png" alt="Resultado da instalação do Juptyer-notebook">
+    <figcaption>Resultado da instalação</figcaption>
+</figure>
+
 E é isso! Se tiver problemas com o Composer não acessando a URL do Packagist, pode dar uma olhada nesse projeto aqui, <https://github.com/rogeriopradoj/cntlm-proxy-windows>, lá tem mais instruções!
 
 ### Agora é só usar!
@@ -71,7 +76,7 @@ Pronto, é só reiniciar o seu Jupyter, e quando for criar um Notebook, vai ter 
 Aqui vai um exemplo:
 
 <figure>
-    <img title="Um exemplo de Jupyter Notebook usando o kernel PHP" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-02.jpg" alt="Um exemplo de Jupyter Notebook usando o kernel PHP">
+    <img title="Um exemplo de Jupyter Notebook usando o kernel PHP" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-02.png" alt="Um exemplo de Jupyter Notebook usando o kernel PHP">
     <figcaption>Um exemplo de Jupyter Notebook usando o kernel PHP</figcaption>
 </figure>
 
