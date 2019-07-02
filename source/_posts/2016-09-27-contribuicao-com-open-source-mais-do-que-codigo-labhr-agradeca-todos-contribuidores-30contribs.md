@@ -17,7 +17,7 @@ tags:
 
 ---
 
-<sub>*Se quiser saber mais sobre como contribuir com projetos open source, [veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!](2015-06-24-30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade)</sub>
+<sub>*Se quiser saber mais sobre como contribuir com projetos open source, [veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!](2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade)</sub>
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 
 Olá pessoal, tudo bem? Como andam as contribuições?
 
-<sub>*Se quiser saber mais sobre como contribuir com projetos open source, [veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!](2015-06-24-30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade)</sub>
+<sub>*Se quiser saber mais sobre como contribuir com projetos open source, [veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!](2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade)</sub>
 
 Hoje vamos ver como contribuir criando um novo pacote para o [Homebrew](http://brew.sh), que é um ótimo gerenciador de pacotes para o macOS (similar ao [apt-get, yum, dnf](https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg) ou [chocolatey](https://chocolatey.org/)).
 
