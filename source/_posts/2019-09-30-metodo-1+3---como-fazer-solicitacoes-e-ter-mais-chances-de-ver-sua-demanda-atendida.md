@@ -54,7 +54,7 @@ Na [PHP Conference Argentina de 2013](https://www.youtube.com/playlist?list=PL62
 
 E sabe o que eu fiz? Tomar coragem, e pedir para a minha empresa atualizar o PHP? Não... Em vez disso, eu fiz uma palestra na PHP Conference Brasil de 2014, sobre como eu sobrevivia trabalhando com uma versão desatualizada da linguagem, mostrando que muitas vezes você não tem escolha mesmo, que o pessoal "da infra" não tem mesmo como evoluir, e a vida é assim. [Surviving PHP 5.2 with Composer](https://joind.in/user/rogeriopradoj/talks) era o nome da apresentação. E, por sorte, o Rasmus estava no Brasil nesse ano, também como palestrante do evento, e fui trocar uma ideia com ele.
 
-Perguntei se ele lembrava de mim no ano anterior, do PHP antigo, ele disse que sim, hehe. E falei: "olha só Rasmus, fiz uma palestra para provar que dá para sobreviver da forma antiga". De forma seca, mas não rude, ele falou: você pode até sobreviver a esse grande desafio que você, e conseguir continuar no ambiente antigo. Mas, realmente, deveria atualizar seu PHP!
+Perguntei se ele lembrava de mim no ano anterior, do PHP antigo, ele disse que sim, hehe. E falei: "olha só Rasmus, fiz uma palestra para provar que dá para sobreviver da forma antiga". De forma seca, mas não rude, ele falou: você pode até sobreviver a esse grande desafio que você tem e mostrar a sua audiência como consegue continuar no ambiente antigo. Mas, realmente, deveria atualizar seu PHP!
 
 Aí pedi uma ajuda para ele: "você grava um vídeo para mim, contando por que o PHP deve ser atualizado?" E ele gravou! Veja o resultado abaixo:
 
