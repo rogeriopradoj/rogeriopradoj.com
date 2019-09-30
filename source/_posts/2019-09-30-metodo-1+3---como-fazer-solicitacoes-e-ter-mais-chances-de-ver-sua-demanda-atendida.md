@@ -20,35 +20,35 @@ social_image: /assets/images/2019/09/30-metodo-1+3---como-fazer-solicitacoes-e-t
 
 Olá, pessoal!
 
-Já ouviram falar no método 1 + 3 para fazer solicitações para outras áreas / pessoas? É um método que uso e recomendo para os casos em que precisar fazer demandas e quiser aumentar suas chances de vê-la atendida.
+Já ouviram falar no método 1 + 3 para fazer solicitações para outras áreas / pessoas? É um método que uso e recomendo para os casos em que precisar fazer demandas e quiser aumentar suas chances de vê-las atendidas.
 
 ## tl;dr - Resumindo o método 1 + 3
 
-* **1 - o que você precisa?** Aqui, vá direto ao ponto, se possível em poucas palavras.
+* **1 - o que você precisa?** Aqui, vá direto ao ponto, se possível, em poucas palavras.
 * 3 complementos mínimos:
     * **3.a - detalhamento**: coloque aqui um pouco mais qual é a sua necessidade. O que você já tem? O que já foi feito? O que você já conseguiu num momento anterior? Etc.
     * **3.b - impactos positivos quando tiver acesso:** liste o benefício que vai ter quando a demanda for atendida.
     * **3.c - problemas caso continuar sem acesso:** listar todas as dificuldades, prejuízos, retrabalho, custos etc. enquanto a situação atual se mantiver.
 
-Em resumo, o método consiste em ter claro o que precisa, de forma que consiga descrever sua questão de forma bem concisa. No entanto, não deixando escapar nada do suficiente dos elementos para que sua demanda seja apreciada.
+Em resumo, o método consiste em ter claro o que precisa, que você consiga descrever sua questão de forma bem concisa. No entanto, sem deixar escapar nenhum dos elementos essenciais para que sua demanda seja apreciada.
 
 ## De onde surgiu esse método?
 
 Em 2016, lá na empresa que trabalho, participei de um processo de gestão de talentos para a VP de Tecnologia da Informação. Bastante puxado, mas bastante recompensador. E foi lá que aprendi, e precisei por em prática, conhecimentos sobre [Business Case, baseado no Prince2](https://prince2.wiki/pt/temas/business-case/).
 
-O projeto final que apresentamos para a banca avaliadora precisava ser construído nesse formato de Caso de Negócios. E, de todas as partes de conteúdo que precisamos preencher num modelo Business Case, a que ficou mais forte na minha memória sempre foi a relacionada às opções de negócio: ou *não fazer nada*, ou *fazer o mínimo* ou *fazer algo* de verdade. Tudo isso com um detalhamento simples e direto sobre os impactos do seu objeto de trabalho.
+O projeto final que apresentamos para a banca avaliadora precisava ser construído nesse formato de Caso de Negócios. E, de todas as partes de conteúdo que precisamos preencher num modelo Business Case, a que ficou mais forte na minha memória sempre foi aquela relacionada às opções de negócio: ou *não fazer nada*, ou *fazer o mínimo* ou *fazer algo* de verdade. Tudo isso com um detalhamento simples e direto sobre os impactos do seu objeto de trabalho.
 
-E naquela época fui percebendo que minha demandas, tanto as que enviava para a matriz da minha área (ex.? patrocínios), quanto para meus chefes (ex.: liberação para participação em eventos ou contratação de treinamentos), quanto para outras áreas que tínhamos relacionamento, passaram a ter um formato padrão: detalhamento sucinto, argumentos bem claros tanto dos benefícios quanto dos os problemas caso a situação continuasse a mesma. E as demandas eram atendidas! 
+E naquela época fui percebendo que minha demandas, tanto as que enviava para a matriz da minha área (ex.: patrocínios), quanto para meus chefes (ex.: liberação para participação em eventos ou contratação de treinamentos), ou ainda para outras áreas que tínhamos relacionamento; todas elas passaram a ter um formato padrão: detalhamento sucinto, argumentos bem claros tanto dos benefícios quanto dos problemas caso a situação continuasse a mesma. E as demandas eram atendidas! 
 
-Sabem aquele receio de pedir pelas coisas, mesmo quando você acredita que deveria pedir? E não pede por medo do que alguém iria pensar? Então... essa sensação foi ficando cada vez mais para trás. Eu tomava coragem, pedia éramos atendidos. E fazia diferença para a empresa, com mais confiança, e gerando valor :-) .
+Sabem aquele receio de pedir pelas coisas, mesmo quando você acredita que deveria pedir? E não pede por medo do que alguém iria pensar de você? Então... essa sensação foi ficando cada vez mais para trás. Eu tomava coragem, pedia, e éramos atendidos. E fazia diferença para a empresa, com mais confiança, e gerando valor :-) .
 
 ## Alguns exemplos de demandas atendidas!
 
-### Atualização das versões do PHP no banco X
+### Atualização das versões do PHP no Banco X
 
-Como muitos sabem, software desatualizado pode trazer grandes problemas profissionais. Tinha um professor na faculdade que tinha uma máxima. "Devo fazer atualizações? Sim, se quiser 3 coisas muito importantes: novas funcionalidades, resolução de bugs, e correção de falhas de segurança."
+Como muitos sabem, software desatualizado pode trazer grandes problemas profissionais. Tinha um professor na faculdade que contava uma máxima. "Devo fazer atualizações? Sim, se quiser 3 coisas muito importantes: novas funcionalidades, resolução de bugs, e correção de falhas de segurança."
 
-No início da década de 2010, por ter bastante envolvimento com a comunidade PHP de São Paulo (PHPSP) naquela época, ouvia sobre as vantagens das versões mais atualizadas da linguagem. Mas não tinha acesso a essas versões lá no banco X. E pensava: "poxa, isso não tem como mudar... Parece que só fora do banco esse mundo perfeito existe. Por que será que aqui é tão travado? Como as novas versões não estão homologadas, não tenho o que fazer..." Será que era apenas o banco a questão, ou eu que tinha um espaço para fazer diferença e não estava fazendo ainda?
+No início da década de 2010, por ter bastante envolvimento com a comunidade [PHP de São Paulo (PHPSP)](https://phpsp.org.br) naquela época, ouvia sobre as vantagens das versões mais atualizadas da linguagem. Mas não tinha acesso a essas versões lá no banco X. E pensava: "poxa, isso não tem como mudar... Parece que só fora do banco esse mundo perfeito existe. Por que será que aqui é tão travado? Como as novas versões não estão homologadas, não tenho o que fazer..." Será que era apenas o banco a questão, ou eu que tinha um espaço para fazer diferença e não estava fazendo ainda?
 
 Na [PHP Conference Argentina de 2013](https://www.youtube.com/playlist?list=PL62q_PZdGEMAeWJvJP0LjL2aJLLkHPEOq) eu estava lá, na platéia, quando [o criador do PHP, Rasmus Lerdorf, em sua palestra](http://talks.php.net/show/phpconfar) foi perguntando: quem está usando a última versão da linguagem, que tinha acabado de ser lançada, 5.5? Maior parte da sala levantou a mão. E continuou perguntando: e a 5.4, versão de 1 ano atrás? Todos levantaram. E a 5.3, versão de 2 anos e meio atrás? Pouquíssima gente levantou a mão. E por fim, 5.2, versão de quase 8 anos atrás? Só eu levantei a mão. E eu tomei a maior invertida que nem imaginava! O Rasmus fala para mim, com a sala lotada: você deveria sair agora da conferência e ir para casa atualizar seu PHP! :-)
 
