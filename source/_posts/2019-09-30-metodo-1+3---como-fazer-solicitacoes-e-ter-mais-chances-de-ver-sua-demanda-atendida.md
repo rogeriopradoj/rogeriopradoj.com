@@ -4,31 +4,33 @@ title: "Método 1 + 3: Como fazer solicitações e ter mais chances de ver sua d
 categories:
     - Administração
 tags:
-    - método 1 + 3
+    - Método 1 + 3
     - data science
     - data science analytics
     - apache hawq
     - gt
+    - visto caixa
+    - gestão de talentos
 social_image: /assets/images/2019/09/30-metodo-1+3---como-fazer-solicitacoes-e-ter-mais-chances-de-ver-sua-demanda-atendida.png
 ---
 
 <figure>
-    <img title="Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter chances de ver sua demanda atendida" src="/assets/images/2019/09/30-metodo-1+3---como-fazer-solicitacoes-e-ter-mais-chances-de-ver-sua-demanda-atendida.png" alt="Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter chances de ver sua demanda atendida">
-    <figcaption>Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter chances de ver sua demanda atendida</figcaption>
+    <img title="Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter mais chances de ver sua demanda atendida" src="/assets/images/2019/09/30-metodo-1+3---como-fazer-solicitacoes-e-ter-mais-chances-de-ver-sua-demanda-atendida.png" alt="Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter mais chances de ver sua demanda atendida">
+    <figcaption>Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter mais chances de ver sua demanda atendida</figcaption>
 </figure>
 
 
 Olá, pessoal!
 
-Já ouviram falar no método 1 + 3 para fazer solicitações para outras áreas / pessoas? É um método que uso e recomendo para os casos em que precisar fazer demandas e quiser aumentar suas chances de vê-las atendidas.
+Já ouviram falar no Método 1 + 3 que ajuda a estruturar solicitações para outras áreas e pessoas? Eu o utilizo e recomendo que você o utilize em casos em que precisar fazer demandas e quiser aumentar suas chances de vê-las atendidas.
 
-## tl;dr - Resumindo o método 1 + 3
+## tl;dr - Resumindo o Método 1 + 3
 
 * **1 - o que você precisa?** Aqui, vá direto ao ponto, se possível, em poucas palavras.
 * 3 complementos mínimos:
-    * **3.a - detalhamento**: coloque aqui um pouco mais qual é a sua necessidade. O que você já tem? O que já foi feito? O que você já conseguiu num momento anterior? Etc.
-    * **3.b - impactos positivos quando tiver acesso:** liste o benefício que vai ter quando a demanda for atendida.
-    * **3.c - problemas caso continuar sem acesso:** listar todas as dificuldades, prejuízos, retrabalho, custos etc. enquanto a situação atual se mantiver.
+    * **3.a - detalhamento**: coloque aqui um pouco mais de informações sobre sua necessidade. O que você já tem? O que já foi feito? O que você já conseguiu num momento anterior? Etc.
+    * **3.b - impactos positivos quando tiver acesso:** liste os benefícios que vai ter quando a demanda for atendida.
+    * **3.c - problemas caso continuar sem acesso:** listar todas as dificuldades, prejuízos, retrabalhos, custos etc. enquanto a situação atual se mantiver.
 
 Em resumo, o método consiste em ter claro o que precisa, que você consiga descrever sua questão de forma bem concisa. No entanto, sem deixar escapar nenhum dos elementos essenciais para que sua demanda seja apreciada.
 
