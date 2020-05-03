@@ -1,0 +1,12 @@
+{
+  "name": "flags",
+  "_cacheHeaders": {
+    "Content-Length": "4276",
+    "Content-Type": "application/octet-stream",
+    "Content-Disposition": "attachment; filename=flags.zip"
+  },
+  "_source": "https://www.flag-sprites.com/get/flags.zip?set=gosquared-large&countries=br,es,gb",
+  "_target": "*",
+  "_originalSource": "https://www.flag-sprites.com/get/flags.zip?set=gosquared-large&countries=br,es,gb",
+  "_direct": true
+}

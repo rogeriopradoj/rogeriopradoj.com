@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral</title>
+
+        <base href="https://rogeriopradoj.com/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral">
+            <meta name="description" content="Olá, pessoal!
+
+Dica rápida para quem quiser testar algum projeto PHP usando o Vagrant, ou o Docker, ou o Servidor Web embutido no PHP.
+
+Vagrant
+
+Já conhece o https://phpagrant.github.io/ ? Nada mais é do que uma lista de sites geradores de Vagrantfile (e tudo o mais que você precisa de provisionadores) para seu projeto PHP ...">
+    <meta name="keywords" content="rogeriopradoj, " />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Testando rapidamente projetos PHP, ou com Vagrant, ou com Docker ou com Servidor Web embutido" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" />
+    <meta property="og:url" content="https://rogeriopradoj.com/2014/11/01/testando-rapidamente-php-com-vagrant-ou-docker-ou-servidor-web-embutido/" />
+    <meta property="og:description" content="Olá, pessoal!
+
+Dica rápida para quem quiser testar algum projeto PHP usando o Vagrant, ou o Docker, ou o Servidor Web embutido no PHP.
+
+Vagrant
+
+Já conhece o https://phpagrant.github.io/ ? Nada mais é do que uma lista de sites geradores de Vagrantfile (e tudo o mais que você precisa de provisionadores) para seu projeto PHP ..." />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+    <meta name="twitter:image:src" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg">
+    <meta name="twitter:title" content="Testando rapidamente projetos PHP, ou com Vagrant, ou com Docker ou com Servidor Web embutido" />
+    <meta name="twitter:description" content="Olá, pessoal!
+
+Dica rápida para quem quiser testar algum projeto PHP usando o Vagrant, ou o Docker, ou o Servidor Web embutido no PHP.
+
+Vagrant
+
+Já conhece o https://phpagrant.github.io/ ? Nada mais é do que uma lista de sites geradores de Vagrantfile (e tudo o mais que você precisa de provisionadores) para seu projeto PHP ..." />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
+
+        <link rel="search" href="https://rogeriopradoj.com/search.xml" type="application/opensearchdescription+xml" title="ROGERIO PRADO J | rogeriopradoj.com"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="https://rogeriopradoj.com/atom.xml" title="ROGERIO PRADO J | rogeriopradoj.com activity feed" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23860787-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23860787-1', { 'optimize_id': 'GTM-K94X8R5'});
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container header-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand async" href="https://rogeriopradoj.com/">Blog</a>
+            <div class="preloader"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about/">Sobre / About / Acerca</a></li>
+                <li><a href="slides/">Slides</a></li>
+                <li><a href="pradoj-com/">PradoJ.com</a></li>
+                <li><a href="contato/">Contato / Contact</a></li>
+                <li><a href="gift/">Gift / Apoie / Doe</a></li>
+                <li><a href="livro/">Meu Livro</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" id="search-form" role="search" method="get" action="https://rogeriopradoj.com/search/">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" name="q">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="#top" class="to-top hidden">
+                        <i class="fa fa-arrow-up"></i> To top
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="https://rogeriopradoj.com/">ROGERIO PRADO J | rogeriopradoj.com</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                            <article class="post">
+        <header>
+            <h2 class="post-title">Testando rapidamente projetos PHP, ou com Vagrant, ou com Docker ou com Servidor Web embutido</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://rogeriopradoj.com/about">Rogerio Prado de Jesus</a> em <time datetime="2014-11-01T01:57:47+00:00" pubdate><span>01/11/2014</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div class="post-content">
+            <p>Olá, pessoal!</p>
+
+<p>Dica rápida para quem quiser testar algum projeto PHP usando o Vagrant, ou o Docker, ou o Servidor Web embutido no PHP.</p>
+
+<h2 id="vagrant">Vagrant</h2>
+
+<p>Já conhece o <a href="https://phpagrant.github.io/">https://phpagrant.github.io/</a> ? Nada mais é do que uma lista de sites geradores de Vagrantfile (e tudo o mais que você precisa de provisionadores) para seu projeto PHP com base no <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
+
+<p><a href="https://phpagrant.github.io/"><img src="assets/images/2014/11/Phpagrant_github_io_by_PHPagrant.png" alt="Phpagrant_github_io_by_PHPagrant" /></a></p>
+
+<p>Tem para todos os gostos: Puppet, Chef, Ansible. Você escolhe! Acesse lá, <a href="https://phpagrant.github.io/">https://phpagrant.github.io/</a>!</p>
+
+<h2 id="docker">Docker</h2>
+
+<p>O novo "queridinho" do mundo da virtualização e conteinerização, o <a href="https://www.docker.com/">Docker</a>, está evoluindo rápido e é importante você correr atrás do prejuízo e aprender sobre ele.</p>
+
+<p><img src="assets/images/2014/11/Docker_-_Build__Ship__and_Run_Any_App__Anywhere.png" alt="Docker_-_Build__Ship__and_Run_Any_App__Anywhere" /></p>
+
+<p>Até a versão 1.2.x tinha um sério problema para os usuários de sistemas não Linux: o <a href="http://boot2docker.io/">Boot2Docker</a>, camada VM para permitir que usuários de OS X e Windows usem o Docker, não permitia usar pastas compartilhadas por padrão. Alguns hacks foram lançados (<a href="http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide">como o ótimo artigo do Chris Jones</a>) , mas depois do <a href="https://blog.docker.com/2014/10/docker-1-3-signed-images-process-injection-security-options-mac-shared-directories/">lançamento da versão 1.3.0</a>, tudo ficou mais fácil: foi embutido suporte para pastas compartilhadas e está mais simples para quem não usa Linux como máquina principal de desenvolvimento ter o Docker como parte do seu processo de trabalho.</p>
+
+<p>Mas e sobre o PHP? Vamos lá! Algumas imagens disponíveis no <a href="https://registry.hub.docker.com/">https://registry.hub.docker.com/</a> para você se divertir:</p>
+
+<ul>
+<li><p><strong>oficial</strong>: <a href="https://registry.hub.docker.com/_/php/">https://registry.hub.docker.com/_/php/</a> (falta FPM, mas já tem CLI e Apache com mod_php)</p></li>
+<li><p><a href="https://github.com/brunoric">@brunoric</a>: <a href="https://hub.docker.com/u/brunoric/">https://hub.docker.com/u/brunoric/</a> (brasileiro, aqui de São Paulo, especialista no Docker. Tem uma série de imagens PHP, vários sabores, até HHVM)</p></li>
+</ul>
+
+<p>Além disso, seguindo a issue <a href="https://github.com/codeguy/php-the-right-way/pull/453">https://github.com/codeguy/php-the-right-way/pull/453</a>, dá para ver que em pouco tempo o <a href="http://www.phptherightway.com/">PHP: The Right Way</a> (e o <a href="http://br.phptherightway.com">PHP: Do Jeito Certo</a>) terá conteúdo sobre Docker e PHP (hoje eles já tem conteúdo sobre Vagrant).</p>
+
+<p>Para quem quer ir direto colocar a mão na massa, o que estou fazendo:</p>
+
+<ul>
+<li><p>Primeiro <a href="http://docs.docker.com/installation/">instalei o Docker</a> (e, como estou num OS X, o Boot2Docker também. Comando para garantir que ele está ligado: <code>boot2docker up</code>)</p></li>
+<li><p>[OS X apenas:] coloquei no meu '/etc/hosts' o hostname 'localdocker' apontando para o IP 192.168.59.103 (esse ip é o que comando <code>boot2docker ip</code> mostra). Isso só é necessário para quem usa boot2docker, pois o Docker de verdade está rodando dentro de uma VM, com esse IP aí de cima. Quem está rodando no Windows deve ser algo parecido. Quem está rodando no Linux, não tem que se preocupar com isso, pois o Docker está usando o IP da sua máquina de verdade.</p></li>
+<li><p>Vou na pasta que seria o document root da minha aplicação (onde tem o front controller, geralmente index.php) . Como estou no OS X, essa pasta tem que estar dentro de /Users para usar o compartilhamento de pasta automático do boot2docker 1.3+. Ex:</p>
+
+<pre><code>$ cd /Users/eu/projetos/php123/
+</code></pre></li>
+<li><p>De lá, rodo o seguinte comando:</p>
+
+<pre><code class="bash">$ docker run --name my-php-webserver -p 8080:80 -v `pwd`:/var/www/html/ php:apache
+</code></pre></li>
+<li><p>Agora, é só abrir no seu navegador para testar: no linux, <a href="http://localhost:8080">http://localhost:8080</a>. No OS X, com boot2docker (se você fez aquela configuração no /etc/hosts), <a href="http://localdocker:8080">http://localdocker:8080</a>.</p></li>
+</ul>
+
+<p>O que aconteceu por trás do comando DOCKER RUN:</p>
+
+<ul>
+<li><p>cria e já executa um container, baseado na imagem php versão apache</p></li>
+<li><p>habilita o volume/disco internamente (dentro do container) como /var/www/html/ e externamente (na máquina host/vm boot2docker) como o resultado comando <code>pwd</code> (diretório atual)</p></li>
+<li><p>redireciona a porta 80 interna (no container) para a porta 8080 externa (na máquina host)</p></li>
+</ul>
+
+<p>É isso!</p>
+
+<p>Quando precisar desligar o container, fazer os seguintes comandos:</p>
+
+<ul>
+<li><p><code>$ docker ps -a</code>(e copiar o CONTAINER ID)</p></li>
+<li><p><code>$ docker rm CONTAINER_ID_QUE_VOCÊ_ACHOU_NO_COMANDO_ANTERIOR</code></p></li>
+</ul>
+
+<h2 id="servidor-embutido">Servidor embutido</h2>
+
+<p>Vai ter momentos que você não quer ou não pode ir para um dos modelos acima, Vagrant ou Docker. E nem quer instalar um servidor web completo (Apache, Nginx etc.) na sua máquina de desenvolvimento. O que fazer?</p>
+
+<p>Se você tem o PHP CLI já instalado, é bom saber que desde a versão 5.4 é possível usar o servidor web embutido. <a href="http://php.net/manual/pt_BR/features.commandline.webserver.php">Leia mais na documentação oficial</a>.</p>
+
+<p><img src="assets/images/2014/11/PHP__Built-in_web_server_-_Manual.png" alt="PHP__Built-in_web_server_-_Manual" /></p>
+
+<p>Então, na pasta onde seria o document root da sua aplicação PHP (onde tem o front controller, certo?), digite o seguinte comando:</p>
+
+<pre><code>$ php -S localhost:8899
+</code></pre>
+
+<p>A porta ali, no caso 8899, poderia ser qualquer uma de sua preferência. E você já tem um servidor web rodando servindo seu código PHP, no seu navegador disponível em <a href="http://localhost:8899">http://localhost:8899.</a> Fácil, não? Você ainda pode configurar algo como um <code>.htaccess</code>, a <a href="http://www.lornajane.net/posts/2012/php-5-4-built-in-webserver">Lorna Jane Mitchell tem um artigo de 2012 falando do assunto</a>. Mas, de novo, leia a <a href="http://php.net/manual/pt_BR/features.commandline.webserver.php">doc oficial</a> que você tem muita informação lá.</p>
+
+<h2 id="considera%C3%A7%C3%B5es-finais">Considerações finais</h2>
+
+<p>Hoje você não é mais obrigado a instalar um servidor web como o Apache ou o Nginx apenas para testar uma aplicação PHP básica. O Servidor web embutido, desde o PHP 5.4 (março de 2012), fornece a estrutura básica para que, em desenvolvimento, você tenha um servidor mínimo.</p>
+
+<p>Caso você precise espelhar o servidor de produção (hardware, sistema operacional e softwares utilizados), vá para o Vagrant, que te entrega isso de forma fácil com a virtualização, tanto para projetos genéricos quanto para projetos PHP.</p>
+
+<p>E, se quiser estar na crista do onda, aplicando conteinerização também no ambiente de desenvolvimento, teste o Docker com PHP.</p>
+
+<p>E fique a vontade de usar os comentários se quiser ajuda!</p>
+
+<p>Até mais!</p>
+
+<p>—-</p>
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+
+        </div>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Se gostou do artigo, compartilhe</small></legend>
+            <div class="buttons">
+                                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Frogeriopradoj.com%2F2014%2F11%2F01%2Ftestando-rapidamente-php-com-vagrant-ou-docker-ou-servidor-web-embutido%2F%2F/" target="_blank"
+                   class="btn btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/share?url=https%3A%2F%2Frogeriopradoj.com%2F2014%2F11%2F01%2Ftestando-rapidamente-php-com-vagrant-ou-docker-ou-servidor-web-embutido%2F%2F&text=Testando%20rapidamente%20projetos%20PHP%2C%20ou%20com%20Vagrant%2C%20ou%20com%20Docker%20ou%20com%20Servidor%20Web%20embutido&via=rogeriopradoj" target="_blank"
+                   class="btn btn-sm btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frogeriopradoj.com%2F2014%2F11%2F01%2Ftestando-rapidamente-php-com-vagrant-ou-docker-ou-servidor-web-embutido%2F%2F&title=Testando rapidamente projetos PHP, ou com Vagrant, ou com Docker ou com Servidor Web embutido&source=https://rogeriopradoj.com" target="_blank"
+                   class="btn btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Gostou muito mesmo do conteúdo e quer apoiar financeiramente? É fácil! Use uma das opções abaixo:</small></legend>
+
+            <ul class="list">
+                <li><p><a href="https://rogeriopradoj.com/gift/">Gift / Apoie / Doe</a></p></li>
+                <li><p><a href="https://rogeriopradoj.com/livro/">Meu Livro: Modernização de Aplicações Legadas em PHP</a></p></li>
+            </ul>
+
+        </fieldset>
+
+        <hr>
+
+        <ul class="list-unstyled">
+                            <li class="categories-list">
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Geral/">Geral</a>
+                                    </li>
+                                    <li class="clearfix"></li>
+        </ul>
+
+                    <nav class="well">
+                <ul class="list-unstyled other-articles row">
+                    <li class="col-sm-6 col-xs-12">
+                                                    <a class="previous" href="https://rogeriopradoj.com/2013/09/10/build-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci//">
+                                <i class="fa fa-angle-double-left"></i>
+                                <span class="title">Build e Integração Contínua no PHP com Composer, Phing, Travis-CI e Scrutinizer-CI</span>
+                            </a>
+                                            </li>
+                    <li class="col-sm-6 col-xs-12 text-right">
+                                                    <a class="next" href="https://rogeriopradoj.com/2014/11/30/como-acompanhar-as-listas-de-discussao-oficiais-do-php-net//">
+                                <span class="title">Como acompanhar as listas de discussão oficiais do PHP.net</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                            </li>
+                </ul>
+            </nav>
+        
+                    <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rogeriopradojcom';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            </article>
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        <a target="_blank" href="https://rogeriopradoj.com/">
+    <img src="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" class="thumbnail">
+</a>
+<ul class="list-unstyled social-list">
+    <a target="_blank" href="https://www.linkedin.com/in/rogeriopradoj">
+        <li class="social-element" id="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </li>
+    </a>
+    <a target="_blank" href="http://www.zend.com/en/yellow-pages/ZEND024088">
+        <li class="social-element" id="php">
+            <i class="fa fa-code"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://github.com/rogeriopradoj/">
+        <li class="social-element" id="github">
+            <i class="fa fa-github-alt"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://plus.google.com/+RogerioPradoDeJesus?rel=author">
+        <li class="social-element" id="google">
+            <i class="fa fa-google-plus"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://twitter.com/rogeriopradoj">
+        <li class="social-element" id="twitter">
+            <i class="fa fa-twitter"></i>
+        </li>
+    </a>
+    <a href="https://rogeriopradoj.com/feed/">
+        <li class="social-element" id="rss">
+            <i class="fa fa-rss"></i>
+        </li>
+    </a>
+</ul>
+
+<div class="well">
+    <h4>
+        <p>ROGERIO PRADO J | rogeriopradoj.com</p>
+        <small>Desenvolvimento e TI em geral</small>    </h4>
+</div>
+<div class="well">
+    <h4>Arquivo</h4>
+    <ul class="nav">
+        <li><a class="btn btn-block btn-xs btn-info" href="https://rogeriopradoj.com/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="https://rogeriopradoj.com/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+    </ul>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c5c04e17cf662208c9474ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+    &copy; 2020 <a target="_blank" href="https://rogeriopradoj.com/">Rogerio Prado de Jesus</a>
+    <span class="pull-right">
+        Source code on <a target="_blank" href="https://github.com/rogeriopradoj/rogeriopradoj.com">GitHub</a> - Powered by <a target="_blank" href="https://sculpin.io">Sculpin</a>
+    </span>
+</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/readingTime.min.js"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+                    </body>
+</html>

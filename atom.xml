@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[ROGERIO PRADO J | rogeriopradoj.com]]></title>
+    <link href="https://rogeriopradoj.com/atom.xml" rel="self"/>
+    <link href="https://rogeriopradoj.com/"/>
+    <updated>2020-05-03T05:56:21+00:00</updated>
+    <id>https://rogeriopradoj.com/</id>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Método 1 + 3: Como fazer solicitações e ter mais chances de ver sua demanda atendida]]></title>
+            <link href="https://rogeriopradoj.com/2019/09/30/metodo-1+3---como-fazer-solicitacoes-e-ter-mais-chances-de-ver-sua-demanda-atendida//"/>
+            <updated>2019-09-30T08:39:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2019/09/30/metodo-1+3---como-fazer-solicitacoes-e-ter-mais-chances-de-ver-sua-demanda-atendida//</id>
+            <content type="html"><![CDATA[<figure>
+    <img title="Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter mais chances de ver sua demanda atendida" src="/assets/images/2019/09/30-metodo-1+3---como-fazer-solicitacoes-e-ter-mais-chances-de-ver-sua-demanda-atendida.png" alt="Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter mais chances de ver sua demanda atendida">
+    <figcaption>Método 1 + 3: Como fazer solicitações com o 1 + 3 e ter mais chances de ver sua demanda atendida</figcaption>
+</figure>
+
+<p>Olá, pessoal!</p>
+
+<p>Já ouviram falar no Método 1 + 3 que ajuda a estruturar solicitações para outras áreas e pessoas? Eu o utilizo e recomendo que você o utilize em casos em que precisar fazer demandas e quiser aumentar suas chances de vê-las atendidas.</p>
+
+<h2 id="tl%3Bdr---resumindo-o-m%C3%A9todo-1-%2B-3">tl;dr - Resumindo o Método 1 + 3</h2>
+
+<ul>
+<li><strong>1 - o que você precisa?</strong> Aqui, vá direto ao ponto, se possível, em poucas palavras.</li>
+<li>3 complementos mínimos:
+
+<ul>
+<li><strong>3.a - detalhamento</strong>: coloque aqui um pouco mais de informações sobre sua necessidade. O que você já tem? O que já foi feito? O que você já conseguiu num momento anterior? Etc.</li>
+<li><strong>3.b - impactos positivos quando tiver acesso:</strong> liste os benefícios que vai ter quando a demanda for atendida.</li>
+<li><strong>3.c - problemas caso continuar sem acesso:</strong> listar todas as dificuldades, prejuízos, retrabalhos, custos etc. enquanto a situação atual se mantiver.</li>
+</ul></li>
+</ul>
+
+<p>Em resumo, o método consiste em ter claro o que precisa, que você consiga descrever sua questão de forma bem concisa. No entanto, sem deixar escapar nenhum dos elementos essenciais para que sua demanda seja apreciada.</p>
+
+<blockquote>
+  <p>Quer ver o texto na íntegra? Ele vai estar publicado na Intranet CAIXA em alguns dias!
+  Olha o que mais tem por lá:</p>
+  
+  <ul>
+  <li>"De onde surgiu esse método?"</li>
+  <li>"Alguns exemplos de demandas atendidas!"</li>
+  <li>"Atualização das versões do PHP no Banco X"</li>
+  <li>"Mostrando benefícios para todos"</li>
+  <li>"Outras homologações de software"</li>
+  <li>"Acessos para as comunidades"</li>
+  <li>"Primeira apresentação pública do Método 1 + 3: Junho de 2019, Belo Horizonte, MG, Imersão na Centralizadora"</li>
+  <li>"E no GT da MP2019? BI, Informações, Data Science Analytics, Big Data, SQL com MPP e Apache HAWQ? Tem espaço para o Método 1 + 3?"</li>
+  <li>"Considerações finais e agradecimentos"</li>
+  </ul>
+</blockquote>
+
+<p>--</p>
+
+<p>Sobre o Método 1 + 3, o que você achou? Já usa alguma outra técnica parecida? Tomara que possa ser mais uma opção em sua caixa de ferramentas e te dê melhores condições de atingir seus resultados!</p>
+
+<p>--</p>
+
+<p>Até a próxima, e podem me chamar para conversar em todos os canais!</p>
+
+<p>Abraços!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="https://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop]]></title>
+            <link href="https://rogeriopradoj.com/2019/09/09/maquina-virtual-windows-10-com-vagrant-e-virtualbox-para-power-bi-desktop//"/>
+            <updated>2019-09-09T02:44:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2019/09/09/maquina-virtual-windows-10-com-vagrant-e-virtualbox-para-power-bi-desktop//</id>
+            <content type="html"><![CDATA[<figure>
+    <img title="Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop" src="/assets/images/2019/09/08-maquina-virtual-windows-10-com-vagrant-e-virtualbox-para-power-bi-desktop.png" alt="Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop">
+    <figcaption>Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop</figcaption>
+</figure>
+
+<p>Olá, pessoal.</p>
+
+<p>Nesse mundo de aprendizagem sobre Data Science Analytics, as ferramentas de self-service BI e visualização são essenciais. Dentre elas, o Power BI Desktop, da Microsoft, é uma das opções profissionais mais usadas. Dois motivos me fizeram buscar mais conhecimento sobre ela e me capacitar com treinamentos: ser gratuita para uso básico em sua máquina pessoal e por ser um dos aplicativos homologados na empresa onde trabalho.</p>
+
+<p>Segundo a própria Microsoft, "O Power BI é um conjunto de ferramentas de análise de negócios para analisar dados e compartilhar ideias." Se quiser saber mais sobre a solução:</p>
+
+<ul>
+<li><a href="https://powerbi.microsoft.com/pt-br/learning/">Treinamentos Microsoft</a></li>
+<li><a href="https://www.datascienceacademy.com.br/course?courseid=microsoft-power-bi-para-data-science">Curso gratuito da Data Science Academy: Microsoft Power BI para Data Science</a></li>
+</ul>
+
+<h2 id="e-como-instalar-o-power-bi-desktop-na-minha-m%C3%A1quina-para-come%C3%A7ar-a-usar%3F">E como instalar o Power BI Desktop na minha máquina para começar a usar?</h2>
+
+<p>Se você usa Windows, é fácil. Acesse <a href="https://powerbi.microsoft.com">o site oficial</a>, baixe o instalador da ferramenta e siga os passos de instalação. Mas, temos um problema: o que fazer se você usa outro sistema operacional? Como sair do outro lado caso você use macOS ou Linux? Fácil também: vamos de máquina virtual!</p>
+
+<p>E, para facilitar nosso caminho, usando <a href="https://www.vagrantup.com">Vagrant</a> e <a href="https://www.virtualbox.org">VirtualBox</a> para configuração do nosso ambiente, e uma box de Windows 10 já configurada, a <a href="https://app.vagrantup.com/peru/boxes/windows-10-enterprise-x64-eval">peru/windows-10-enterprise-x64-eval</a>.</p>
+
+<h2 id="vm%3A-o-que-voc%C3%AA-precisa-ter-no-seu-computador%3F">VM: O que você precisa ter no seu computador?</h2>
+
+<ul>
+<li><a href="https://powerbi.microsoft.com">VirtualBox</a>;</li>
+<li><a href="https://www.vagrantup.com/">Vagrant</a>.</li>
+</ul>
+
+<h2 id="vm%3A-como-criar-e-subir-a-m%C3%A1quina-virtual%3F">VM: Como criar e subir a máquina virtual?</h2>
+
+<p>Primeiro passo é criar o arquivo de manifesto com a configuração do seu ambiente, o <a href="https://www.vagrantup.com/docs/vagrantfile/">Vagrantfile</a>. Crie uma pasta para seu projeto e em seguida, no terminal:</p>
+
+<pre><code class="shell"># baixe um Vagrantfile já configurado com 4GB de RAM para a VM
+wget https://gist.githubusercontent.com/rogeriopradoj/0b4ae77419dafef3d67526d63e914290/raw/8129df2332a4c7f831e543752aac6dc8546ed992/Vagrantfile
+
+# ou rode o comando para criar o Vagrantfile
+vagrant init peru/windows-10-enterprise-x64-eval
+</code></pre>
+
+<p>Após isso, suba seu ambiente, com o comando <code>vagrant up</code>.</p>
+
+<h2 id="vm%3A-depois-da-m%C3%A1quina-de-p%C3%A9%2C-como-acess%C3%A1-la%3F">VM: Depois da máquina de pé, como acessá-la?</h2>
+
+<p>Dois caminhos: o primeiro é usar a tela de interface gráfica da VM que o VirtualBox vai ter aberto para você. O segundo, que é meu prefirido e recomendo, é abrir uma sessão RDP (área de trabalho remota). Para isso <a href="https://alternativeto.net/software/remote-desktop-connection/">busque algum aplicativo que tenha essa funcionalidade para seu sistema operacional</a> e conecte no endereço <code>localhost</code>.</p>
+
+<p><a href="https://www.vagrantup.com/docs/boxes.html">Essa box</a> de Windows 10 tem dois usuários configurados, você pode usar qualquer um deles para logar:</p>
+
+<ul>
+<li>username: localhost\Administrator - password: vagrant</li>
+<li>username: localhost\vagrant - password: vagrant</li>
+</ul>
+
+<p>E é isso, depois de acessar a VM, siga os passos tradicionais para instalar o Power BI Desktop no ambiente!</p>
+
+<h2 id="b%C3%B4nus-chocolatey%3A-como-instalar-o-power-bi-desktop-usando-o-gerenciador-de-pacotes-do-windows-chocolatey%3F">Bônus Chocolatey: Como instalar o Power BI Desktop usando o gerenciador de pacotes do Windows Chocolatey?</h2>
+
+<p>Primeiro, <a href="https://chocolatey.org/install">instale o Chocolatey</a>. Para quem não conhece-o:</p>
+
+<blockquote>
+  <h3 id="what-is-chocolatey%3F">What is Chocolatey?</h3>
+  
+  <p>Chocolatey is kind of like apt-get, but for Windows (with Windows comes limitations). It is a machine level package manager that is built on top of nuget command line and the nuget infrastructure.</p>
+  
+  <p>-- <a href="https://chocolatey.org/faq#what-is-chocolatey">https://chocolatey.org/faq#what-is-chocolatey</a></p>
+</blockquote>
+
+<p>Depois, no terminal, execute:</p>
+
+<pre><code class="shell">choco upgrade powerbi
+</code></pre>
+
+<p>Talvez você pergunte: por que usar <code>upgrade</code> em vez de <code>install</code>? Posso te dizer que, caso seja a primeira instalação no seu ambiente, os dois comandos funcionam da mesma forma. A vantagem é para o caso que o aplicativo já estiver instalado, e estiver com versão antiga. Nesse caso, o chocolatey já faz a atualização para nós. Vale a pena ;-) .</p>
+
+<h2 id="considera%C3%A7%C3%B5es-finais">Considerações finais</h2>
+
+<p>E é isso! No fim de todos esses passos, terá um ambiente virtualizado perfeitamente montado com o Power BI Desktop rodando numa máquina virtual Windows 10 sobre Vagrant e VirtualBox!</p>
+
+<p>É importante ressaltar que esse processo pode ser usado mesmo no caso que você o seu sistema operacional principal já seja o Windows 10, mas você quer deixar a instalação do Power BI Desktop o mais isolada possível do seu ambiente.</p>
+
+<p>E o que você diz? Costuma usar ambientes virtualizados (máquinas virtuais ou containers) para seus trabalhos, ou prefere fazer as instalações diretamente no seu S.O.? Eu sempre que possível vou de ambientes virtualizados! Diga aí nos comentários sua opinião, ok?</p>
+
+<p>Até a próxima, e podem me chamar para conversar em todos os canais!</p>
+
+<p>Abraços!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="https://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Como tirar acentos de string no Python? Transliterate, Unicodedata e Unidecode]]></title>
+            <link href="https://rogeriopradoj.com/2019/07/14/como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode//"/>
+            <updated>2019-07-14T19:48:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2019/07/14/como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode//</id>
+            <content type="html"><![CDATA[<figure>
+    <img title="Como tirar acentos de string no Python?" src="/assets/images/2019/07/14-como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode.png" alt="Como tirar acentos de string no Python?">
+    <figcaption>Como tirar acentos de string no Python?</figcaption>
+</figure>
+
+<p>Olá, galera, tudo certinho?</p>
+
+<p>Nesse caminho do Data Science, em específico no tratamento de textos e processamento de linguagem natural (PLN, ou NLP do inglês Natural Language Processing), muitos e muitos tratamentos em string são necessários. E um deles que me apareceu: como fazer para retirar acentos de uma cadeia de caracteres e olhar um texto mais puro?</p>
+
+<p>Lembrando da minha experiência com programação, lembrei do conceito de transliteração, do inglês transliteratation:</p>
+
+<blockquote>
+  <p><strong>Transliteration</strong> is a type of conversion of a text from one script to another[1] that involves swapping letters (thus trans- + liter-) in predictable ways (such as α → a, д → d, χ → ch, ն → n or æ → ae).</p>
+  
+  <p>-- <a href="https://en.wikipedia.org/wiki/Transliteration">Wikipedia</a></p>
+</blockquote>
+
+<p>Em resumo, é fazer com que todas as formas de apresentação de uma letra seja padronizada em uma apenas. Pegando como exemplo, no português, temos os seguintes caracteres:</p>
+
+<ul>
+<li>a, á, à, â</li>
+<li>e, é, ê</li>
+<li>i, í</li>
+<li>o, ó, ô</li>
+<li>u, ú, ü</li>
+<li>c, ç</li>
+</ul>
+
+<p>Esses grupos todos acima poderiam ser padronizados no primeiro "formato", o próprio caracter sem acento, trema ou cedilha, no caso:</p>
+
+<ul>
+<li>a</li>
+<li>e</li>
+<li>i</li>
+<li>o</li>
+<li>u</li>
+<li>c</li>
+</ul>
+
+<p>No passado já vi alguns scripts caseiros, geralmente naquela biblioteca Utils que o programador faz, com esse tipo de tratamento, algo como:</p>
+
+<ul>
+<li>lista "de-para" do caractere acentuado para o sem acento;</li>
+<li>em seguida, usando alguma função de "string replace", rodar isso em cada função.</li>
+</ul>
+
+<p>A dúvida: será que não tem uma função da biblioteca padrão da linguagem, ou então algum pacote bem utilizado para fazer essa função? E tem sim! E mais de um! Aqui vamos ver dois deles: o <a href="https://docs.python.org/3/library/unicodedata.html"><strong>unicodedata</strong></a>, embutido no Python, e o <a href="https://pypi.org/project/Unidecode/"><strong>unidecode</strong></a> que pode ser instalado via PyPi.</p>
+
+<p>Pegando um texto bem simples, veja o resultado do processamento de cada um deles:</p>
+
+<pre><code class="python">import unidecode
+import unicodedata
+
+# texto original
+original = "peça ótimo péssimo não é tão às"
+
+# com unidecode
+processamento_1 = unidecode.unidecode(original)
+print(processamento_1) # peca otimo pessimo nao e tao as
+
+
+# com unicodedata
+processamento_2 = unicodedata.normalize("NFD", original)
+print(processamento_2) # peça ótimo péssimo não é tão às
+processamento_2 = processamento_2.encode("ascii", "ignore")
+print(processamento_2) # b'peca otimo pessimo nao e tao as'
+processamento_2 = processamento_2.decode("utf-8")
+print(processamento_2) # peca otimo pessimo nao e tao as
+</code></pre>
+
+<p>Nos dois casos, mesma saída: texto original sem os acentos e cedilha. E o unicodedata ainda teve mais passos: primeiro normalizar usando o parâmetro NFD, e em seguida transformar em binário e retornar para string.</p>
+
+<h2 id="se-o-unidecode-parece-ser-bem-mais-simples%2C-por-que-usar-o-unicodedata%3F">Se o unidecode parece ser bem mais simples, por que usar o unicodedata?</h2>
+
+<p>Talvez a primeira vantagem é que o unicodedata já está na biblioteca padrão do Python. Mas a que peguei que é mais crítica é a seguinte: como é feita a transliteração de algumas pontuações, como sinal ordinal masculino (º) e sinal de grau (°).</p>
+
+<pre><code class="python">import unidecode
+import unicodedata
+
+# texto original
+original = "É o 5º e último. Estava 30°C"
+
+# com unidecode
+processamento_1 = unidecode.unidecode(original)
+print(processamento_1) # E o 5o e ultimo. Estava 30degC
+
+
+# com unicodedata
+processamento_2 = unicodedata.normalize("NFD", original)
+print(processamento_2) # É o 5º e último. Estava 30°C
+processamento_2 = processamento_2.encode("ascii", "ignore")
+print(processamento_2) # b'E o 5 e ultimo. Estava 30C'
+processamento_2 = processamento_2.decode("utf-8")
+print(processamento_2) # E o 5 e ultimo. Estava 30C
+</code></pre>
+
+<p>Podemos ver que com o unidecode, o ordinal vira uma letra "o" minúscula, e o sinal de grau virá um "deg".</p>
+
+<p>Você terá que avaliar no seu caso, no meu foi assim: na verdade, todo o texto analisado deveria ter sido digitado como ordinal, mas tinha partes com um e partes com outro. É lógico que eu poderia tratar, para substituir primeiramente todos os formatos para um só, e depois fazer a transliteração. Mas, prefiro que a função faça tudo por mim, no caso, retirando os dois sinais. Assim, com a entrada "É o 5º e último. Estava 30°C", prefiro que fique a saída "E o 5 e ultimo. Estava 30C" (unicodedata + encode + decode) do que "E o 5o e ultimo. Estava 30degC" (unidecode).</p>
+
+<hr />
+
+<p>E você, qual formato utilizaria como padrão?</p>
+
+<p>Até a próxima, e podem me chamar para conversar em todos os canais, ok!</p>
+
+<p>Abraços!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="https://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Notebooks Jupyter em PHP, além do Python? Sim, é possível: veja como fazer!]]></title>
+            <link href="https://rogeriopradoj.com/2019/05/13/notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer//"/>
+            <updated>2019-05-13T13:30:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2019/05/13/notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer//</id>
+            <content type="html"><![CDATA[<figure>
+    <img title="Sim, é possível!" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-01.png" alt="Sim, é possível!">
+    <figcaption>Sim, é possível!</figcaption>
+</figure>
+
+<p>Fala pessoal, tudo bem?</p>
+
+<p>É muito comum durante nossa jornada de cursos no tema de Big Data, Analytics, Data Science, IA e afins sermos apresentados à plataforma Jupyter e aos seus notebooks, não é mesmo?</p>
+
+<blockquote>
+  <p><a href="https://jupyter.org/">Jupyter</a>: The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.</p>
+</blockquote>
+
+<p>E, acredito que se você já mexeu nessa plataforma, o padrão é usar a linguagem de programação Python, certo? Talvez R também? E se te disser que é possível usar várias outras também? Sim, durante a escrita deste artigo, 2019/MAI, já são mais de 40 linguagens suportadas. E o mais impressionante: o PHP é sim uma dessas linguagens suportadas no Jupyter Notebook!</p>
+
+<p>Vamos conhecer então como fazer?</p>
+
+<h3 id="primeiro%3A-tenha-o-jupyter-dispon%C3%ADvel">Primeiro: tenha o Jupyter disponível</h3>
+
+<p>A maneira mais simples que conheço no Windows é tendo o Anaconda disponível. Você consegue mais informações acessando o site oficial: https://www.anaconda.com/distribution/</p>
+
+<blockquote>
+  <p><a href="https://www.anaconda.com/">Anaconda</a>: The World's Most Popular Python/R Data Science Platform</p>
+</blockquote>
+
+<h3 id="tenha-o-php-e-o-composer-com-as-depend%C3%AAncias-instaladas">Tenha o PHP e o Composer com as dependências instaladas</h3>
+
+<p>Em <a href="https://windows.php.net/">https://windows.php.net/</a> você consegue pegar a última versão disponível do PHP. Para as coisas funcionarem você precisa pelo menos da versão PHP 7.2+. Vale a pena colocar a pasta do binário do php.exe na sua variável de ambiente PATH, assim, você pode chamar o comando php de qualquer terminal. Talvez te ajude: a versão que usei aqui no meu computador é a PHP 7.2.7 NTS x64.</p>
+
+<p>É necessário também ter instalado o gerenciador de dependências Composer. Mais informações no site oficial, <a href="https://getcomposer.org/">https://getcomposer.org/</a>. Se instalar ele certinho, vai poder ter o comando composer disponível de qualquer terminal.</p>
+
+<p>E, por último, é necessário que você tenha no PHP a extensão ZMQ. Para isso:</p>
+
+<ul>
+<li>baixe no site da extensão PECL, <a href="https://pecl.php.net/package/zmq/1.1.3/windows">https://pecl.php.net/package/zmq/1.1.3/windows</a>, a versão correspondente ao que você tem no seu computador (no meu caso, baixei a "7.2 Non Thread Safe (NTS) x64"). Quer saber qual sua versão do php? É fácil: no terminal, digite: <code>php -v</code>.</li>
+<li>na mesma pasta onde tem o arquivo php.exe, descompacte o arquivo libzmq.dll</li>
+<li>na pasta ext, descompacte o arquivo php_zmq.dll</li>
+<li>inclua no fim do seu arquivo php.ini a declaração <code>extension=php_zmq.dll</code></li>
+</ul>
+
+<p>Não sabe onde fica o arquivo php.ini? É fácil descobrir: só digitar no terminal: <code>php --ini</code>.</p>
+
+<p>Foi na pasta e não achou um arquivo php.ini? Tranquilo: faça uma cópia do arquivo php.ini-development como php.ini. E depois edite esse php.ini.</p>
+
+<p>Quer confirmar se a extensão ZMQ está instalada? Na linha de comando, pode executar o seguinte comando para mostrar todas as extensões disponíveis: <code>php -m</code>.</p>
+
+<h3 id="instale-o-componente-jupyter-php-o-kernel-de-php-para-o-jupyter">Instale o componente Jupyter-PHP (o kernel de PHP para o Jupyter)</h3>
+
+<p>No site oficial, <a href="https://litipk.github.io/Jupyter-PHP-Installer/">https://litipk.github.io/Jupyter-PHP-Installer/</a>, tem mais informações. Em resumo:</p>
+
+<ul>
+<li>baixar o instalador .phar, <a href="https://litipk.github.io/Jupyter-PHP-Installer/dist/jupyter-php-installer.phar">https://litipk.github.io/Jupyter-PHP-Installer/dist/jupyter-php-installer.phar</a>;</li>
+<li>entrar na pasta onde baixou, pelo terminal, e executar: <code>php jupyter-php-installer.phar install</code>.</li>
+</ul>
+
+<figure>
+    <img title="Resultado da instalação do Juptyer-notebook" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-03.png" alt="Resultado da instalação do Juptyer-notebook">
+    <figcaption>Resultado da instalação</figcaption>
+</figure>
+
+<p>E é isso! Se tiver problemas com o Composer não acessando a URL do Packagist, pode dar uma olhada nesse projeto aqui, <a href="https://github.com/rogeriopradoj/cntlm-proxy-windows">https://github.com/rogeriopradoj/cntlm-proxy-windows</a>, lá tem mais instruções!</p>
+
+<h3 id="agora-%C3%A9-s%C3%B3-usar%21">Agora é só usar!</h3>
+
+<p>Pronto, é só reiniciar o seu Jupyter, e quando for criar um Notebook, vai ter lá a opção de escolher PHP também (além dos outros que você já tinha, tipo o Python 3).</p>
+
+<p>Aqui vai um exemplo:</p>
+
+<figure>
+    <img title="Um exemplo de Jupyter Notebook usando o kernel PHP" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-02.png" alt="Um exemplo de Jupyter Notebook usando o kernel PHP">
+    <figcaption>Um exemplo de Jupyter Notebook usando o kernel PHP</figcaption>
+</figure>
+
+<p>Se quiser testar no seu próprio ambiente, é só baixar em <a href="https://gist.github.com/rogeriopradoj/75a7e8ba3f58734c8510bd8f42d3e335">https://gist.github.com/rogeriopradoj/75a7e8ba3f58734c8510bd8f42d3e335</a>.</p>
+
+<p>É isso, pessoal!</p>
+
+<h3 id="mas-por-que-usar-php-nesse-mundo%3F%3F%3F-n%C3%A3o-era-para-estarmos-focando-mais-em-python%2C-r-e-outras%3F">Mas por que usar PHP nesse mundo??? Não era para estarmos focando mais em Python, R e outras?</h3>
+
+<p>Acho muito que é questão parecida com o que eu via no passado quando estava bastante envolvido com comunidades e Meetups, e já ouvia assim: "poxa, Golang seria uma opção muito melhor para IA, por ser mais rápida, etc etc". Mas o Python já tinha ganhado a briga pois os algoritmos matemáticos todos já tinham sido implementados nele, e em Golang não".</p>
+
+<p>Hoje, pela pesquisa rápida que fiz, Golang ainda não tem ecossistema que se compara ao de R ou Python... <a href="https://news.ycombinator.com/item?id=16883877">https://news.ycombinator.com/item?id=16883877</a>. Mas, não quer dizer que não tenha suas vantagens, né?</p>
+
+<p>Especificamente do PHP, quais pontos positivos acredito em também usá-lo para ML e afins, aqui lá no "Banco X":</p>
+
+<ul>
+<li>linguagem madura, e cada vez mais rápida desde a versão 7.0 (hoje está na 7.3): <a href="https://kinsta.com/pt/blog/benchmarks-definitivos-do-php/">https://kinsta.com/pt/blog/benchmarks-definitivos-do-php/</a></li>
+<li>ótimo ecossistema, ainda ativa (e muito! ) , utilizada por diversas grandes empresas, suporte da comunidade e de muitos players, seja para integrações e também para infra</li>
+<li>ainda é a mais usada de toda a web (79% em 2019/MAI, <a href="https://w3techs.com/technologies/overview/programming_language/all">https://w3techs.com/technologies/overview/programming_language/all</a>)</li>
+<li>é uma das plataformas oficialmente homologada no "Banco X"</li>
+<li>tem suporte em toda a infra do "Banco X" atual (desde os servidores IIS com Fastcgi ou Linux Apache nos ambientes descentralizados, ou mesmo da infra de Openshift, Docker etc. do ambiente centralizado)</li>
+<li>vai permitir que os colegas que já tenham um certo domínio do PHP e seu ecossistema de usar esse conhecimento para esse novo mundo do Data Science, Analytics, IA, Machine Learning etc.</li>
+</ul>
+
+<p>E você, o que anda fazendo aí na sua área? Bora testar mais essa opção?</p>
+
+<p>O mais importante é: compartilhe o que está fazendo, assim todos podemos ganhar e a empresa também!</p>
+
+<p>Até a próxima, e podem me chamar para conversar em todos os canais, ok!</p>
+
+<p>Abraços!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="https://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Estou no Glitch.com]]></title>
+            <link href="https://rogeriopradoj.com/2018/03/20/estou-no-glitch//"/>
+            <updated>2018-03-20T13:30:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2018/03/20/estou-no-glitch//</id>
+            <content type="html"><![CDATA[<p>Eu já estou no <a href="https://glitch.com/@rogeriopradoj">Glitch.com</a>, e você?</p>
+
+<p><a href="https://glitch.com/@rogeriopradoj"></p>
+
+<figure>
+    <img title="https://glitch.com/@rogeriopradoj." src="/assets/images/2018/03/20-estou-no-glitch-01.jpg" alt="Glitch">
+    <figcaption>@rogeriopradoj no Glitch.com</figcaption>
+</figure>
+
+<p></a></p>
+
+<hr />
+
+<h3 id="mas-o-que-%C3%A9-o-glitch%3F">Mas o que é o Glitch?</h3>
+
+<blockquote>
+  <p>Glitch is the friendly community where you'll build the app of your dreams</p>
+</blockquote>
+
+<p>Esse site, plataforma ou serviço pode ser definido de diversas formas, mas, em resumo é o que eles mesmos se auto-entitulam no "About" deles: o Glitch é uma comunidade amigável onde você pode construir o aplicativo dos seus sonhos!</p>
+
+<p>Criado pela <a href="https://www.fogcreek.com/">Fog Creek</a>, bastante conhecida por ser a criadora do <a href="https://trello.com/">Trello</a> e <a href="https://trello.com/">co-criadora do Stack Overflow</a> (esse eu nem sabia!), é uma ferramenta super interessante para trabalhar online num código seja de forma individual ou.</p>
+
+<h3 id="como-conheci-a-plataforma">Como conheci a plataforma</h3>
+
+<p>Foi na época que estava buscando formas de deixar a <a href="https://github.com/pradoj/horofinder">aplicação HoroFinder</a> como <a href="https://developers.google.com/web/progressive-web-apps/">PWA - Progressive Web App</a>, conseguindo trabalhar offline mesmo sendo um webapp, que cai sem querer no Glitch.com. Na explicação da ferramenta <a href="https://developers.google.com/web/tools/workbox/guides/codelabs/webpack">Workbox do Google</a> para uso com <a href="https://webpack.js.org/">Webpack</a>, tinha lá o exemplo de código usando o Glitch.</p>
+
+<p><a href="https://developers.google.com/web/tools/workbox/"></p>
+
+<figure>
+    <img title="https://developers.google.com/web/tools/workbox/" src="/assets/images/2018/03/20-estou-no-glitch-02.svg" alt="Workbox">
+    <figcaption><a href="https://developers.google.com/web/tools/workbox/">Workbox - JavaScript Libraries for adding offline support to web apps</figcaption>
+</figure>
+
+<p></a></p>
+
+<p>E depois que entrei nele, hehe, não consegui sair mais!</p>
+
+<p>Na época, FEV/2018, eles tinha lançado um <a href="https://glitch.com/react-starter-kit">cursinho básico de React</a>, num formato bem diferente de outros que já tinha visto: vídeos, mão-na-massa, editor de código/ide tudo bem integrado e leve. Não tinha como não gostar!</p>
+
+<h3 id="e-como-funciona-o-glitch%3F">E como funciona o Glitch?</h3>
+
+<p>Aqui é quase uma tradução livre do <a href="https://glitch.com/about/">https://glitch.com/about/</a>, vamos lá:</p>
+
+<h4 id="comece-fazendo-um-remix">Comece fazendo um Remix</h4>
+
+<figure>
+    <img title="Start by remixing" src="/assets/images/2018/03/20-estou-no-glitch-03.png" alt="Glitch - Start by remixing">
+    <figcaption>Start by remixing</figcaption>
+</figure>
+
+<p>Você não precisa começar do zero! Faça o Remix de um app completo e funcional, personalizando-o para suas necessidades, ou se baseie nos frameworks de desenvolvimento mais poderosos e populares.</p>
+
+<h4 id="colabora%C3%A7%C3%A3o-de-verdade">Colaboração de verdade</h4>
+
+<figure>
+    <img title="Real collaboration" src="/assets/images/2018/03/20-estou-no-glitch-04.gif" alt="Glitch - Real collaboration">
+    <figcaption>Real collaboration</figcaption>
+</figure>
+
+<p>Não é necessário nenhum controle de versão complicado - o editor embutido deixa você, e qualquer um que você você convidar, editar todo o código de uma vez e desfazer os erros assim que eles aparecerem. É muito parecido com trabalhar juntos no Google Docs.</p>
+
+<h4 id="o-glitch-%C3%A9-para-todos">O Glitch é para todos</h4>
+
+<figure>
+    <img title="Glitch is for everyone" src="/assets/images/2018/03/20-estou-no-glitch-05.png" alt="Glitch - Glitch is for everyone">
+    <figcaption>Glitch is for everyone</figcaption>
+</figure>
+
+<p>Muitas ferramentas de desenvolvimento colocam grandes obstáculos na frente sua criativade pois empurram toneladas de configurações, funcionalidades confusas e complicadas, ou deixando idiotas se espalharem na comunidade. No Glitch, o tapete vermelho é estendido para receber bem criadores como nós!</p>
+
+<h4 id="apesar-de-ser-divertido%2C-n%C3%A3o-%C3%A9-apenas-um-brinquedo">Apesar de ser divertido, não é apenas um brinquedo</h4>
+
+<figure>
+    <img title="It's fun, but it's not a toy" src="/assets/images/2018/03/20-estou-no-glitch-06.png" alt="Glitch - It's fun, but it's not a toy">
+    <figcaption>It's fun, but it's not a toy</figcaption>
+</figure>
+
+<p>O Glitch não é uma versão "idiotizada" de um ambiente de desenvolvimento real - seu aplicativo Glitch roda exatamente na mesma infraestrutura de cloud e com o motor de Node.js que os melhores desenvolvedores usam para rodar suas aplicações. Eles só deixaram as coisas fáceis para começar.</p>
+
+<p>Enquanto você trabalha com o Glitch, eles tratam de atualizar os servidores no background sem ruídos. Não existe processo de deployment ou provisionamento de servidores - tudo acontece automaticamente.</p>
+
+<h4 id="feito-por-uma-empresa-que-se-importa-com-voc%C3%AA">Feito por uma empresa que se importa com você</h4>
+
+<figure>
+    <img title="Built by a company that gives a damn" src="/assets/images/2018/03/20-estou-no-glitch-07.svg" alt="Glitch - Built by a company that gives a damn">
+    <figcaption>Built by a company that gives a damn</figcaption>
+</figure>
+
+<p>Ele é feito pela <a href="https://fogcreek.com/">Fog Creek Software</a>. Eles estão no mercado desde 2000 como uma das mais influentes pequenas empresas de tecnologia do mundo. No passado, a equipe deles inventou o <a href="https://trello.com/">Trello</a> para ajudar a gerenciar projetos, co-criaram o <a href="https://stackoverflow.com/">Stack Overflow</a> para responder qualquer dúvida que um desenvolvedor possa ter, e construíram o <a href="https://fogbugz.com/">FogBugz</a>, pioneiro em bug-tracking.</p>
+
+<p>O Glitch é parte desse legado, sendo construído em cima de tudo que eles aprenderam para ajudar qualquer um a construir o app dos seus sonhos.</p>
+
+<h3 id="e-tem-embed%3F-uhull%21">E tem embed? Uhull!</h3>
+
+<p>Parte bem legal é que os projetos feitos podem ser publicados como Embed, ou seja, coloca no seu blog, hotsite, página da empresa, enfim, em qualquer lugar que aceite um HTML/IFRAME!</p>
+
+<p>Esse aqui é meu projeto rodando por lá referente ao curso de React:</p>
+
+<!-- Copy and Paste Me -->
+
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/candle-mile?path=app/components/HelloWorld.jsx" alt="candle-mile on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
+</div>
+
+<h3 id="modo-pessoal-e-modo-comunidade---glitch-for-platforms">Modo pessoal e modo comunidade - Glitch for Platforms</h3>
+
+<p>Além do modo pessoal, existe um formato onde onde grupos ou empresas que querem aproveitar o Glitch (que, provalmente, todos os programadores adoram e deve virar febre logo logo) e querem melhorar a adoção, por exemplo, de suas APIs publicadas.</p>
+
+<p>No <a href="https://glitch.com/forplatforms/">Glitch for Platforms</a> são fornecidos alguns planos, um deles gratuito (chamado de Community), com funcionalidades que podem ser bem interessantes para uma organização engajar pessoas em torno de seus projetos.</p>
+
+<figure>
+    <img title="Glitch for Platforms - Pricing" src="/assets/images/2018/03/20-estou-no-glitch-08.jpg" alt="Glitch for Platforms - Pricing">
+    <figcaption><a href="https://glitch.com/forplatforms/">Glitch for Platforms - Pricing</a></figcaption>
+</figure>
+
+<hr />
+
+<h3 id="considera%C3%A7%C3%B5es-finais">Considerações finais</h3>
+
+<p>Acho mesmo que vale a pena conhecer a plataforma! Seja você desenvolvedor há bastante tempo, ou entrando na área agora, poder conhecer a plataforma bem agora no início é uma experiência muito muito interessante, e acredito verdadeiramente que ela vá viralizar!</p>
+
+<p>Então é isso aí, pessoal, se quiser me encontrar por lá, <a href="https://glitch.com/@rogeriopradoj">https://glitch.com/@rogeriopradoj</a>. E você, já utiliza o Glitch também? Conta aí nos comentários!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="https://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Stay hungry. Stay foolish.]]></title>
+            <link href="https://rogeriopradoj.com/2017/01/18/stay-hungry-stay-foolish//"/>
+            <updated>2017-01-18T12:30:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2017/01/18/stay-hungry-stay-foolish//</id>
+            <content type="html"><![CDATA[<p>Você já deve ter ouvido falar na frase "Stay hungry. Stay foolish.", não?</p>
+
+<figure>
+    <img title="Stay hungry. Stay foolish." src="assets/images/2017/01/18-stay-hungry-stay-foolish-01.jpg" alt="Steve Jobs e a frase">
+    <figcaption>"Stay hungry. Stay foolish."</figcaption>
+</figure>
+
+<hr />
+
+<p>Essa é uma frase que me identifico desde que assisti ao famoso vídeo da apresentação do Steve Jobs em 2005 para formandos da Stanford University e acredito que me define de alguma forma. No meu caso, estar sempre em busca de conhecimento.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D1R-jKKp3NA" frameborder="0" allowfullscreen></iframe>
+
+<p><em>Youtube Video: <a href="https://youtu.be/D1R-jKKp3NA">https://youtu.be/D1R-jKKp3NA</a></em></p>
+
+<hr />
+
+<p>No entanto, não estava encontrando uma forma de traduzir a frase para português de uma forma que fizesse sem ficar muito ao pé-da-letra:</p>
+
+<figure>
+    <img title="Hungry - Tradução no Linguee.com" src="assets/images/2017/01/18-stay-hungry-stay-foolish-02.png" alt="Tela do site linguee.com com a tradução de hungry em inglês para português">
+    <figcaption>Hungry - Tradução no Linguee.com</figcaption>
+</figure>
+
+<figure>
+    <img title="Foolish - Tradução no Linguee.com" src="assets/images/2017/01/18-stay-hungry-stay-foolish-02.png" alt="Tela do site linguee.com com a tradução de foolish em inglês para português">
+    <figcaption>Foolish - Tradução no Linguee.com</figcaption>
+</figure>
+
+<hr />
+
+<p>Mas agora consegui!</p>
+
+<p>Achei no site <a href="http://www.naopossoevitar.com.br/2009/05/stay-hungry-stay-foolish.html">Não Posso Evitar, de Rodolfo Araújo</a> as considerações dele sobre o vídeo citado lá em cima, e a parte específica do sobre a frase está aqui, de um jeito muito bem adaptado para o português:</p>
+
+<blockquote>
+  <p>Mantenha-se faminto por coisas novas, mantenha-se certo de sua ignorância. Continue ávido por aprender, continue ingênuo e humilde para procurar. Tenha fome de vida, sede de descobrir. Stay hungry, stay foolish.</p>
+</blockquote>
+
+<hr />
+
+<p>E você? Tem uma frase que o identifica? Conta aí nos comentários!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[A famosa receita do bacalhau com ovos do Wanderlei]]></title>
+            <link href="https://rogeriopradoj.com/2016/12/31/a-famosa-receita-do-bacalhau-com-ovos-do-wanderlei//"/>
+            <updated>2016-12-31T11:00:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2016/12/31/a-famosa-receita-do-bacalhau-com-ovos-do-wanderlei//</id>
+            <content type="html"><![CDATA[<p>Olá, olá, pessoal! Último post de 2016! Boas festas para todos, que o novo ano seja ótimo para todos nós.</p>
+
+<p>E nessa época de comemorações com muita comilança, estava na hora de publicar uma super receita aqui no blog: o bacalhau com ovos na frigideira do Wanderlei, vulgo bacalhau com ovos do meu pai ;-).</p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-capa.jpg" alt="O famoso bacalhau com ovos do Wanderlei - a receita de família" />
+<em>O famoso bacalhau com ovos do Wanderlei - a receita de família</em></p>
+
+<p>Minha tia conta a história que minha avó paterna tinha algumas receitas que antes de falecer passou para os filhos, e dentre elas duas de bacalhau. A que ela ficou foi o mais tradicional bacalhau de forno com batatas. E a que o meu pai ficou foi o bacalhau com ovos na frigideira. As duas formas são muito saborosas, mas com certeza gosto mais da frigideira!</p>
+
+<p>E da mesma forma que minha avó passou a receita, meu pai me ensinou no Réveillon de 2015 como fazer (na noite de 31/12/2014 estávamos aqui em casa preparando o prato. Ele me indicando cada um dos passos, eu botando a mão-na-massa e anotando tudo tim-tim por tim-tim)!</p>
+
+<p>Foi uma experiência muito boa a preparação. E depois, ver o pessoal comendo, elogiando e repetindo (entre eles meu meu pai) foi excepcional! Ainda bem que já nesse primeira vez fiz "duas receitas", para dobrar o número de porções, caso contrário ia ter briga por quem não conseguiria experimentar o famoso bacalhau ;-) .</p>
+
+<p>E com alegria digo que essa receita de família de bacalhau com ovos sempre surprende positivamente quem conhece pela primeira vez. Seja pelo sabor crocante do bacalhau combinando com os vegetais, ou pela quantidade de ovos usada na receita (sim, é uma dúzia de ovos!), ou ainda pela aparência do prato servido na própria frigideira ou num grande prato ou travessa. E quem come sempre quer mais!</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yFHaFBv9s7A" frameborder="0" allowfullscreen></iframe>
+
+<p><em>Youtube Video: <a href="https://youtu.be/yFHaFBv9s7A">https://youtu.be/yFHaFBv9s7A</a></em></p>
+
+<p>Já está com água na boca? Então chega de história e vamos ver como fazer esse prato delicioso!</p>
+
+<h3 id="ingredientes">Ingredientes</h3>
+
+<ul>
+<li>400g de bacalhau desfiado</li>
+<li>1 cebola grande</li>
+<li>4 dentes de alho</li>
+<li>2 tomates grandes</li>
+<li>1 dúzia de ovos</li>
+<li>tempero baiano</li>
+<li>salsinha fresca</li>
+<li>sal</li>
+<li>óleo</li>
+<li>azeite</li>
+</ul>
+
+<h3 id="antes-de-come%C3%A7ar---dessalgando-o-bacalhau">Antes de começar - Dessalgando o bacalhau</h3>
+
+<p>Dessalgue o bacalhau (6 horas dentro da água num pote dentro da geladeira, trocando a água de duas em duas horas).</p>
+
+<h3 id="prepara%C3%A7%C3%A3o">Preparação</h3>
+
+<p>Numa frigideira grande (que tenha tampa), fritar o bacalhau com óleo, um fio de azeite e tempero baiano.</p>
+
+<p>Depois de frito, juntar a cebola.</p>
+
+<p>Depois, colocar os tomates cortados em roldea, cobrindo toda a frigideira.</p>
+
+<p>Cobrir com salsinha.</p>
+
+<p>Em seguida, começar a quebrar os ovos, a partir de um canto, sem quebrar a gema e colocando sal. Cobrir a frigideira com os ovos, distribuindo as gemas.</p>
+
+<p>Diminuir o fogo e tampar a frigideira até os ovos cozinharem.</p>
+
+<p>Retirar o excesso de óleo (escorrer) e servir.</p>
+
+<hr />
+
+<h3 id="galeria">Galeria</h3>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-0.jpg" alt="Bacalhau com ovos: o preferido!" />
+<em>Bacalhau com ovos: o preferido!</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-1.jpg" alt="Bacalhau com ovos: preparação, fase quebrando os ovos" />
+<em>Bacalhau com ovos: preparação, fase quebrando os ovos</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-2.jpg" alt="Bacalhau com ovos: duas receitas, muito bom!" />
+<em>Bacalhau com ovos: duas receitas, muito bom!</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-3.jpg" alt="Bacalhau com ovos: preparação, ovos cozinhando" />
+<em>Bacalhau com ovos: preparação, ovos cozinhando</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-4.jpg" alt="Bacalhau com ovos: preparação, ovos cozidos" />
+<em>Bacalhau com ovos: preparação, ovos cozidos</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-5.jpg" alt="Bacalhau com ovos: contraste, panela e frigideira" />
+<em>Bacalhau com ovos: contraste, panela e frigideira</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-6.jpg" alt="Bacalhau com ovos: à família" />
+<em>Bacalhau com ovos: à família</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-7.jpg" alt="Bacalhau com ovos: à família II" />
+<em>Bacalhau com ovos: à família II</em></p>
+
+<p><img src="assets/images/2016/12/bacalhau-com-ovos-wanderlei-8.jpg" alt="Bacalhau com ovos: à galera" />
+<em>Bacalhau com ovos: à galera</em></p>
+
+<hr />
+
+<p>Um feliz ano novo para todo mundo!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Configurando Hotkeys no Nintendo 64 do Retropie]]></title>
+            <link href="https://rogeriopradoj.com/2016/10/24/configurando-hotkeys-no-nintendo-64-do-retropie//"/>
+            <updated>2016-10-24T08:06:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2016/10/24/configurando-hotkeys-no-nintendo-64-do-retropie//</id>
+            <content type="html"><![CDATA[<p>Olá pessoal!</p>
+
+<p>Essa dica é para quem usa o Retropie para emular videogames antigos no Raspberry Pi e está tendo problemas para sair de um jogo dentro do emulador de Nintendo 64 e também não consegue salvar seu progresso para carregá-lo posteriormente.</p>
+
+<p><a href="https://retropie.org.uk/"><img src="assets/images/2016/10/RetroPieWebsiteLogo.png" alt="Logo Retropie" /></a>
+<em>Fonte: <a href="https://retropie.org.uk/">https://retropie.org.uk/</a></em></p>
+
+<hr />
+
+<p>Por padrão, o Retropie tem uma lista de hotkeys (que são os atalhos especiais feitos no joystick para alguma ação do emulador):</p>
+
+<p><a href="https://retropie.org.uk/"><img src="assets/images/2016/10/hotkeys-retropie.png" alt="tabela hotkeys retropie" /></a>
+<em>Fonte: <a href="https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#default-joypad-hotkeys">https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#default-joypad-hotkeys</a></em></p>
+
+<p>O problema é que quanto estamos jogando o Nintendo 64 (que roda o emulador Mupen64plus no Retropie 4), os padrões acima não funcionam. E nada acontece quando você aperta por exemplo SELECT + START, que deveria encerrar a partida e ir para a lista de ROMs no EmulationStation, fazendo com que você tenha que recorrer a linha de comando ou a um teclado conectado só para conseguir ir para outro jogo! Bem ruim, não é mesmo?</p>
+
+<p>Essa situação acontece porque o Retropie tenta utilizar sempre que possível os emuladores da "família LibreRetro" daqueles hotkeys que mostramos. No entanto, quando a melhor performance para um dos videogames é conseguida com outro programa (caso do Nintendo 64), o emulador diferente tem a preferência.</p>
+
+<p>Agora que já sabemos da história, vamos ver como resolver esse imbróglio:</p>
+
+<ol>
+<li><p>Entre na linha de comando do seu Retropie (apertando F4 num teclado conectado, ou <a href="https://github.com/retropie/retropie-setup/wiki/ssh">acessando via SSH</a>)</p></li>
+<li><p>Verifique no seu controle principal qual é o número correspondente ao botões que você vai usar como hotkey, usando o comando <code>jstest /dev/input/jsX</code>, onde X é o índice referente ao seu joystick. Exemplo, onde descobri que o SELECT é o botão 8 e o START é o botão 9:</p></li>
+</ol>
+
+<pre><code>$ jstest /dev/input/js0
+Driver version is 2.1.0.
+Joystick (Xbox 360 Wireless Receiver) has 6 axes (X, Y, Rx, Ry, Hat0X, Hat0Y)
+and 17 buttons (BtnX, BtnY, BtnTL, BtnTR, BtnTR2, BtnSelect, BtnStart, BtnMode, BtnThumbL, BtnThumbR, ?, ?, ?, (null), (null), (null), (null)).
+Testing ... (interrupt to exit)
+Axes:  0: -2050  1:     0  2: -3810  3:     0  4:     0  5:     0 Buttons:  0:off  1:off  2:off  3:off  4:off  5:off  6:off  7:off  8:off  9:off 10:off 11:off 12:off 13:off 14:off 15:off 16:off
+</code></pre>
+
+<ol start="3">
+<li>Edite o arquivo <code>/opt/retropie/configs/all/autoconf.cfg</code> de forma que a linha <code>mupen64plus_hotkeys = 1</code> fique <code>mupen64plus_hotkeys = 0</code>:</li>
+</ol>
+
+<pre><code>$ sed -i "s/mupen64plus_hotkeys = 1/mupen64plus_hotkeys = 0/g" /opt/retropie/configs/all/autoconf.cfg
+</code></pre>
+
+<ol start="4">
+<li>Edite o arquivo <code>/opt/retropie/configs/n64/mupen64plus.cfg</code> para colocar os hotkeys de acordo com sua preferência e números dos botões descobertos com o jstest:</li>
+</ol>
+
+<pre><code># Meus botões, Xbox 360 Controller wifi, xpad driver
+# ---------------------------------------------------
+# &lt;select&gt;   =&gt; 8
+# &lt;start&gt;    =&gt; 9
+# &lt;L1&gt;       =&gt; 4
+# &lt;R1&gt;       =&gt; 5
+
+# Hotkey para sair de um jogo
+$ sed -i 's~Joy Mapping Stop = ""~Joy Mapping Stop = "J*B8/B9"~g' /opt/retropie/configs/n64/mupen64plus.cfg
+
+# Hotkey para carregar um progresso salvo de uma partida
+$ sed -i 's~Joy Mapping Load State = ""~Joy Mapping Load State = "J*B8/B4"~g' /opt/retropie/configs/n64/mupen64plus.cfg
+
+# Hotkey para salvar o progresso de uma partida
+$ sed -i 's~Joy Mapping Save State = ""~Joy Mapping Save State = "J*B8/B5"~g' /opt/retropie/configs/n64/mupen64plus.cfg
+</code></pre>
+
+<p>Depois disso aí é só reiniciar o Raspberry Pi (<code>$ sudo shutdown -r now</code>) e os seus jogos de Nintendo 64 já vão ter esses hotkeys funcionando!</p>
+
+<hr />
+
+<p>Ficou com dúvida? Fique à vontade para falar comigo nos comentários abaixo e nos <a href="https://rogeriopradoj.com/about/">contatos do RogerioPradoJ.com</a>.</p>
+
+<p>Até mais!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Contribuição com Open Source: Mais Do Que Código - #LABHR - Agradeça a Todos os Contribuidores - #30contribs]]></title>
+            <link href="https://rogeriopradoj.com/2016/09/27/contribuicao-com-open-source-mais-do-que-codigo-labhr-agradeca-todos-contribuidores-30contribs//"/>
+            <updated>2016-09-27T06:20:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2016/09/27/contribuicao-com-open-source-mais-do-que-codigo-labhr-agradeca-todos-contribuidores-30contribs//</id>
+            <content type="html"><![CDATA[<p><em>Este artigo é todo baseado na página <a href="https://labhr.github.io/">LABHR - Let's All Build A Hat Rack</a> disponível em <a href="https://labhr.github.io/">https://labhr.github.io/</a></em>.</p>
+
+<hr />
+
+<p><sub>*Se quiser saber mais sobre como contribuir com projetos open source, <a href="2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade">veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!</a></sub></p>
+
+<hr />
+
+<p>Olá pessoal, tudo certinho?</p>
+
+<p>Acho que vocês já sabiam que para contribuir para projetos open source e para a comunidade de desenvolvimento você não precisa apenas ir para código fonte, não é mesmo? Tem como ajudar com documentação dos projetos, tradução, divulgação, utilização e reportagem de erros e bugs etc. Bacana demais, né!</p>
+
+<p>E como que os mantenedores de projeto podem valorizar todos esses contribuidores, seja os que mexeram com código diretamente ou todos os outros que são muitos também?</p>
+
+<p>É aí que entra em cena a iniciativa LABHR, Let's All Build A Hat Rack!</p>
+
+<p><a href="https://labhr.github.io/"><img src="assets/images/2016/09/labhr-logo.png" alt="labhr logo" /></a>
+<em>Fonte: https://github.com/LABHR</em></p>
+
+<p>A iniciativa LAHBR busca valorizar todos que trabalhar com as contribuições além do código e permitir que os mantenedores dos projetos agradeçam!</p>
+
+<h3 id="origens">Origens</h3>
+
+<p>O LABHR começou como <a href="http://hawthornlandings.org/2015/02/13/a-place-to-hang-your-hat/">uma ideia de Leslie Hawthorn</a>, que evangelizava sobre como agradecer de forma aberta as pessoas tanto via <a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=%23LABHR">mídias sociais</a> quanto por meio de <a href="http://hawthornlandings.org/2015/02/23/the-weekly-writing-update/">recomendações por escrito</a>.</p>
+
+<p>Aí a ideia foi ampliada pela Katie McLaughlin com o trabalho de <a href="http://opensource.com/life/15/10/octohat-github-non-code-contribution-tracker">automatização desse processo no GitHub</a>.</p>
+
+<h3 id="projetos">Projetos</h3>
+
+<p>Você pode automatizar essa descoberta dos contribuidores para agradecer pelo trabalho em projetos FOSS (Free and Open-Source Software) usando uma das ferramentas do LABHR:</p>
+
+<ul>
+<li><a href="https://github.com/LABHR/hatrack">hatrack</a> - buscador web de contribuições "non-code" + "code" no GitHub</li>
+<li><a href="https://github.com/LABHR/octohatrack">octohatrack</a> - buscador python de linha de comando de contribuições "non-code" + "code" no GitHub</li>
+<li><a href="https://labhr.github.io/stackoverflow/">stackoverflow hat rack</a> - veja os usuários mais ativos de uma tag específica no StackOverflow</li>
+<li><a href="https://labhr.github.io/wikipedia/">wikipedia hat rack</a> - veja os contribuidores de uma página da Wikipedia</li>
+</ul>
+
+<h3 id="artigos">Artigos</h3>
+
+<h4 id="em-ingl%C3%AAs">Em inglês</h4>
+
+<ul>
+<li><a href="http://hawthornlandings.org/2015/02/13/a-place-to-hang-your-hat/">A place to hang your hat</a> - Leslie Hawthorn</li>
+<li><a href="http://hawthornlandings.org/2015/02/23/the-weekly-writing-update/">Recommendations Update</a> - Leslie Hawthorn</li>
+<li><a href="https://opensource.com/life/15/10/octohat-github-non-code-contribution-tracker">A tool for tracking non-code GitHub contributions</a> - Katie McLaughlin</li>
+<li><a href="https://modelviewculture.com/pieces/acknowledging-non-coding-contributions">Acknowledging Non-Coding Contributions</a> - Katie McLaughlin</li>
+</ul>
+
+<h4 id="em-portugu%C3%AAs">Em português</h4>
+
+<ul>
+<li><a href="https://rogeriopradoj.com//2016/09/27/contribuicao-com-open-source-mais-do-que-codigo-labhr-agradeca-todos-contribuidores-30contribs/">Contribuição com Open Source: Mais Do Que Código - #LABHR - Agradeça a Todos os Contribuidores - #30contribs</a></li>
+</ul>
+
+<h3 id="palestras">Palestras</h3>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=iAu7Xw9lFt0">Build A Better Hat Rack - All Contributions Welcome</a> apresentada na <a href="https://us.pycon.org/2016/schedule/presentation/1584/">PyCon US</a></li>
+<li><a href="https://www.youtube.com/watch?v=wQxFKxbWcFM">Build A Better Hat Rack - All Contributions Welcome</a> apresentada na <a href="https://nzpug.org/kiwipycon/christchurch-2015/">Kiwi PyCon</a></li>
+<li><a href="https://www.youtube.com/watch?v=yQGrLrLgT-M">Build A Better Hat Rack - All Contributions Welcome</a> apresentada na <a href="http://2015.devworld.com.au/">/dev/world/</a></li>
+<li><a href="https://www.youtube.com/watch?v=wNWrr19gE0Y">Build A Better Hat Rack - All Contributions Welcome</a> apresentada na <a href="http://2015.pycon-au.org/schedule/30023/view_talk?day=saturday">PyCon AU</a></li>
+<li>Mencionada na <a href="https://www.youtube.com/watch?v=dkMFoo60d0s">FOSS Lessions from building the KSP-CKAN</a> pelo Paul Fenwick na OSDC</li>
+<li>Mencionada na <a href="https://opbeat.com/events/duth/">Keynote</a> pelo Dr Russell Keith-Magee na Django Under the Hood</li>
+<li>Lightning Talks foram apresentada na: <a href="http://www.meetup.com/SydPHP/events/220312809/">SydPHP</a>, <a href="http://www.meetup.com/devops-sydney/events/219153444/">DevOps Sydney</a>, <a href="http://www.meetup.com/sydneypython/events/221908406/">SyPy</a>, /dev/world, <a href="http://2015.phpconference.org.nz/conference-warm-up/">PHP Conference NZ</a>, <a href="https://2015.osdc.com.au/">OSDC</a>, <a href="https://linux.conf.au/">linux.conf.au</a>, and <a href="https://2016.djangocon.eu/">DjangoCon Europe</a></li>
+</ul>
+
+<h3 id="evangelistas">Evangelistas</h3>
+
+<ul>
+<li><a href="https://twitter.com/lhawthorn">Leslie Hawthorn</a></li>
+<li><a href="https://twitter.com/glasnt">Katie McLaughlin</a></li>
+</ul>
+
+<h3 id="outros-apoiadores">Outros apoiadores</h3>
+
+<ul>
+<li><a href="https://twitter.com/rogeriopradoj">eu</a></li>
+<li><strong>você</strong> ;-)</li>
+</ul>
+
+<h3 id="al%C3%A9m-do-labhr">Além do LABHR</h3>
+
+<p>Foi criado também um projeto no GitHub, do <a href="https://github.com/kentcdodds">Kent C. Dodds</a>, chamado <a href="https://github.com/kentcdodds/all-contributors">github://kentcdodds/all-contributors</a> e a chamada dele é: <em>Recognize all contributors, not just the ones who push code</em>.</p>
+
+<p><img src="assets/images/2016/09/kentcdodds-all-contributors.png" alt="kentcdodds all-contributors github repo" />
+<em>GitHub repo: <a href="https://github.com/kentcdodds/all-contributors">https://github.com/kentcdodds/all-contributors</a></em></p>
+
+<p>A ideia principal dele é criar um arquivo manifesto, <code>.all-contributorsrc</code>, que ficaria dentro de cada repositório público com toda a informação de todos os contribuidores. Seria uma forma de padronizar tudo por meio de uma especificação. Se quiser saber mais sobre esse projeto específico, <a href="https://github.com/kentcdodds/all-contributors">acessa lá</a></p>
+
+<h3 id="considera%C3%A7%C3%B5es-finais">Considerações finais</h3>
+
+<p>É muito bacana saber que existem essas iniciativas de agradecer todos os contribuidores, seja os que codificam ou os que trabalham com tantas outras coisas relacionadas a projetos open source. Vale a pena conhecer mais sobre as ações e ser mais um apoiador dessas ideias!</p>
+
+<p>E, como sempre, se quiser falar comigo pode usar os comentários abaixo e os <a href="https://rogeriopradoj.com/about/">contatos do RogerioPradoJ.com</a>.</p>
+
+<p>Até mais!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs]]></title>
+            <link href="https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs//"/>
+            <updated>2016-09-26T06:15:00+00:00</updated>
+            <id>https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs//</id>
+            <content type="html"><![CDATA[<p>Olá pessoal, tudo bem? Como andam as contribuições?</p>
+
+<p><sub>*Se quiser saber mais sobre como contribuir com projetos open source, <a href="2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade">veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!</a></sub></p>
+
+<p>Hoje vamos ver como contribuir criando um novo pacote para o <a href="http://brew.sh">Homebrew</a>, que é um ótimo gerenciador de pacotes para o macOS (similar ao <a href="https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg">apt-get, yum, dnf</a> ou <a href="https://chocolatey.org/">chocolatey</a>).</p>
+
+<p><img src="assets/images/2016/09/homebrew-page.png" alt="homebrew website" />
+<em>Homebrew website: <a href="http://brew.sh">http://brew.sh</a></em></p>
+
+<hr />
+
+<p><a href="/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs//#parabens-rodrigo" id="parabens-rodrigo">🍺</a>E também dar parabéns para o <a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!">@royopa! 30 anos! #30contribs!</a></p>
+
+<p><a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!"><img src="assets/images/2016/09/giphy-cheers.gif" alt="giphy cheers" /></a>
+<a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!"><em>Parabéns, @royopa, parça! Fonte: http://www.reactiongifs.com/r/drj1NmK.gif</em></a></p>
+
+<hr />
+
+<p>Antes de começar a falar direto sobre a contribuição, vamos falar por que cheguei nisso!</p>
+
+<h3 id="motiva%C3%A7%C3%A3o%3A-hostess">Motivação: Hostess</h3>
+
+<p>Descobri uma ferramenta bem bacana para gerenciar nosso <code>/etc/hosts</code>:</p>
+
+<blockquote>
+  <p><strong><a href="https://github.com/cbednarski/hostess">cbednarski/hostess</a></strong></p>
+  
+  <p>An idempotent command-line utility for managing your /etc/hosts file.</p>
+  
+  <p>-- https://github.com/cbednarski/hostess</p>
+</blockquote>
+
+<p>Ele é uma ferramenta escrita em <a href="https://golang.org/">golang</a>, **, e na sua versão 0.2.1 tem como forma de instalação oficial os <a href="https://github.com/cbednarski/hostess/releases">binários pré-compilados no GitHub</a> ou, para quem quer mexer de alguma forma no código fonte, via <code>go get</code> ou compilando diretamente do repositório.</p>
+
+<h3 id="instala%C3%A7%C3%A3o-de-aplicativos-de-forma-autom%C3%A1tica-e-gerenci%C3%A1vel">Instalação de aplicativos de forma automática e gerenciável</h3>
+
+<p>Mas eu queria instalar a ferramenta no meu macOS de uma forma que conseguisse facilmente listar depois os aplicativos instalados, simplificando a reinstalação do sistema se necessário - acabei de reinstalar o macOS Sierra 10.12 de <a href="http://macs.about.com/od/macOSSierra/ss/How-to-Perform-a-Clean-Install-of-macOS-Sierra.htm">forma limpa</a>, e a reinstalação dos aplicativos e bibliotecas por meio de uma <a href="https://gist.github.com/rogeriopradoj/611cf631a723b6aa211d6d80c2240052">listagem programática foi excelente</a>!</p>
+
+<p>Aproveitando, para quem tem macOS, segue a lista dos gerenciadores de aplicativos, pacotes, bibliotecas e configurações que uso e recomendo junto do <a href="http://brew.sh">Homebrew</a>:</p>
+
+<ul>
+<li><a href="https://caskroom.github.io">Homebrew Cask</a>: Homebrew para aplicações;</li>
+<li><a href="https://github.com/argon/mas">mas-cli</a>: Linha de comando para a Mac App Store;</li>
+<li><a href="https://github.com/lra/mackup">mackup</a>: Sincroniza as configurações dos seus aplicativos em vários tipos de armazenamento como Drobpox, Google Drive ou Git. <a href="https://db.tt/I2yXtpGI">Eu uso o Dropbox pois é o padrão e funciona muito bem</a>.</li>
+</ul>
+
+<h3 id="um-espa%C3%A7o-para-contribuir%3A-hostess-no-homebrew">Um espaço para contribuir: Hostess no Homebrew</h3>
+
+<p>Como vimos, segundo a página oficial, o <strong>hostess</strong> ainda não estava disponível para instalação via gerenciadores. Então a primeira coisa foi ver se já tinha algum suporte no <strong>homebrew</strong>. Com o comando <code>brew search</code> fazemos uma consulta tanto nos repositórios do <strong>homebrew</strong> quanto do <strong>homebrew-cask</strong>:</p>
+
+<pre><code>$ brew search hostess
+No formula found for "hostess".
+==&gt; Searching pull requests...
+
+</code></pre>
+
+<p>Que beleza: uma oportunidade para contribuição com open source! (aqui alguns commits já aceitos no <a href="https://github.com/Homebrew/homebrew-core/commits?author=rogeriopradoj">homebrew</a> e no <a href="https://github.com/caskroom/homebrew-cask/commits?author=rogeriopradoj">homebrew-cask</a>).</p>
+
+<h3 id="come%C3%A7ando-a-contribuir">Começando a contribuir</h3>
+
+<p><img src="assets/images/2016/09/giphy-ready-go.gif" alt="giphy ready go" />
+<em>Fonte: <a href="http://imgur.com/gallery/ccd3Fjs">http://imgur.com/gallery/ccd3Fjs</a></em></p>
+
+<h4 id="reposit%C3%B3rio-principal-no-github">Repositório principal no GitHub</h4>
+
+<p>Primeiro, tinha que saber para qual lugar mandar o Pull Request. Por ser um pacote do sistema operacional, e não um aplicativo, o <strong>homebrew</strong> era o melhor lugar.</p>
+
+<p>É importante frisar: cada um dos pacotes que o <strong>homebrew</strong> sabe gerenciar ele chama de <em>Formula</em>. E aí fui buscar o repositório do GitHub onde ficam essas fórmulas oficiais, que é o https://github.com/Homebrew/homebrew-core.</p>
+
+<h4 id="contributing.md">Contributing.md</h4>
+
+<p>A boa prática nos diz que dentro do repositório, quando vamos fazer uma contribuição, <a href="https://github.com/blog/1184-contributing-guidelines">devemos ir direto para o arquivo CONTRIBUTING.md</a>. Nesse repositório somos ensinados sobre como <a href="https://github.com/Homebrew/homebrew-core/blob/master/CONTRIBUTING.md#add-a-new-formula-for-foo-version-234-from-url">submeter uma nova fórmula</a>.</p>
+
+<h3 id="criando-o-arquivo-da-f%C3%B3rmula">Criando o arquivo da fórmula</h3>
+
+<p>Então vamos lá:</p>
+
+<pre><code>$ brew create https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz
+</code></pre>
+
+<p>O comando cria um esqueleto para a fórmula no seguinte caminho: <code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb"</code>. O conteúdo dele ficou assim:</p>
+
+<pre><code class="ruby"># Documentation: https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
+#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
+# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+
+class Hostess &lt; Formula
+  desc ""
+  homepage ""
+  url "https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz"
+  version "0.2.1"
+  sha256 "3be0198f358d49aa9b17fd8622ab5d4e3732dc45226fe1804f245a0773504aee"
+
+  # depends_on "cmake" =&gt; :build
+  depends_on :x11 # if your formula requires any X11/XQuartz components
+
+  def install
+    # ENV.deparallelize  # if your formula fails when building in parallel
+
+    # Remove unrecognized options if warned by configure
+    system "./configure", "--disable-debug",
+                          "--disable-dependency-tracking",
+                          "--disable-silent-rules",
+                          "--prefix=#{prefix}"
+    # system "cmake", ".", *std_cmake_args
+    system "make", "install" # if this fails, try separate make/make install steps
+  end
+
+  test do
+    # `test do` will create, run in and delete a temporary directory.
+    #
+    # This test will fail and we won't accept that! It's enough to just replace
+    # "false" with the main program this formula installs, but it'd be nice if you
+    # were more thorough. Run the test with `brew test hostess`. Options passed
+    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
+    #
+    # The installed folder is not in the path, so use the entire path to any
+    # executables being tested: `system "#{bin}/program", "do", "something"`.
+    system "false"
+  end
+end
+
+</code></pre>
+
+<p>Como vimos, é apenas um arquivo de exemplo, escrito em <a href="https://www.ruby-lang.org/en/">Ruby</a>. De forma a me basear na construção do arquivo adequadamente, estudei outras fórmulas, dentro do repositório, que instalavam pacotes Golang. Para achar todos os arquivos que pudessem me ajudar, fiz o seguinte:</p>
+
+<pre><code>$ pt 'depends_on "go" =&gt; :build' /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/
+#
+# ... várias fórmulas...
+
+</code></pre>
+
+<p><sub>**Estou usando o pt para busca: https://github.com/monochromegane/the_platinum_searcher. Você pode usar sua IDE, editor de texto etc.*</sub></p>
+
+<p>Depois de estudar o código das outras fórmulas (obrigado open source!), fiz as alterações e o meu arquivo <code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb</code> final ficou assim:</p>
+
+<pre><code class="ruby">class Hostess &lt; Formula
+  desc "Idempotent command-line utility for managing your /etc/hosts file"
+  homepage "https://github.com/cbednarski/hostess"
+  url "https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz"
+  sha256 "3be0198f358d49aa9b17fd8622ab5d4e3732dc45226fe1804f245a0773504aee"
+  head "https://github.com/cbednarski/hostess.git"
+
+  depends_on "go" =&gt; :build
+
+  def install
+    (buildpath + "src/github.com/cbednarski/hostess").install Dir[buildpath/"*"]
+    cd "src/github.com/cbednarski/hostess/cmd/hostess" do
+      ENV["GOPATH"] = buildpath
+      system "go", "install"
+    end
+    bin.install "bin/hostess" =&gt; "hostess"
+  end
+
+  test do
+    system bin/"hostess", "--help"
+  end
+end
+
+</code></pre>
+
+<h3 id="testando-a-instala%C3%A7%C3%A3o-do-arquivo">Testando a instalação do arquivo</h3>
+
+<p>O passo seguinte foi testar a instalação, seguindo a orientação lá do <a href="https://github.com/Homebrew/homebrew-core/blob/master/CONTRIBUTING.md#add-a-new-formula-for-foo-version-234-from-url">CONTRIBUTING.md</a>:</p>
+
+<pre><code>$ brew install --debug --verbose /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+
+
+/usr/local/Homebrew/Library/Homebrew/brew.rb (Formulary::FromPathLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+/usr/local/Homebrew/Library/Homebrew/brew.rb (Formulary::FormulaLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/go.rb
+==&gt; Using the sandbox
+/usr/bin/sandbox-exec -f /tmp/homebrew20160925-23319-7e1u4k.sb nice /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -W0 -I /usr/local/Homebrew/Library/Homebrew -- /usr/local/Homebrew/Library/Homebrew/build.rb /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb --verbose --debug
+/usr/local/Homebrew/Library/Homebrew/build.rb (Formulary::FromPathLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+/usr/local/Homebrew/Library/Homebrew/build.rb (Formulary::FormulaLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/go.rb
+==&gt; Downloading https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz
+Already downloaded: /Users/rogerio/Library/Caches/Homebrew/hostess-0.2.1.tar.gz
+==&gt; Verifying hostess-0.2.1.tar.gz checksum
+tar xvzf /Users/rogerio/Library/Caches/Homebrew/hostess-0.2.1.tar.gz
+x hostess-0.2.1/
+x hostess-0.2.1/.gitignore
+x hostess-0.2.1/.travis.yml
+x hostess-0.2.1/Dockerfile
+x hostess-0.2.1/LICENSE
+x hostess-0.2.1/Makefile
+x hostess-0.2.1/README.md
+x hostess-0.2.1/cmd/
+x hostess-0.2.1/cmd/hostess/
+x hostess-0.2.1/cmd/hostess/hostess.go
+x hostess-0.2.1/commands.go
+x hostess-0.2.1/commands_test.go
+x hostess-0.2.1/hostfile.go
+x hostess-0.2.1/hostfile_test.go
+x hostess-0.2.1/hostlist.go
+x hostess-0.2.1/hostlist_test.go
+x hostess-0.2.1/hostname.go
+x hostess-0.2.1/hostname_test.go
+x hostess-0.2.1/test-fixtures/
+x hostess-0.2.1/test-fixtures/hostfile1
+x hostess-0.2.1/vendor/
+x hostess-0.2.1/vendor/github.com/
+x hostess-0.2.1/vendor/github.com/codegangsta/
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/LICENSE
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/app.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/cli.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/command.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/context.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/flag.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/help.go
+==&gt; go install
+==&gt; Cleaning
+Fixing /usr/local/Cellar/hostess/0.2.1/bin/hostess permissions from 755 to 555
+==&gt; Finishing up
+ln -s ../Cellar/hostess/0.2.1/bin/hostess hostess
+==&gt; Summary
+🍺  /usr/local/Cellar/hostess/0.2.1: 2 files, 3.9M, built in 2 seconds
+
+</code></pre>
+
+<p>É isso aí, instalou!</p>
+
+<p>Aqui já aproveitamos e rodamos o comando de teste:</p>
+
+<pre><code>$ brew test /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+
+Testing hostess
+==&gt; Using the sandbox
+==&gt; /usr/local/Cellar/hostess/0.2.1/bin/hostess --help
+</code></pre>
+
+<p>Ok, testes executados com sucesso!</p>
+
+<h3 id="script-de-auditoria-e-um-bug-no-homebrew">Script de auditoria e um bug no Homebrew</h3>
+
+<p>Agora, seguindo os próximos passos para a contribuição, vamos fazer a auditoria:</p>
+
+<pre><code>$ brew audit --new-formula /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+
+Error: type mismatch: String given
+Please report this bug:
+    https://git.io/brew-troubleshooting
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `=~'
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `block in search_tap'
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `select'
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `search_tap'
+/usr/local/Homebrew/Library/Homebrew/dev-cmd/audit.rb:347:in `block (2 levels) in audit_formula_name'
+</code></pre>
+
+<p>Ops... Deu algum problema: <strong><em>__Error__: type mismatch: String given</em></strong>. Abri uma <a href="https://github.com/Homebrew/homebrew-core/issues/5249">issue referente ao bug no repositório do homebrew</a>, já recebi a resposta (minha instalação estava desatualizada), e quando rodei novamente, tudo certo:</p>
+
+<pre><code>$ brew audit --new-formula /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+</code></pre>
+
+<p>Dessa vez, o comando não deu nenhuma saída, indicando que a fórmula passou OK pela auditoria.</p>
+
+<h3 id="fork%2C-branch%2C-commit">Fork, Branch, Commit</h3>
+
+<p>Próximo passo, fazer o commit num branch separado (<a href="http://codeinthehole.com/writing/pull-requests-and-other-good-practices-for-teams-using-github/#work-on-a-story">boa prática</a>), já preparando para o Pull Request:</p>
+
+<pre><code># garantir que está na pasta correta
+$ cd $(brew --repository homebrew/core)
+
+# fazer fork do repositório no github, usando a ferramenta cli hub, recomendadíssima (https://hub.github.com/)
+$ hub fork
+
+# criar branch separado
+$ git checkout -b new-formula-hostess
+
+# fazer o commit
+$ git add Formula/hostess.rb
+$ git commit -m "hostess 0.2.1 (new formula)"
+</code></pre>
+
+<h3 id="pull-request">Pull Request</h3>
+
+<p>Commit feito, hora de criar o Pull Request:</p>
+
+<pre><code># primeiro mandar as alterações lá para o meu fork no GitHub
+# (rogeriopradoj é o nome do meu git remote)
+$ git push rogeriopradoj new-formula-hostess
+
+# caso tiver algum problema aqui referente a 'shallow update not allowed' rode a seguinte linha:
+# $ git fetch --unshallow rogeriopradoj &amp;&amp; git push rogeriopradoj new-formula-hostess
+
+# e termine fazendo o pull request
+$ hub pull-request
+#
+# https://github.com/Homebrew/homebrew-core/pull/5257
+</code></pre>
+
+<p>Yeah! O Pull Request foi feito, e a linha de comando já retorna o endereço: <a href="https://github.com/Homebrew/homebrew-core/pull/5257">https://github.com/Homebrew/homebrew-core/pull/5257</a>.</p>
+
+<p><img src="assets/images/2016/09/pull-request-for-hostess-new-homebrew-formula.png" alt="pull request aberto" /></p>
+
+<p>Agora é só esperar o resultado da avaliação da contribuição em alguns dias (que deve ser feita pelos mantenedores do projeto seguindo <a href="https://github.com/Homebrew/brew/blob/master/docs/How-To-Open-a-Homebrew-Pull-Request-(and-get-it-merged).md#how-to-open-a-homebrew-pull-request-and-get-it-merged">esse documento</a>).</p>
+
+<h3 id="considera%C3%A7%C3%B5es-finais">Considerações finais</h3>
+
+<p>Costumo falar que <a href="2015-11-04-becoming-a-contributor-open-sourcer-and-beyond-palestra-do-tdc-2014-trilha-php">contribuir para projetos open source tem muito de motivação e estilo</a>, mas tem um fator que também é muito importante: oportunidade! Aqui, percebi a oportunidade quando uma biblioteca não estava disponível, e podia ser incluída via contribuição.</p>
+
+<p>Meu irmão <a href="https://github.com/royopa">Rodrigo, o @royopa</a> fala que a motivação dele é contribuir de qualquer forma para todo projeto que ele usar sempre que ele conseguir (souber como fazer e tiver a oportunidade!).</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!"><strong>E reforçando, hoje 26 de setembro é aniversário dele de 30 anos, então: Parabéns, Rodrigo, muitas felicidades!</strong></a></p>
+</blockquote>
+
+<p>Eu tento seguir isso que ele fala também. Tanto que boa parte das <a href="https://github.com/rogeriopradoj">minhas contribuições no GitHub são para projetos abertos</a> que uso constantemente.</p>
+
+<p>Por fim, nesse artigo conhecemos e vimos como contribuir para o <strong>Homebrew</strong>, criando uma fórmula para o <strong>hostess</strong>, passamos por vários softwares para instalação de aplicativos de forma automática e gerenciável (<strong>Homebrew Cask</strong>, <strong>mas-cli</strong> e <strong>mackup</strong> com <a href="https://db.tt/I2yXtpGI">Dropbox</a>).</p>
+
+<p>É isso aí, se quiser falar comigo pode usar os comentários abaixo e os <a href="https://rogeriopradoj.com/about/">contatos do RogerioPradoJ.com</a>.</p>
+
+<p>Até a próxima!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+]]></content>
+        </entry>
+    </feed>

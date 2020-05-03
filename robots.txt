@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://rogeriopradoj.com/sitemap.xml
+Disallow: /search.json

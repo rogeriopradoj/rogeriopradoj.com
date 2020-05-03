@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral</title>
+
+        <base href="https://rogeriopradoj.com/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral">
+            <meta name="description" content="Eu já estou há alguns meses tentando escrever um guia com dicas sobre como contribuir com open source nesse meu gist, mas até agora não consegui terminar... Quem sabe daqui um tempo tenhamos essas Dicas de como contribuir com open source by @rogeriopradoj ;-).
+
+No entanto, em 24/09/2015 o Rob Allen, mais conhecido no Twitter como @akrabat, escreveu ...">
+    <meta name="keywords" content="rogeriopradoj, , git, github, open-source, opensource" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="O guia para iniciantes sobre como contribuir com um projeto no GitHub" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" />
+    <meta property="og:url" content="https://rogeriopradoj.com/2015/09/28/o-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github/" />
+    <meta property="og:description" content="Eu já estou há alguns meses tentando escrever um guia com dicas sobre como contribuir com open source nesse meu gist, mas até agora não consegui terminar... Quem sabe daqui um tempo tenhamos essas Dicas de como contribuir com open source by @rogeriopradoj ;-).
+
+No entanto, em 24/09/2015 o Rob Allen, mais conhecido no Twitter como @akrabat, escreveu ..." />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+    <meta name="twitter:image:src" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg">
+    <meta name="twitter:title" content="O guia para iniciantes sobre como contribuir com um projeto no GitHub" />
+    <meta name="twitter:description" content="Eu já estou há alguns meses tentando escrever um guia com dicas sobre como contribuir com open source nesse meu gist, mas até agora não consegui terminar... Quem sabe daqui um tempo tenhamos essas Dicas de como contribuir com open source by @rogeriopradoj ;-).
+
+No entanto, em 24/09/2015 o Rob Allen, mais conhecido no Twitter como @akrabat, escreveu ..." />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
+
+        <link rel="search" href="https://rogeriopradoj.com/search.xml" type="application/opensearchdescription+xml" title="ROGERIO PRADO J | rogeriopradoj.com"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="https://rogeriopradoj.com/atom.xml" title="ROGERIO PRADO J | rogeriopradoj.com activity feed" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23860787-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23860787-1', { 'optimize_id': 'GTM-K94X8R5'});
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container header-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand async" href="https://rogeriopradoj.com/">Blog</a>
+            <div class="preloader"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about/">Sobre / About / Acerca</a></li>
+                <li><a href="slides/">Slides</a></li>
+                <li><a href="pradoj-com/">PradoJ.com</a></li>
+                <li><a href="contato/">Contato / Contact</a></li>
+                <li><a href="gift/">Gift / Apoie / Doe</a></li>
+                <li><a href="livro/">Meu Livro</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" id="search-form" role="search" method="get" action="https://rogeriopradoj.com/search/">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" name="q">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="#top" class="to-top hidden">
+                        <i class="fa fa-arrow-up"></i> To top
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="https://rogeriopradoj.com/">ROGERIO PRADO J | rogeriopradoj.com</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                            <article class="post">
+        <header>
+            <h2 class="post-title">O guia para iniciantes sobre como contribuir com um projeto no GitHub</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://rogeriopradoj.com/about">Rogerio Prado de Jesus</a> em <time datetime="2015-09-28T21:39:18+00:00" pubdate><span>28/09/2015</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div class="post-content">
+            <p>Eu já estou há alguns meses tentando escrever um guia com dicas sobre como contribuir com open source <a href="https://gist.github.com/rogeriopradoj/9c2208b50bcb1f047d19">nesse meu gist</a>, mas até agora não consegui terminar... Quem sabe daqui um tempo tenhamos essas <em>Dicas de como contribuir com open source by <a href="https://github.com/rogeriopradoj">@rogeriopradoj</a> ;-).</em></p>
+
+<p>No entanto, em 24/09/2015 o Rob Allen, mais conhecido no Twitter como <a href="https://twitter.com/akrabat">@akrabat</a>, escreveu um artigo sobre o tema: <a href="http://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/">The beginner's guide to contributing to a GitHub project</a>. Conversei com ele para pedir a autorização para traduzir seu texto em português do Brasil aqui no <a href="http://rogeriopradoj.com">RogerioPradoJ.com</a>, e a resposta foi positiva!</p>
+
+<blockquote class="twitter-tweet" lang="en">
+<p dir="ltr" lang="en"><a href="https://twitter.com/rogeriopradoj">@rogeriopradoj</a> Sure</p>
+— Rob Allen (@akrabat) <a href="https://twitter.com/akrabat/status/647290027026837504">September 25, 2015</a></blockquote>
+
+<script src="//platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+<p>Então vamos lá:</p>
+
+<hr />
+
+<p>Este é um guia sobre como contribuir como um projeto open source que utiliza o GitHub. Ele é baseado principalmente no que acompanhei sobre a forma como operam o <a href="http://framework.zend.com/">Zend Framework</a>, o <a href="http://www.slimframework.com/">Slim Framework</a> e o <a href="https://joind.in/">joind.in</a>. No entanto, esse é um guia genérico, sendo assim, leia o README de seus projetos para ver o que for específico.</p>
+
+<h2 id="tl%3Bdr">TL;DR</h2>
+
+<p>Vá direto para o <a href="/2015/09/28/o-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github//#resumindo">resumo</a>.</p>
+
+<h2 id="passo-1%3A-defina-uma-c%C3%B3pia-de-trabalho-working-copy-no-seu-computador">Passo 1: Defina uma cópia de trabalho (working copy) no seu computador</h2>
+
+<p>Primeiramente, você precisa de um fork local do projeto na sua máquina, vá direto no GitHub e aperte o botão "fork". Ele criará uma cópia do repositório em sua própria conta do GitHub e você verá um aviso de que ele foi forkado abaixo do nome do projeto:</p>
+
+<p><img src="assets/images/2015/09/2015-09forked.png" alt="Forked" /></p>
+
+<p>Agora, você precisa de uma cópia local. Procure por "HTTPS clone URL" ou "SSH clone URL" do lado direito do site e use esse endereço para fazer o clone local usando um terminal:</p>
+
+<pre><code>$ git clone git@github.com:akrabat/zend-validator.git
+</code></pre>
+
+<p>O resultado será parecido com esse aqui:</p>
+
+<p><img src="assets/images/2015/09/2015-09clone.png" alt="Clone" /></p>
+
+<p>Entre no diretório do novo projeto:</p>
+
+<pre><code>$ cd zend-validator
+</code></pre>
+
+<p>Por fim, você precisa definir um novo remoto (<em>remote</em>) apontando para o projeto original. Dessa forma, você consegue trazer as mudanças e colocá-las dentro de sua cópia local. Acesse o link do repositório original - ele está marcado com "Forked from" no topo da página do GitHub. Isso vai te levar para a página principal do GitHub do projeto, onde você encontra a "HTTPS clone URL" ou a "SSH clone URL" e deve usá-la para criar o novo remoto, que chamaremos de <em>upstream</em>.</p>
+
+<pre><code>$ git remote add upstream git@github.com:zendframework/zend-validator.git
+</code></pre>
+
+<p>Agora você tem dois remotos para esse projeto no disco:</p>
+
+<ol>
+<li>o <em>origin</em> que aponta para seu fork do projeto no GitHub. Você tem acesso de leitura e gravação nesse remoto</li>
+<li>o <em>upstream</em> que aponta para o repositório principal do projeto no GitHub. Você só tem acesso de leitura nesse remoto.</li>
+</ol>
+
+<h2 id="passo-2%3A%C2%A0fa%C3%A7a-suas-modifica%C3%A7%C3%B5es">Passo 2: Faça suas modificações</h2>
+
+<p>Essa é a parte divertida onde você começa a contribuir com o projeto. Em geral, é melhor começar arrumando um problema que está te atrapalhando ou algum bug que você encontrou no issue tracker do projeto. Se estiver procurando um lugar para começar, vários projetos usam a marcação <a href="http://seld.be/notes/encouraging-contributions-with-the-easy-pick-label">"easy pick" label</a> (ou alguma variação) para indicar que a issue pode ser resolvida por alguém novo no projeto.</p>
+
+<h3 id="branch%21">Branch!</h3>
+
+<p><strong>A regra número um é colocar cada pedaço do seu trabalho em seu próprio branch</strong>. Se o projeto estiver usando o <a href="http://nvie.com/posts/a-successful-git-branching-model/">git-flow</a>, ele terá tanto um branch <em>master</em> quanto um branch <em>develop</em>. A regra padrão é que se você estiver consertando um bug, você criará um branch a partir do master, e se você estiver adicionando uma nova funcionalidade, criará um branch a partir do develop. Se o projeto tiver apenas o branch master, é de lá que você criará o branch novo. Alguns projetos, como o Slim, usam os nomes dos branches baseadas em um número de versão (2.x e 3.x na situação deles). Nesse caso, escolha o branch que for relevante.</p>
+
+<p>Neste exemplo, vamos supor que você está arrumando um bug no zend-validator, então vamos fazer um branch a partir do <em>master</em>:</p>
+
+<pre><code>$ git checkout master
+$ git pull upstream master &amp;&amp; git push origin master
+$ git checkout -b hotfix/readme-update
+
+Primeiramente, vamos garantir que estamos no branch master. Dessa forma o comando `git pull` irá sincronizar nossa cópia local com o projeto upstream e  o `git push` irá sincronizá-lo com nosso projeto forkado no GitHub. Por fim criamos nosso novo branch. Você pode nomear o branch como quiser, mas ajuda se o nome for significativo. Incluir o número da issue também é útil. Se o projeto usar o git-flow tal qual o zend-validator, existem convenções de nomenclatura para prefixar os branches com "hotfix/" ou "feature/".
+
+Agora você pode fazer suas alterações.
+
+Tenha certeza que você apenas arrume o código onde que estiver trabalhando. Não ceda à tentação de arrumar outras coisas que for achando durante suas alterações pois assim seu PR (Pull Request) provavelmente será rejeitado. Certifique-se que você faça commits em blocos lógicos. Cada uma das mensagens de commit deve ser sensata. Leia o artigo do Tim Pope [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) (ou, se preferir em português do Brasil, [desde 2011 em RogerioPradoJ.com: Uma Nota Sobre as Mensagens do Git Commit](http://rogeriopradoj.com/2011/11/29/uma-nota-sobre-as-mensagens-do-git-commit/)).
+
+## Passo 3: Crie o PR (Pull Request)
+
+Para criar um PR, você precisa fazer o push de seu branch para o remoto *origin* e depois apertar alguns botões no GitHub.
+
+Para fazer o push de um branch novo:
+
+</code></pre>
+
+<p>$ git push -u origin hotfix/readme-update
+```</p>
+
+<p>O comando cria um branch em seu projeto no GitHub. A flag <code>-u</code> faz a amarração desse branch com seu remoto, assim, no futuro, você pode simplesmente digitar <code>git push origin</code>.</p>
+
+<p>Volte ao navegador e acesse o fork do seu projeto (https://github.com/akrabat/zend-validator no meu caso) e você verá que seu novo branch está listado no topo com um conveniente botão "Compare &amp; pull request":</p>
+
+<p><img src="assets/images/2015/09/2015-09pr-button.png" alt="Pr button" /></p>
+
+<p>Vá em frente e aperte o botão!</p>
+
+<p>Se você vir uma caixa amarela como essa:</p>
+
+<p><img src="assets/images/2015/09/2015-09contributing.png" alt="Contributing" /></p>
+
+<p>Clique no link que te levará ao arquivo CONTRIBUTING do projeto e o leia! Ele contém informação valiosa sobre como trabalhar com a base de código do projeto e ajudará para que sua contribuição seja aceita.</p>
+
+<p>Na página a seguir assegure que o "base fork" aponta para o repositório e para o branch correto. Então certifique-se de fornecer um título bom e sucinto para seu pull request e explique porque você o criou na caixa de descrição. Adicione todos os números de issue caso os tenha.</p>
+
+<p><img src="assets/images/2015/09/2015-09create-pr.png" alt="Create pr" /></p>
+
+<p>Se você rolar a tela um pouco, verá um diff das suas alterações. <strong>Verifique mais de uma vez se ele contém o que era esperado</strong>.</p>
+
+<p>Quando estiver satisfeito, aperte o botão "Create pull request" e você terá terminado.</p>
+
+<h2 id="passo%C2%A04%3A-revis%C3%A3o-dos%C2%A0mantenedores">Passo 4: Revisão dos mantenedores</h2>
+
+<p>Para que seu trabalho seja integrado no projeto, os mantenedores fazem a revisão do seu que você fez e então ou solicitam alterações ou fazem o merge.</p>
+
+<p>O artigo da Lorna Mitchell <a href="http://www.lornajane.net/posts/2015/code-reviews-before-you-even-run-the-code">Code Reviews: Before You Even Run The Code</a> trata sobre os pontos com os quais os mantenedores se preocupam. Por isso, vá lá dar uma lida e assegure que você facilitou as coisas para os mantenedores o máximo possível.</p>
+
+<h2 id="resumindo">Resumindo</h2>
+
+<p>Isso é tudo! As partes fundamentais são as seguintes:</p>
+
+<ol>
+<li>Faça o fork do projeto &amp; o clone local.</li>
+<li>Crie um remoto <em>upstream</em> e sincronize com sua cópia local antes de criar o branch.</li>
+<li>Faça um branch para cada pedaço separado de trabalho.</li>
+<li>Faça as alterações, escreva <a href="https://blogs.gnome.org/danni/2011/10/25/a-guide-to-writing-git-commit-messages/">boas mensagens de commit</a> e leia o arquivo CONTRIBUTING quando ele existir</li>
+<li>Faça o push para seu repositório <em>origin</em>.</li>
+<li>Crie em novo PR (Pull Request) no GitHub.</li>
+<li>Responda a todos os feedbacks recebidos durante a <a href="http://www.lornajane.net/posts/2015/code-reviews-before-you-even-run-the-code">revisão do código</a>.</li>
+</ol>
+
+<p>Se você quiser contribuir com um projeto open source, considere o <a href="https://github.com/joindin/joindin-web2#joindin">joind.in</a>!</p>
+
+<hr />
+
+<p>É isso pessoal! Agradeço muito ao <a href="http://akrabat.com/">Rob Allen</a> pelo <a href="http://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/">artigo original</a> e autorização para tradução aqui no <a href="https://rogeriopradoj.com">RogerioPradoJ.com</a>.</p>
+
+<p>Para quem quiser mais ideias de projetos opensource para contribuir, deêm uma olhada no <a href="http://rogeriopradoj.com/2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade/">#30contribs</a> e também no <a href="https://twitter.com/yourfirstpr">@yourfirstpr</a>, que te ajudam a começar a contribuir.</p>
+
+<p>O mais legal vai ser daqui a pouco você ter tantas contribuições que nem vai lembrar de quando foi sua primeira vez. Para te ajudar a recordar, você pode usar o http://firstpr.me/!</p>
+
+<p><a href="http://firstpr.me/#rogeriopradoj"><img src="assets/images/2015/09/First-Pull-Request.png" alt="firstpr-rogeriopradoj" /></a>
+<em><a href="http://firstpr.me/#rogeriopradoj">http://firstpr.me/#rogeriopradoj</a> em 28/09/2015</em></p>
+
+<p>Até mais!</p>
+
+<p>—-</p>
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+
+        </div>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Se gostou do artigo, compartilhe</small></legend>
+            <div class="buttons">
+                                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Frogeriopradoj.com%2F2015%2F09%2F28%2Fo-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github%2F%2F/" target="_blank"
+                   class="btn btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/share?url=https%3A%2F%2Frogeriopradoj.com%2F2015%2F09%2F28%2Fo-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github%2F%2F&text=O%20guia%20para%20iniciantes%20sobre%20como%20contribuir%20com%20um%20projeto%20no%20GitHub&via=rogeriopradoj" target="_blank"
+                   class="btn btn-sm btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frogeriopradoj.com%2F2015%2F09%2F28%2Fo-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github%2F%2F&title=O guia para iniciantes sobre como contribuir com um projeto no GitHub&source=https://rogeriopradoj.com" target="_blank"
+                   class="btn btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Gostou muito mesmo do conteúdo e quer apoiar financeiramente? É fácil! Use uma das opções abaixo:</small></legend>
+
+            <ul class="list">
+                <li><p><a href="https://rogeriopradoj.com/gift/">Gift / Apoie / Doe</a></p></li>
+                <li><p><a href="https://rogeriopradoj.com/livro/">Meu Livro: Modernização de Aplicações Legadas em PHP</a></p></li>
+            </ul>
+
+        </fieldset>
+
+        <hr>
+
+        <ul class="list-unstyled">
+                            <li class="categories-list">
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Geral/">Geral</a>
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Versionamento/">Versionamento</a>
+                                    </li>
+                                        <li class="tags-list">
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/git/">git</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/github/">github</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/open-source/">open source</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/opensource/">opensource</a>
+                                    </li>
+                        <li class="clearfix"></li>
+        </ul>
+
+                    <nav class="well">
+                <ul class="list-unstyled other-articles row">
+                    <li class="col-sm-6 col-xs-12">
+                                                    <a class="previous" href="https://rogeriopradoj.com/2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade//">
+                                <i class="fa fa-angle-double-left"></i>
+                                <span class="title">#30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!</span>
+                            </a>
+                                            </li>
+                    <li class="col-sm-6 col-xs-12 text-right">
+                                                    <a class="next" href="https://rogeriopradoj.com/2015/10/08/meu-primeiro-plugin-para-o-vagrant-mostra-a-lista-de-ips-da-vm-vagrant-ip-show//">
+                                <span class="title">Meu primeiro plugin para o Vagrant mostra a lista de IPs da VM! vagrant-ip-show</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                            </li>
+                </ul>
+            </nav>
+        
+                    <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rogeriopradojcom';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            </article>
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        <a target="_blank" href="https://rogeriopradoj.com/">
+    <img src="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" class="thumbnail">
+</a>
+<ul class="list-unstyled social-list">
+    <a target="_blank" href="https://www.linkedin.com/in/rogeriopradoj">
+        <li class="social-element" id="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </li>
+    </a>
+    <a target="_blank" href="http://www.zend.com/en/yellow-pages/ZEND024088">
+        <li class="social-element" id="php">
+            <i class="fa fa-code"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://github.com/rogeriopradoj/">
+        <li class="social-element" id="github">
+            <i class="fa fa-github-alt"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://plus.google.com/+RogerioPradoDeJesus?rel=author">
+        <li class="social-element" id="google">
+            <i class="fa fa-google-plus"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://twitter.com/rogeriopradoj">
+        <li class="social-element" id="twitter">
+            <i class="fa fa-twitter"></i>
+        </li>
+    </a>
+    <a href="https://rogeriopradoj.com/feed/">
+        <li class="social-element" id="rss">
+            <i class="fa fa-rss"></i>
+        </li>
+    </a>
+</ul>
+
+<div class="well">
+    <h4>
+        <p>ROGERIO PRADO J | rogeriopradoj.com</p>
+        <small>Desenvolvimento e TI em geral</small>    </h4>
+</div>
+<div class="well">
+    <h4>Arquivo</h4>
+    <ul class="nav">
+        <li><a class="btn btn-block btn-xs btn-info" href="https://rogeriopradoj.com/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="https://rogeriopradoj.com/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+    </ul>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c5c04e17cf662208c9474ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+    &copy; 2020 <a target="_blank" href="https://rogeriopradoj.com/">Rogerio Prado de Jesus</a>
+    <span class="pull-right">
+        Source code on <a target="_blank" href="https://github.com/rogeriopradoj/rogeriopradoj.com">GitHub</a> - Powered by <a target="_blank" href="https://sculpin.io">Sculpin</a>
+    </span>
+</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/readingTime.min.js"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+                    </body>
+</html>

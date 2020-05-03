@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral</title>
+
+        <base href="https://rogeriopradoj.com/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral">
+            <meta name="description" content="Olá pessoal, tudo bem? Como andam as contribuições?
+
+*Se quiser saber mais sobre como contribuir com projetos open source, veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!
+
+Hoje vamos ver como contribuir criando um novo pacote para ...">
+    <meta name="keywords" content="rogeriopradoj, , 30contribs, homebrew, hostess, go-get, go-clean" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" />
+    <meta property="og:url" content="https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/" />
+    <meta property="og:description" content="Olá pessoal, tudo bem? Como andam as contribuições?
+
+*Se quiser saber mais sobre como contribuir com projetos open source, veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!
+
+Hoje vamos ver como contribuir criando um novo pacote para ..." />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+    <meta name="twitter:image:src" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg">
+    <meta name="twitter:title" content="Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs" />
+    <meta name="twitter:description" content="Olá pessoal, tudo bem? Como andam as contribuições?
+
+*Se quiser saber mais sobre como contribuir com projetos open source, veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!
+
+Hoje vamos ver como contribuir criando um novo pacote para ..." />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
+
+        <link rel="search" href="https://rogeriopradoj.com/search.xml" type="application/opensearchdescription+xml" title="ROGERIO PRADO J | rogeriopradoj.com"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="https://rogeriopradoj.com/atom.xml" title="ROGERIO PRADO J | rogeriopradoj.com activity feed" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23860787-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23860787-1', { 'optimize_id': 'GTM-K94X8R5'});
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container header-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand async" href="https://rogeriopradoj.com/">Blog</a>
+            <div class="preloader"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about/">Sobre / About / Acerca</a></li>
+                <li><a href="slides/">Slides</a></li>
+                <li><a href="pradoj-com/">PradoJ.com</a></li>
+                <li><a href="contato/">Contato / Contact</a></li>
+                <li><a href="gift/">Gift / Apoie / Doe</a></li>
+                <li><a href="livro/">Meu Livro</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" id="search-form" role="search" method="get" action="https://rogeriopradoj.com/search/">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" name="q">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="#top" class="to-top hidden">
+                        <i class="fa fa-arrow-up"></i> To top
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="https://rogeriopradoj.com/">ROGERIO PRADO J | rogeriopradoj.com</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                            <article class="post">
+        <header>
+            <h2 class="post-title">Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://rogeriopradoj.com/about">Rogerio Prado de Jesus</a> em <time datetime="2016-09-26T06:15:00+00:00" pubdate><span>26/09/2016</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div class="post-content">
+            <p>Olá pessoal, tudo bem? Como andam as contribuições?</p>
+
+<p><sub>*Se quiser saber mais sobre como contribuir com projetos open source, <a href="2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade">veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!</a></sub></p>
+
+<p>Hoje vamos ver como contribuir criando um novo pacote para o <a href="http://brew.sh">Homebrew</a>, que é um ótimo gerenciador de pacotes para o macOS (similar ao <a href="https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg">apt-get, yum, dnf</a> ou <a href="https://chocolatey.org/">chocolatey</a>).</p>
+
+<p><img src="assets/images/2016/09/homebrew-page.png" alt="homebrew website" />
+<em>Homebrew website: <a href="http://brew.sh">http://brew.sh</a></em></p>
+
+<hr />
+
+<p><a href="/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs//#parabens-rodrigo" id="parabens-rodrigo">🍺</a>E também dar parabéns para o <a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!">@royopa! 30 anos! #30contribs!</a></p>
+
+<p><a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!"><img src="assets/images/2016/09/giphy-cheers.gif" alt="giphy cheers" /></a>
+<a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!"><em>Parabéns, @royopa, parça! Fonte: http://www.reactiongifs.com/r/drj1NmK.gif</em></a></p>
+
+<hr />
+
+<p>Antes de começar a falar direto sobre a contribuição, vamos falar por que cheguei nisso!</p>
+
+<h3 id="motiva%C3%A7%C3%A3o%3A-hostess">Motivação: Hostess</h3>
+
+<p>Descobri uma ferramenta bem bacana para gerenciar nosso <code>/etc/hosts</code>:</p>
+
+<blockquote>
+  <p><strong><a href="https://github.com/cbednarski/hostess">cbednarski/hostess</a></strong></p>
+  
+  <p>An idempotent command-line utility for managing your /etc/hosts file.</p>
+  
+  <p>-- https://github.com/cbednarski/hostess</p>
+</blockquote>
+
+<p>Ele é uma ferramenta escrita em <a href="https://golang.org/">golang</a>, **, e na sua versão 0.2.1 tem como forma de instalação oficial os <a href="https://github.com/cbednarski/hostess/releases">binários pré-compilados no GitHub</a> ou, para quem quer mexer de alguma forma no código fonte, via <code>go get</code> ou compilando diretamente do repositório.</p>
+
+<h3 id="instala%C3%A7%C3%A3o-de-aplicativos-de-forma-autom%C3%A1tica-e-gerenci%C3%A1vel">Instalação de aplicativos de forma automática e gerenciável</h3>
+
+<p>Mas eu queria instalar a ferramenta no meu macOS de uma forma que conseguisse facilmente listar depois os aplicativos instalados, simplificando a reinstalação do sistema se necessário - acabei de reinstalar o macOS Sierra 10.12 de <a href="http://macs.about.com/od/macOSSierra/ss/How-to-Perform-a-Clean-Install-of-macOS-Sierra.htm">forma limpa</a>, e a reinstalação dos aplicativos e bibliotecas por meio de uma <a href="https://gist.github.com/rogeriopradoj/611cf631a723b6aa211d6d80c2240052">listagem programática foi excelente</a>!</p>
+
+<p>Aproveitando, para quem tem macOS, segue a lista dos gerenciadores de aplicativos, pacotes, bibliotecas e configurações que uso e recomendo junto do <a href="http://brew.sh">Homebrew</a>:</p>
+
+<ul>
+<li><a href="https://caskroom.github.io">Homebrew Cask</a>: Homebrew para aplicações;</li>
+<li><a href="https://github.com/argon/mas">mas-cli</a>: Linha de comando para a Mac App Store;</li>
+<li><a href="https://github.com/lra/mackup">mackup</a>: Sincroniza as configurações dos seus aplicativos em vários tipos de armazenamento como Drobpox, Google Drive ou Git. <a href="https://db.tt/I2yXtpGI">Eu uso o Dropbox pois é o padrão e funciona muito bem</a>.</li>
+</ul>
+
+<h3 id="um-espa%C3%A7o-para-contribuir%3A-hostess-no-homebrew">Um espaço para contribuir: Hostess no Homebrew</h3>
+
+<p>Como vimos, segundo a página oficial, o <strong>hostess</strong> ainda não estava disponível para instalação via gerenciadores. Então a primeira coisa foi ver se já tinha algum suporte no <strong>homebrew</strong>. Com o comando <code>brew search</code> fazemos uma consulta tanto nos repositórios do <strong>homebrew</strong> quanto do <strong>homebrew-cask</strong>:</p>
+
+<pre><code>$ brew search hostess
+No formula found for "hostess".
+==&gt; Searching pull requests...
+
+</code></pre>
+
+<p>Que beleza: uma oportunidade para contribuição com open source! (aqui alguns commits já aceitos no <a href="https://github.com/Homebrew/homebrew-core/commits?author=rogeriopradoj">homebrew</a> e no <a href="https://github.com/caskroom/homebrew-cask/commits?author=rogeriopradoj">homebrew-cask</a>).</p>
+
+<h3 id="come%C3%A7ando-a-contribuir">Começando a contribuir</h3>
+
+<p><img src="assets/images/2016/09/giphy-ready-go.gif" alt="giphy ready go" />
+<em>Fonte: <a href="http://imgur.com/gallery/ccd3Fjs">http://imgur.com/gallery/ccd3Fjs</a></em></p>
+
+<h4 id="reposit%C3%B3rio-principal-no-github">Repositório principal no GitHub</h4>
+
+<p>Primeiro, tinha que saber para qual lugar mandar o Pull Request. Por ser um pacote do sistema operacional, e não um aplicativo, o <strong>homebrew</strong> era o melhor lugar.</p>
+
+<p>É importante frisar: cada um dos pacotes que o <strong>homebrew</strong> sabe gerenciar ele chama de <em>Formula</em>. E aí fui buscar o repositório do GitHub onde ficam essas fórmulas oficiais, que é o https://github.com/Homebrew/homebrew-core.</p>
+
+<h4 id="contributing.md">Contributing.md</h4>
+
+<p>A boa prática nos diz que dentro do repositório, quando vamos fazer uma contribuição, <a href="https://github.com/blog/1184-contributing-guidelines">devemos ir direto para o arquivo CONTRIBUTING.md</a>. Nesse repositório somos ensinados sobre como <a href="https://github.com/Homebrew/homebrew-core/blob/master/CONTRIBUTING.md#add-a-new-formula-for-foo-version-234-from-url">submeter uma nova fórmula</a>.</p>
+
+<h3 id="criando-o-arquivo-da-f%C3%B3rmula">Criando o arquivo da fórmula</h3>
+
+<p>Então vamos lá:</p>
+
+<pre><code>$ brew create https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz
+</code></pre>
+
+<p>O comando cria um esqueleto para a fórmula no seguinte caminho: <code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb"</code>. O conteúdo dele ficou assim:</p>
+
+<pre><code class="ruby"># Documentation: https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
+#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
+# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+
+class Hostess &lt; Formula
+  desc ""
+  homepage ""
+  url "https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz"
+  version "0.2.1"
+  sha256 "3be0198f358d49aa9b17fd8622ab5d4e3732dc45226fe1804f245a0773504aee"
+
+  # depends_on "cmake" =&gt; :build
+  depends_on :x11 # if your formula requires any X11/XQuartz components
+
+  def install
+    # ENV.deparallelize  # if your formula fails when building in parallel
+
+    # Remove unrecognized options if warned by configure
+    system "./configure", "--disable-debug",
+                          "--disable-dependency-tracking",
+                          "--disable-silent-rules",
+                          "--prefix=#{prefix}"
+    # system "cmake", ".", *std_cmake_args
+    system "make", "install" # if this fails, try separate make/make install steps
+  end
+
+  test do
+    # `test do` will create, run in and delete a temporary directory.
+    #
+    # This test will fail and we won't accept that! It's enough to just replace
+    # "false" with the main program this formula installs, but it'd be nice if you
+    # were more thorough. Run the test with `brew test hostess`. Options passed
+    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
+    #
+    # The installed folder is not in the path, so use the entire path to any
+    # executables being tested: `system "#{bin}/program", "do", "something"`.
+    system "false"
+  end
+end
+
+</code></pre>
+
+<p>Como vimos, é apenas um arquivo de exemplo, escrito em <a href="https://www.ruby-lang.org/en/">Ruby</a>. De forma a me basear na construção do arquivo adequadamente, estudei outras fórmulas, dentro do repositório, que instalavam pacotes Golang. Para achar todos os arquivos que pudessem me ajudar, fiz o seguinte:</p>
+
+<pre><code>$ pt 'depends_on "go" =&gt; :build' /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/
+#
+# ... várias fórmulas...
+
+</code></pre>
+
+<p><sub>**Estou usando o pt para busca: https://github.com/monochromegane/the_platinum_searcher. Você pode usar sua IDE, editor de texto etc.*</sub></p>
+
+<p>Depois de estudar o código das outras fórmulas (obrigado open source!), fiz as alterações e o meu arquivo <code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb</code> final ficou assim:</p>
+
+<pre><code class="ruby">class Hostess &lt; Formula
+  desc "Idempotent command-line utility for managing your /etc/hosts file"
+  homepage "https://github.com/cbednarski/hostess"
+  url "https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz"
+  sha256 "3be0198f358d49aa9b17fd8622ab5d4e3732dc45226fe1804f245a0773504aee"
+  head "https://github.com/cbednarski/hostess.git"
+
+  depends_on "go" =&gt; :build
+
+  def install
+    (buildpath + "src/github.com/cbednarski/hostess").install Dir[buildpath/"*"]
+    cd "src/github.com/cbednarski/hostess/cmd/hostess" do
+      ENV["GOPATH"] = buildpath
+      system "go", "install"
+    end
+    bin.install "bin/hostess" =&gt; "hostess"
+  end
+
+  test do
+    system bin/"hostess", "--help"
+  end
+end
+
+</code></pre>
+
+<h3 id="testando-a-instala%C3%A7%C3%A3o-do-arquivo">Testando a instalação do arquivo</h3>
+
+<p>O passo seguinte foi testar a instalação, seguindo a orientação lá do <a href="https://github.com/Homebrew/homebrew-core/blob/master/CONTRIBUTING.md#add-a-new-formula-for-foo-version-234-from-url">CONTRIBUTING.md</a>:</p>
+
+<pre><code>$ brew install --debug --verbose /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+
+
+/usr/local/Homebrew/Library/Homebrew/brew.rb (Formulary::FromPathLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+/usr/local/Homebrew/Library/Homebrew/brew.rb (Formulary::FormulaLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/go.rb
+==&gt; Using the sandbox
+/usr/bin/sandbox-exec -f /tmp/homebrew20160925-23319-7e1u4k.sb nice /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -W0 -I /usr/local/Homebrew/Library/Homebrew -- /usr/local/Homebrew/Library/Homebrew/build.rb /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb --verbose --debug
+/usr/local/Homebrew/Library/Homebrew/build.rb (Formulary::FromPathLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+/usr/local/Homebrew/Library/Homebrew/build.rb (Formulary::FormulaLoader): loading /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/go.rb
+==&gt; Downloading https://github.com/cbednarski/hostess/archive/v0.2.1.tar.gz
+Already downloaded: /Users/rogerio/Library/Caches/Homebrew/hostess-0.2.1.tar.gz
+==&gt; Verifying hostess-0.2.1.tar.gz checksum
+tar xvzf /Users/rogerio/Library/Caches/Homebrew/hostess-0.2.1.tar.gz
+x hostess-0.2.1/
+x hostess-0.2.1/.gitignore
+x hostess-0.2.1/.travis.yml
+x hostess-0.2.1/Dockerfile
+x hostess-0.2.1/LICENSE
+x hostess-0.2.1/Makefile
+x hostess-0.2.1/README.md
+x hostess-0.2.1/cmd/
+x hostess-0.2.1/cmd/hostess/
+x hostess-0.2.1/cmd/hostess/hostess.go
+x hostess-0.2.1/commands.go
+x hostess-0.2.1/commands_test.go
+x hostess-0.2.1/hostfile.go
+x hostess-0.2.1/hostfile_test.go
+x hostess-0.2.1/hostlist.go
+x hostess-0.2.1/hostlist_test.go
+x hostess-0.2.1/hostname.go
+x hostess-0.2.1/hostname_test.go
+x hostess-0.2.1/test-fixtures/
+x hostess-0.2.1/test-fixtures/hostfile1
+x hostess-0.2.1/vendor/
+x hostess-0.2.1/vendor/github.com/
+x hostess-0.2.1/vendor/github.com/codegangsta/
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/LICENSE
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/app.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/cli.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/command.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/context.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/flag.go
+x hostess-0.2.1/vendor/github.com/codegangsta/cli/help.go
+==&gt; go install
+==&gt; Cleaning
+Fixing /usr/local/Cellar/hostess/0.2.1/bin/hostess permissions from 755 to 555
+==&gt; Finishing up
+ln -s ../Cellar/hostess/0.2.1/bin/hostess hostess
+==&gt; Summary
+🍺  /usr/local/Cellar/hostess/0.2.1: 2 files, 3.9M, built in 2 seconds
+
+</code></pre>
+
+<p>É isso aí, instalou!</p>
+
+<p>Aqui já aproveitamos e rodamos o comando de teste:</p>
+
+<pre><code>$ brew test /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+
+Testing hostess
+==&gt; Using the sandbox
+==&gt; /usr/local/Cellar/hostess/0.2.1/bin/hostess --help
+</code></pre>
+
+<p>Ok, testes executados com sucesso!</p>
+
+<h3 id="script-de-auditoria-e-um-bug-no-homebrew">Script de auditoria e um bug no Homebrew</h3>
+
+<p>Agora, seguindo os próximos passos para a contribuição, vamos fazer a auditoria:</p>
+
+<pre><code>$ brew audit --new-formula /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+
+Error: type mismatch: String given
+Please report this bug:
+    https://git.io/brew-troubleshooting
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `=~'
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `block in search_tap'
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `select'
+/usr/local/Homebrew/Library/Homebrew/cmd/search.rb:153:in `search_tap'
+/usr/local/Homebrew/Library/Homebrew/dev-cmd/audit.rb:347:in `block (2 levels) in audit_formula_name'
+</code></pre>
+
+<p>Ops... Deu algum problema: <strong><em>__Error__: type mismatch: String given</em></strong>. Abri uma <a href="https://github.com/Homebrew/homebrew-core/issues/5249">issue referente ao bug no repositório do homebrew</a>, já recebi a resposta (minha instalação estava desatualizada), e quando rodei novamente, tudo certo:</p>
+
+<pre><code>$ brew audit --new-formula /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hostess.rb
+</code></pre>
+
+<p>Dessa vez, o comando não deu nenhuma saída, indicando que a fórmula passou OK pela auditoria.</p>
+
+<h3 id="fork%2C-branch%2C-commit">Fork, Branch, Commit</h3>
+
+<p>Próximo passo, fazer o commit num branch separado (<a href="http://codeinthehole.com/writing/pull-requests-and-other-good-practices-for-teams-using-github/#work-on-a-story">boa prática</a>), já preparando para o Pull Request:</p>
+
+<pre><code># garantir que está na pasta correta
+$ cd $(brew --repository homebrew/core)
+
+# fazer fork do repositório no github, usando a ferramenta cli hub, recomendadíssima (https://hub.github.com/)
+$ hub fork
+
+# criar branch separado
+$ git checkout -b new-formula-hostess
+
+# fazer o commit
+$ git add Formula/hostess.rb
+$ git commit -m "hostess 0.2.1 (new formula)"
+</code></pre>
+
+<h3 id="pull-request">Pull Request</h3>
+
+<p>Commit feito, hora de criar o Pull Request:</p>
+
+<pre><code># primeiro mandar as alterações lá para o meu fork no GitHub
+# (rogeriopradoj é o nome do meu git remote)
+$ git push rogeriopradoj new-formula-hostess
+
+# caso tiver algum problema aqui referente a 'shallow update not allowed' rode a seguinte linha:
+# $ git fetch --unshallow rogeriopradoj &amp;&amp; git push rogeriopradoj new-formula-hostess
+
+# e termine fazendo o pull request
+$ hub pull-request
+#
+# https://github.com/Homebrew/homebrew-core/pull/5257
+</code></pre>
+
+<p>Yeah! O Pull Request foi feito, e a linha de comando já retorna o endereço: <a href="https://github.com/Homebrew/homebrew-core/pull/5257">https://github.com/Homebrew/homebrew-core/pull/5257</a>.</p>
+
+<p><img src="assets/images/2016/09/pull-request-for-hostess-new-homebrew-formula.png" alt="pull request aberto" /></p>
+
+<p>Agora é só esperar o resultado da avaliação da contribuição em alguns dias (que deve ser feita pelos mantenedores do projeto seguindo <a href="https://github.com/Homebrew/brew/blob/master/docs/How-To-Open-a-Homebrew-Pull-Request-(and-get-it-merged).md#how-to-open-a-homebrew-pull-request-and-get-it-merged">esse documento</a>).</p>
+
+<h3 id="considera%C3%A7%C3%B5es-finais">Considerações finais</h3>
+
+<p>Costumo falar que <a href="2015-11-04-becoming-a-contributor-open-sourcer-and-beyond-palestra-do-tdc-2014-trilha-php">contribuir para projetos open source tem muito de motivação e estilo</a>, mas tem um fator que também é muito importante: oportunidade! Aqui, percebi a oportunidade quando uma biblioteca não estava disponível, e podia ser incluída via contribuição.</p>
+
+<p>Meu irmão <a href="https://github.com/royopa">Rodrigo, o @royopa</a> fala que a motivação dele é contribuir de qualquer forma para todo projeto que ele usar sempre que ele conseguir (souber como fazer e tiver a oportunidade!).</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/home?status=Feliz%20anivers%C3%A1rio,%20%40royopa,%20muitas%20felicidades!%20J%C3%A1%20chegou%20nos%2030%20anos!%20https%3A//rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/%23parabens-rodrigo%20%2330contribs" title="Dê os parabéns para o Rodrigo!"><strong>E reforçando, hoje 26 de setembro é aniversário dele de 30 anos, então: Parabéns, Rodrigo, muitas felicidades!</strong></a></p>
+</blockquote>
+
+<p>Eu tento seguir isso que ele fala também. Tanto que boa parte das <a href="https://github.com/rogeriopradoj">minhas contribuições no GitHub são para projetos abertos</a> que uso constantemente.</p>
+
+<p>Por fim, nesse artigo conhecemos e vimos como contribuir para o <strong>Homebrew</strong>, criando uma fórmula para o <strong>hostess</strong>, passamos por vários softwares para instalação de aplicativos de forma automática e gerenciável (<strong>Homebrew Cask</strong>, <strong>mas-cli</strong> e <strong>mackup</strong> com <a href="https://db.tt/I2yXtpGI">Dropbox</a>).</p>
+
+<p>É isso aí, se quiser falar comigo pode usar os comentários abaixo e os <a href="https://rogeriopradoj.com/about/">contatos do RogerioPradoJ.com</a>.</p>
+
+<p>Até a próxima!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+
+        </div>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Se gostou do artigo, compartilhe</small></legend>
+            <div class="buttons">
+                                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Frogeriopradoj.com%2F2016%2F09%2F26%2Fcomo-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs%2F%2F/" target="_blank"
+                   class="btn btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/share?url=https%3A%2F%2Frogeriopradoj.com%2F2016%2F09%2F26%2Fcomo-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs%2F%2F&text=Como%20Contribuir%20com%20o%20Homebrew%20para%20macOS%20e%20Feliz%20Anivers%C3%A1rio%20Rodrigo%20%2330contribs&via=rogeriopradoj" target="_blank"
+                   class="btn btn-sm btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frogeriopradoj.com%2F2016%2F09%2F26%2Fcomo-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs%2F%2F&title=Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs&source=https://rogeriopradoj.com" target="_blank"
+                   class="btn btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Gostou muito mesmo do conteúdo e quer apoiar financeiramente? É fácil! Use uma das opções abaixo:</small></legend>
+
+            <ul class="list">
+                <li><p><a href="https://rogeriopradoj.com/gift/">Gift / Apoie / Doe</a></p></li>
+                <li><p><a href="https://rogeriopradoj.com/livro/">Meu Livro: Modernização de Aplicações Legadas em PHP</a></p></li>
+            </ul>
+
+        </fieldset>
+
+        <hr>
+
+        <ul class="list-unstyled">
+                            <li class="categories-list">
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/30contribs/">30contribs</a>
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/mac/">mac</a>
+                                    </li>
+                                        <li class="tags-list">
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/30contribs/">30contribs</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/homebrew/">homebrew</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/hostess/">hostess</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/go-get/">go get</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/go-clean/">go clean</a>
+                                    </li>
+                        <li class="clearfix"></li>
+        </ul>
+
+                    <nav class="well">
+                <ul class="list-unstyled other-articles row">
+                    <li class="col-sm-6 col-xs-12">
+                                                    <a class="previous" href="https://rogeriopradoj.com/2016/03/20/gerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine//">
+                                <i class="fa fa-angle-double-left"></i>
+                                <span class="title">Gerenciamento de Recursos de Hardware no Docker e Como Instalar Pacotes de Sistema Operacional no docker-machine</span>
+                            </a>
+                                            </li>
+                    <li class="col-sm-6 col-xs-12 text-right">
+                                                    <a class="next" href="https://rogeriopradoj.com/2016/09/27/contribuicao-com-open-source-mais-do-que-codigo-labhr-agradeca-todos-contribuidores-30contribs//">
+                                <span class="title">Contribuição com Open Source: Mais Do Que Código - #LABHR - Agradeça a Todos os Contribuidores - #30contribs</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                            </li>
+                </ul>
+            </nav>
+        
+                    <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rogeriopradojcom';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            </article>
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        <a target="_blank" href="https://rogeriopradoj.com/">
+    <img src="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" class="thumbnail">
+</a>
+<ul class="list-unstyled social-list">
+    <a target="_blank" href="https://www.linkedin.com/in/rogeriopradoj">
+        <li class="social-element" id="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </li>
+    </a>
+    <a target="_blank" href="http://www.zend.com/en/yellow-pages/ZEND024088">
+        <li class="social-element" id="php">
+            <i class="fa fa-code"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://github.com/rogeriopradoj/">
+        <li class="social-element" id="github">
+            <i class="fa fa-github-alt"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://plus.google.com/+RogerioPradoDeJesus?rel=author">
+        <li class="social-element" id="google">
+            <i class="fa fa-google-plus"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://twitter.com/rogeriopradoj">
+        <li class="social-element" id="twitter">
+            <i class="fa fa-twitter"></i>
+        </li>
+    </a>
+    <a href="https://rogeriopradoj.com/feed/">
+        <li class="social-element" id="rss">
+            <i class="fa fa-rss"></i>
+        </li>
+    </a>
+</ul>
+
+<div class="well">
+    <h4>
+        <p>ROGERIO PRADO J | rogeriopradoj.com</p>
+        <small>Desenvolvimento e TI em geral</small>    </h4>
+</div>
+<div class="well">
+    <h4>Arquivo</h4>
+    <ul class="nav">
+        <li><a class="btn btn-block btn-xs btn-info" href="https://rogeriopradoj.com/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="https://rogeriopradoj.com/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+    </ul>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c5c04e17cf662208c9474ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+    &copy; 2020 <a target="_blank" href="https://rogeriopradoj.com/">Rogerio Prado de Jesus</a>
+    <span class="pull-right">
+        Source code on <a target="_blank" href="https://github.com/rogeriopradoj/rogeriopradoj.com">GitHub</a> - Powered by <a target="_blank" href="https://sculpin.io">Sculpin</a>
+    </span>
+</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/readingTime.min.js"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+                    </body>
+</html>

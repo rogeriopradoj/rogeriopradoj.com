@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral</title>
+
+        <base href="https://rogeriopradoj.com/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral">
+            <meta name="description" content="Olá pessoal!
+
+Se quiser ir direto para a resposta a pergunta título, vá para essa parte do artigo. Primeiro eu vou contar por que precisei aprender a fazer isso.
+
+De onde surgiu a necessidade?
+
+Estava vendo os slides do Wellington Silva da apresentação Aplicações 12 Fatores - Melhor com Docker que ele fez ...">
+    <meta name="keywords" content="rogeriopradoj, , docker, docker-machine, boot2docker, darkmira-tour, phpsp, package-manager, gerenciador-pacotes, apt, yum, tce-load" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Gerenciamento de Recursos de Hardware no Docker e Como Instalar Pacotes de Sistema Operacional no docker-machine" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" />
+    <meta property="og:url" content="https://rogeriopradoj.com/2016/03/20/gerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine/" />
+    <meta property="og:description" content="Olá pessoal!
+
+Se quiser ir direto para a resposta a pergunta título, vá para essa parte do artigo. Primeiro eu vou contar por que precisei aprender a fazer isso.
+
+De onde surgiu a necessidade?
+
+Estava vendo os slides do Wellington Silva da apresentação Aplicações 12 Fatores - Melhor com Docker que ele fez ..." />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+    <meta name="twitter:image:src" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg">
+    <meta name="twitter:title" content="Gerenciamento de Recursos de Hardware no Docker e Como Instalar Pacotes de Sistema Operacional no docker-machine" />
+    <meta name="twitter:description" content="Olá pessoal!
+
+Se quiser ir direto para a resposta a pergunta título, vá para essa parte do artigo. Primeiro eu vou contar por que precisei aprender a fazer isso.
+
+De onde surgiu a necessidade?
+
+Estava vendo os slides do Wellington Silva da apresentação Aplicações 12 Fatores - Melhor com Docker que ele fez ..." />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
+
+        <link rel="search" href="https://rogeriopradoj.com/search.xml" type="application/opensearchdescription+xml" title="ROGERIO PRADO J | rogeriopradoj.com"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="https://rogeriopradoj.com/atom.xml" title="ROGERIO PRADO J | rogeriopradoj.com activity feed" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23860787-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23860787-1', { 'optimize_id': 'GTM-K94X8R5'});
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container header-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand async" href="https://rogeriopradoj.com/">Blog</a>
+            <div class="preloader"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about/">Sobre / About / Acerca</a></li>
+                <li><a href="slides/">Slides</a></li>
+                <li><a href="pradoj-com/">PradoJ.com</a></li>
+                <li><a href="contato/">Contato / Contact</a></li>
+                <li><a href="gift/">Gift / Apoie / Doe</a></li>
+                <li><a href="livro/">Meu Livro</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" id="search-form" role="search" method="get" action="https://rogeriopradoj.com/search/">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" name="q">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="#top" class="to-top hidden">
+                        <i class="fa fa-arrow-up"></i> To top
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="https://rogeriopradoj.com/">ROGERIO PRADO J | rogeriopradoj.com</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                            <article class="post">
+        <header>
+            <h2 class="post-title">Gerenciamento de Recursos de Hardware no Docker e Como Instalar Pacotes de Sistema Operacional no docker-machine</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://rogeriopradoj.com/about">Rogerio Prado de Jesus</a> em <time datetime="2016-03-20T06:22:00+00:00" pubdate><span>20/03/2016</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div class="post-content">
+            <p>Olá pessoal!</p>
+
+<p>Se quiser ir direto para a resposta a pergunta título, vá para <a href="https://rogeriopradoj.com/2016/03/20/gerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine//#acessando-a-vm-via-docker-machine-ssh">essa parte do artigo</a>. Primeiro eu vou contar por que precisei aprender a fazer isso.</p>
+
+<h3 id="de-onde-surgiu-a-necessidade%3F">De onde surgiu a necessidade?</h3>
+
+<p>Estava vendo os slides do Wellington Silva da apresentação <a href="https://speakerdeck.com/wsilva/12-factor-melhor-com-docker">Aplicações 12 Fatores - Melhor com Docker</a> que ele fez no <a href="https://br.darkmiratour.com/">Darkmira Tour PHP 2016</a>, onde ele faz de forma exemplar as relações entre a <a href="http://12factor.net/">metodologia 12 factor</a>, da galera da Heroku, com o <a href="https://www.docker.com/">docker</a>. Como estou cada dia mais conhecendo docker, me espantei quando ele mostrou dois comandos: <code>docker run ... --memory=512M</code> e <code>docker update --memory=1GB ...</code>.</p>
+
+<p>No mundo da virtualização é normal pensar na definição da capacidade de Hardware (além dos Softwares e Sistema Operacional) que serão reservadas para aquela máquina virtual. Costumamos fazer ou na interface gráfica da ferramenta, ou então via scripts diretos na CLI do <a href="https://en.wikipedia.org/wiki/Hypervisor">hypervisor</a> ou ainda por meio do <a href="https://www.vagrantup.com/">Vagrant</a>. Assim, quando pensamos na VM já temos essa definição do "tamanho dos recursos": quantidade de CPUs, quantidade de memória RAM, quantidade de disco etc.</p>
+
+<p>Já no mundo do docker sempre percebi que o foco é mais na aplicação e serviços rodando dentro do container. Pensei: mas no Dockerfile nunca vi serem feitos essas definições de recurso: o arquivo geralmente é feito pensando mais no código e instalações da camada de software (faço um paralelo aqui com o Vagrantfile, onde as duas situações podem ser tratatadas). Fui buscar mais informações, e achei duas fontes interessantes. A primeira é o artigo <a href="https://goldmann.pl/blog/2014/09/11/resource-management-in-docker/">Resource management in Docker</a>, onde Marek Goldmann faz uma visão geral sobre <code>cgroups</code> e como é possível gerenciar CPU, memória e disco nos containers.</p>
+
+<p>O segundo foi um <a href="https://github.com/agileek/docker/tree/master/cpuset-test">repositório no GitHub</a>, o contendo o Dockerfile da imagem docker <a href="https://hub.docker.com/r/agileek/cpuset-test/"><code>agileek/cpuset-test</code></a> para que fosse possível testar de forma rápida pelo menos a flag <code>--cpuset-cpus</code> do comando <code>docker run</code>. No vídeo de apresentação da imagem o negócio é quase instantâneo: ele roda o container e as cpus começam a fritar. E usando a flag <code>--cpuset-cpus</code>, você só faz uma parte delas fritar, e tudo é possível acompanhar por exemplo pelo <a href="http://hisham.hm/htop/">htop</a>.</p>
+
+<p>É isso que fui fazer. Como a imagem é bem pequena (1.5MB apenas, é só um binário em golang, ele roda o <a href="https://github.com/patrickmn/cpuburn">cpuburn</a> lá dentro), tudo parecia que ia ser muito rápido.</p>
+
+<p>Como estou usando o OS X, primeiro subi minha docker-machine:</p>
+
+<pre><code>$ dockerup
+
+# é um alias de docker-machine start dev &amp;&amp; eval "$(docker-machine env dev)"
+# e só criei isso pois sou fã de Vagrant e do "vagrant up" ;-)
+</code></pre>
+
+<p>Em seguida já fui rodar o <code>docker run</code> e, como não tinha a imagem ainda na minha máquina, ela foi baixada e já começou a executar:</p>
+
+<pre><code>$ docker run -it --rm --cpuset-cpus=0,1 agileek/cpuset-test
+
+Unable to find image 'agileek/cpuset-test:latest' locally
+latest: Pulling from agileek/cpuset-test
+acc9a6499096: Pull complete
+97ff6384ee3c: Pull complete
+Digest: sha256:b1217ec9cf830819904b1e79c1b9c5acad07235bc8576bfb634d840d36995bed
+Status: Downloaded newer image for agileek/cpuset-test:latest
+Burning 8 CPUs/cores
+10 seconds
+20 seconds
+30 seconds
+40 seconds
+...
+</code></pre>
+
+<p>Abri um outro terminal, e como tenho um i7 quadcore (8 cores hyperthreading), fui olhar o <code>htop</code> para monitorar o uso de CPU. Ali em cima tinha pedido para ele fritar dois dos núcleos, o 0 e o 1:</p>
+
+<p><img src="assets/images/2016/03/1-htop-osx.png" alt="htop via os x" /></p>
+
+<p><img src="assets/images/2016/03/2-htop-osx.png" alt="htop via os x" /></p>
+
+<p>Ué? Não apareceu o que eu estava esperando. Ele parecia estar fazendo o stress em quatro cores, e não nos dois como eu havia pedido.</p>
+
+<h3 id="docker-machine%3A-vm-que-permite-usar-docker-em-sistemas-n%C3%A3o-linux">Docker-machine: VM que permite usar docker em sistemas não-Linux</h3>
+
+<p>Aí lembrei que, por estar no OS X, o docker engine/daemon (que é afetado pelo <code>docker run</code>) não está diretamente no meu computador: ele está dentro do docker-machine. O <a href="https://docs.docker.com/machine/">docker-machine</a> é a máquina virtual oficial do docker para possamos usar os containers de Linux (sobre o qual o docker é baseado) em outras sistemas operacionais.</p>
+
+<p>A existência dessa camada ficou mais clara quando vi qual processo que estava consumindo aquele monte de CPU: era o VBoxHeadless, do VirtualBox, justo o hypervisor onde a VM está rodando. Fui até olhar como estava a configuração da VM via GUI:</p>
+
+<p><img src="assets/images/2016/03/virtualbox-gui-cpus-docker-machine-dev.png" alt="PHP Experience capa" /></p>
+
+<h3 id="acessando-a-vm-via-docker-machine-ssh">Acessando a VM via docker-machine ssh</h3>
+
+<p>Tranquilo então, era só entrar na VM e rodar o <code>htop</code> por lá. Meu foco era apenas enxergar como que se refleteria o ajuste de CPUs no sistema operacional hospedeiro do docker (para quem usa Linux, ele próprio, para outros SOs, o Linux da VM do docker-machine) depois do comando <code>docker run</code> e a flag `--cpuset.</p>
+
+<pre><code>$ docker-machine ssh dev
+
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+ _                 _   ____     _            _
+| |__   ___   ___ | |_|___ \ __| | ___   ___| | _____ _ __
+| '_ \ / _ \ / _ \| __| __) / _` |/ _ \ / __| |/ / _ \ '__|
+| |_) | (_) | (_) | |_ / __/ (_| | (_) | (__|   &lt;  __/ |
+|_.__/ \___/ \___/ \__|_____\__,_|\___/ \___|_|\_\___|_|
+Boot2Docker version 1.10.3, build master : 625117e - Thu Mar 10 22:09:02 UTC 2016
+Docker version 1.10.3, build 20f81dd
+docker@dev:~$
+</code></pre>
+
+<p>Lá dentro fui rodar o <code>htop</code> e apareceu comando não encontrado:</p>
+
+<pre><code>docker@dev:~$ htop
+
+-sh: htop: not found
+</code></pre>
+
+<p>Tudo bem: fui tentar instalar o htop via <code>apt-get</code> ou <code>yum</code>, mas nenhum dos dois também estavam disponíveis:</p>
+
+<pre><code>docker@dev:~$ apt-get install htop
+
+-sh: apt-get: not found
+
+docker@dev:~$ yum install htop
+
+-sh: yum: not found
+</code></pre>
+
+<p>O que acontece é que é a distribuição Linux da docker-machine não é nem Debian-like (que costumam usar <code>apt-get</code>) nem RedHat-like (que costumam usar <code>yum</code>). A distribuição Linux que é utilizada é a Tiny Core Linux, que usa como gerenciador de pacotes a ferramenta <code>tce-load</code> (segue <a href="http://distro.ibiblio.org/tinycorelinux/tcz_2x.html">lista contendo vários dos pacotes oficiais</a>).</p>
+
+<p>Então, para finalmente completar a instalação foi só rodar:</p>
+
+<pre><code>docker@dev:~$ tce-load -wi htop
+
+htop.tcz.dep OK
+Downloading: ncurses.tcz
+Connecting to repo.tinycorelinux.net (89.22.99.37:80)
+ncurses.tcz          100% |***************************************************|   196k  0:00:00 ETA
+ncurses.tcz: OK
+Downloading: htop.tcz
+Connecting to repo.tinycorelinux.net (89.22.99.37:80)
+htop.tcz             100% |***************************************************|   116k  0:00:00 ETA
+htop.tcz: OK
+</code></pre>
+
+<p>E agora, abrir o <code>htop</code>:</p>
+
+<pre><code>docker@dev:~$ htop
+
+Error opening terminal: xterm-256color.
+</code></pre>
+
+<p>Puxa, mais um erro. Agora o problema era com a váriavel de ambiente $TERM. Foi só mudá-la para <code>xterm</code> da seguinte forma:</p>
+
+<pre><code>$ export TERM=xterm
+</code></pre>
+
+<p>E agora, de uma vez por todas, abrir o <code>htop</code>, e tudo funcionar!</p>
+
+<pre><code>docker@dev:~$ htop
+
+# HTOP instalado via gerenciador de pacotes tce-load
+</code></pre>
+
+<h3 id="teste-efetivo-do-docker-run-com-a-flag---cpuset-cpus">Teste efetivo do docker run com a flag --cpuset-cpus</h3>
+
+<p>Agora sim, consegui testar  aquela imagem docker com flag <code>--cpuset-cpus</code> do <code>docker run</code> e ver tudo acontecendo:</p>
+
+<p><img src="assets/images/2016/03/1-htop-docker-machine.png" alt="htop na vm docker-machine" /></p>
+
+<p><img src="assets/images/2016/03/2-htop-docker-machine.png" alt="htop na vm docker-machine" /></p>
+
+<p><img src="assets/images/2016/03/3-htop-docker-machine.png" alt="htop na vm docker-machine" /></p>
+
+<p><img src="assets/images/2016/03/4-htop-docker-machine.png" alt="htop na vm docker-machine" /></p>
+
+<p><img src="assets/images/2016/03/5-htop-docker-machine.png" alt="htop na vm docker-machine" /></p>
+
+<p><img src="assets/images/2016/03/6-htop-docker-machine.png" alt="htop na vm docker-machine" /></p>
+
+<h3 id="considera%C3%A7%C3%B5es-finais">Considerações finais</h3>
+
+<p>Primeiro, o docker está me fazendo aprender um monte de coisas, e isso é muito bom!</p>
+
+<p>Aqui, vimos primeiro que é possível sim fazer o gerenciamento de recursos em nível de hardware nos containers usando flags nos comandos que interagem com o docker engine/daemon, por exemplo o <code>docker run --cpuset-cpus</code>.</p>
+
+<p>Em seguida, percebemos que se existir uma camada de VM, os recursos que estão sendo gerenciados (como CPU, memória ou disco) não são da máquina hospedeira diretamente, mas sim dessa máquina virtual.</p>
+
+<p>Também que a distribuição Linux usada na VM criada pelo docker-machine é a Tiny Core Linux, que usa como gerenciador de pacotes o <code>tce-load</code>, e se for preciso, conseguimos fazer as instalações necessárias.</p>
+
+<p>Sobre a instalação de pacotes nesse sistema operacional, um ponto importante é que tudo que você fez será perdido na próxima atualização do docker-machine, que entende quaisquer alterações no SO feita pelo usuário como efêmeras, trazendo sempre uma nova versão com apenas os pacotes de fábrica. O que isso tudo quer dizer? Anote bem os comandos que você fizer quando usar o <code>tce-load</code> para poder reutilizá-los no futuro, quem sabe num <a href="https://gist.github.com/">Gist</a>.</p>
+
+<p>É isso aí, até a próxima!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+
+        </div>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Se gostou do artigo, compartilhe</small></legend>
+            <div class="buttons">
+                                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Frogeriopradoj.com%2F2016%2F03%2F20%2Fgerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine%2F%2F/" target="_blank"
+                   class="btn btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/share?url=https%3A%2F%2Frogeriopradoj.com%2F2016%2F03%2F20%2Fgerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine%2F%2F&text=Gerenciamento%20de%20Recursos%20de%20Hardware%20no%20Docker%20e%20Como%20Instalar%20Pacotes%20de%20Sistema%20Operacional%20no%20docker-machine&via=rogeriopradoj" target="_blank"
+                   class="btn btn-sm btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frogeriopradoj.com%2F2016%2F03%2F20%2Fgerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine%2F%2F&title=Gerenciamento de Recursos de Hardware no Docker e Como Instalar Pacotes de Sistema Operacional no docker-machine&source=https://rogeriopradoj.com" target="_blank"
+                   class="btn btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Gostou muito mesmo do conteúdo e quer apoiar financeiramente? É fácil! Use uma das opções abaixo:</small></legend>
+
+            <ul class="list">
+                <li><p><a href="https://rogeriopradoj.com/gift/">Gift / Apoie / Doe</a></p></li>
+                <li><p><a href="https://rogeriopradoj.com/livro/">Meu Livro: Modernização de Aplicações Legadas em PHP</a></p></li>
+            </ul>
+
+        </fieldset>
+
+        <hr>
+
+        <ul class="list-unstyled">
+                            <li class="categories-list">
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Docker/">Docker</a>
+                                    </li>
+                                        <li class="tags-list">
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/docker/">docker</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/docker-machine/">docker machine</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/boot2docker/">boot2docker</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/darkmira-tour/">darkmira tour</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/phpsp/">phpsp</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/package-manager/">package manager</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/gerenciador-pacotes/">gerenciador pacotes</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/apt/">apt</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/yum/">yum</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/tce-load/">tce load</a>
+                                    </li>
+                        <li class="clearfix"></li>
+        </ul>
+
+                    <nav class="well">
+                <ul class="list-unstyled other-articles row">
+                    <li class="col-sm-6 col-xs-12">
+                                                    <a class="previous" href="https://rogeriopradoj.com/2016/03/14/resultado-da-acao-30contribs-phpx-eu-contribuo-e-quero-ir-na-faixa-para-a-php-experience-2016//">
+                                <i class="fa fa-angle-double-left"></i>
+                                <span class="title">Resultado da ação #30contribs/phpx2016 - Eu contribuo e quero ir na faixa para a PHP Experience 2016</span>
+                            </a>
+                                            </li>
+                    <li class="col-sm-6 col-xs-12 text-right">
+                                                    <a class="next" href="https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs//">
+                                <span class="title">Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                            </li>
+                </ul>
+            </nav>
+        
+                    <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rogeriopradojcom';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            </article>
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        <a target="_blank" href="https://rogeriopradoj.com/">
+    <img src="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" class="thumbnail">
+</a>
+<ul class="list-unstyled social-list">
+    <a target="_blank" href="https://www.linkedin.com/in/rogeriopradoj">
+        <li class="social-element" id="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </li>
+    </a>
+    <a target="_blank" href="http://www.zend.com/en/yellow-pages/ZEND024088">
+        <li class="social-element" id="php">
+            <i class="fa fa-code"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://github.com/rogeriopradoj/">
+        <li class="social-element" id="github">
+            <i class="fa fa-github-alt"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://plus.google.com/+RogerioPradoDeJesus?rel=author">
+        <li class="social-element" id="google">
+            <i class="fa fa-google-plus"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://twitter.com/rogeriopradoj">
+        <li class="social-element" id="twitter">
+            <i class="fa fa-twitter"></i>
+        </li>
+    </a>
+    <a href="https://rogeriopradoj.com/feed/">
+        <li class="social-element" id="rss">
+            <i class="fa fa-rss"></i>
+        </li>
+    </a>
+</ul>
+
+<div class="well">
+    <h4>
+        <p>ROGERIO PRADO J | rogeriopradoj.com</p>
+        <small>Desenvolvimento e TI em geral</small>    </h4>
+</div>
+<div class="well">
+    <h4>Arquivo</h4>
+    <ul class="nav">
+        <li><a class="btn btn-block btn-xs btn-info" href="https://rogeriopradoj.com/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="https://rogeriopradoj.com/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+    </ul>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c5c04e17cf662208c9474ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+    &copy; 2020 <a target="_blank" href="https://rogeriopradoj.com/">Rogerio Prado de Jesus</a>
+    <span class="pull-right">
+        Source code on <a target="_blank" href="https://github.com/rogeriopradoj/rogeriopradoj.com">GitHub</a> - Powered by <a target="_blank" href="https://sculpin.io">Sculpin</a>
+    </span>
+</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/readingTime.min.js"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+                    </body>
+</html>

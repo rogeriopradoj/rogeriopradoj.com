@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral</title>
+
+        <base href="https://rogeriopradoj.com/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral">
+            <meta name="description" content="Olá, pessoal,
+
+Há tempos que não fazia uma limpeza no meu GitHub, seja para excluir projetos que não fazem mais sentido, forks que não ia mais utilizar, ou mesmo para atualizar algum repositório e me lembrar de tudo que venho estudando desde que conheci o GitHub (segundo o site dos caras, ...">
+    <meta name="keywords" content="rogeriopradoj, , composer, phing, php, phpcs, scrutinizer, travis" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Build e Integração Contínua no PHP com Composer, Phing, Travis-CI e Scrutinizer-CI" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" />
+    <meta property="og:url" content="https://rogeriopradoj.com/2013/09/10/build-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci/" />
+    <meta property="og:description" content="Olá, pessoal,
+
+Há tempos que não fazia uma limpeza no meu GitHub, seja para excluir projetos que não fazem mais sentido, forks que não ia mais utilizar, ou mesmo para atualizar algum repositório e me lembrar de tudo que venho estudando desde que conheci o GitHub (segundo o site dos caras, ..." />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+    <meta name="twitter:image:src" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg">
+    <meta name="twitter:title" content="Build e Integração Contínua no PHP com Composer, Phing, Travis-CI e Scrutinizer-CI" />
+    <meta name="twitter:description" content="Olá, pessoal,
+
+Há tempos que não fazia uma limpeza no meu GitHub, seja para excluir projetos que não fazem mais sentido, forks que não ia mais utilizar, ou mesmo para atualizar algum repositório e me lembrar de tudo que venho estudando desde que conheci o GitHub (segundo o site dos caras, ..." />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
+
+        <link rel="search" href="https://rogeriopradoj.com/search.xml" type="application/opensearchdescription+xml" title="ROGERIO PRADO J | rogeriopradoj.com"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="https://rogeriopradoj.com/atom.xml" title="ROGERIO PRADO J | rogeriopradoj.com activity feed" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23860787-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23860787-1', { 'optimize_id': 'GTM-K94X8R5'});
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container header-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand async" href="https://rogeriopradoj.com/">Blog</a>
+            <div class="preloader"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about/">Sobre / About / Acerca</a></li>
+                <li><a href="slides/">Slides</a></li>
+                <li><a href="pradoj-com/">PradoJ.com</a></li>
+                <li><a href="contato/">Contato / Contact</a></li>
+                <li><a href="gift/">Gift / Apoie / Doe</a></li>
+                <li><a href="livro/">Meu Livro</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" id="search-form" role="search" method="get" action="https://rogeriopradoj.com/search/">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" name="q">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="#top" class="to-top hidden">
+                        <i class="fa fa-arrow-up"></i> To top
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="https://rogeriopradoj.com/">ROGERIO PRADO J | rogeriopradoj.com</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                            <article class="post">
+        <header>
+            <h2 class="post-title">Build e Integração Contínua no PHP com Composer, Phing, Travis-CI e Scrutinizer-CI</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://rogeriopradoj.com/about">Rogerio Prado de Jesus</a> em <time datetime="2013-09-10T21:49:40+00:00" pubdate><span>10/09/2013</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div class="post-content">
+            <p>Olá, pessoal,</p>
+
+<p>Há tempos que não fazia uma limpeza no <a href="https://github.com/rogeriopradoj">meu GitHub</a>, seja para excluir projetos que não fazem mais sentido, forks que não ia mais utilizar, ou mesmo para atualizar algum repositório e me lembrar de tudo que venho estudando desde que conheci o GitHub (segundo o site dos caras, outubro de 2010).</p>
+
+<p><a href="https://travis-ci.org/rogeriopradoj/ManoWars"><img src="https://travis-ci.org/rogeriopradoj/ManoWars.png?branch=master" alt="" /></a> <a href="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/"><img src="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/quality-score.png?s=f1b7894e3ada78b8ea81da9f790ea7e3b89f8779" alt="" /></a> <a href="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/"><img src="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/coverage.png?s=ee15ca0f9e783a480f056ff32247a044477b00d6" alt="" /></a></p>
+
+<p>E foi no meio dessa limpeza (na verdade bem no começo mesmo :-) ) que achei o <a href="https://github.com/rogeriopradoj/ManoWars">https://github.com/rogeriopradoj/ManoWars</a>, fork de um projeto criado pelo <a href="https://github.com/rdohms">Rafael Dohms</a> e pelo <a href="https://github.com/augustohp">Augusto Pascutti</a> há muito tempo para ensinar sobre Testes Unitários e Integração Contínua.</p>
+
+<p>Foi aí que pensei: porque não dar uma relembrada no assunto, e também atualizar com coisas que tenha aprendido nesse período (poxa, são quase 3 anos!)?</p>
+
+<h3 id="phing%3F%3F%3F">Phing???</h3>
+
+<p><a href="https://www.phing.info/"><img src="https://www.phing.info/trac/chrome/site/logo.gif" alt="Logo Phing" /></a></p>
+
+<p>Muita coisa ainda não havia tocado, caso do <a href="https://www.phing.info/">Phing</a>, que o <a href="https://speakerdeck.com/hussani/automacao-e-deploy-com-phing">Hussani</a> e o <a href="http://www.slideshare.net/duodraco/phing-14008532">Duodraco</a> já haviam apresentado mais de uma vez em palestras. Também não estava muito habituado com as ferramentas para geração de relatórios de métricas, como o <a href="http://phpmd.org/">PHPMD</a>, ou o <a href="http://pdepend.org/">PDepend</a>.</p>
+
+<p>Mas aí estava a graça, um bom desafio! E com a ótima estrutura que o Dohms e o Pascutti haviam deixado, não foi tão difícil começar.</p>
+
+<h3 id="composer">Composer</h3>
+
+<p><a href="http://getcomposer.org/"><img src="https://getcomposer.org/img/logo-composer-transparent.png" alt="Composer logo" /></a></p>
+
+<p>A primeira coisa que fiz foi usar o <a href="https://getcomposer.org/">Composer</a> para gerenciar as dependências do projeto.</p>
+
+<p>Aqui uma decisão tinha que ser tomada: o projeto foi todo baseado em PHP 5.2+, e eu poderia continuar deixando essa versão como a mínima necessária. Só que muitas das ferramentas de métricas e o próprio PHPUnit que hoje está disponível via Composer é apenas 5.3+. Então decidi subir para 5.3 a dependência mínima.</p>
+
+<p>Como o Composer além de gerenciar as dependências também gera um autoloader completo (tanto com o código do meu projeto quanto das dependências), pude retirar sem dó o Zend/Loader que estava no projeto, pois ele não era mais necessário.</p>
+
+<p>E com um mágico <code>$ composer install</code> estava lá: todas as dependências na pasta vendor, um autoloader funcional completo, e o melhor, todas as ferramentas binárias (PHPUnit, PHPPdepend etc., e o próprio Phing) já disponíveis também na pasta vendor/bin.</p>
+
+<p>É, o Composer é uma mão na roda!</p>
+
+<p>E lógico, com o PHP 5.4+ com servidor web embutido, foi brincadeira de criança subir testar a aplicação rodando no navegador, só com um <code>$ php -S localhost:8080 -t public</code>.</p>
+
+<h3 id="estrututura-de-pastas-e-arquivos">Estrututura de pastas e arquivos</h3>
+
+<p>Como o Composer coloca todas as dependências dentro da pasta vendor na raiz, e é meio que padrão os projetos PHP que vejo deixarem uma estrutura baseada na raiz também, mudei um pouquinho as pastas de lugar. A maior mudança foi colocar as pastas que estavam dentro de ManoWars na raiz, assim a hierarquia ficou um pouco menor.</p>
+
+<ul>
+<li><p>/libs: contém o código da aplicação</p></li>
+<li><p>/public: o document root do servidor web</p></li>
+<li><p>/tests: testes unitários</p></li>
+<li><p>init.php: bootstrap da aplicação (usado tanto na aplicação web quanto nos testes)</p></li>
+</ul>
+
+<h3 id="phpunit.xml.dist">phpunit.xml.dist</h3>
+
+<p>Já havia lido sobre a vantagem de usar o phpunit.xml.dist no artigo <a href="http://www.testically.org/2010/08/24/best-practice-how-to-ship-phpunit-configuration/">[Best practice] How to ship PHPUnit configuration</a> do <a href="http://www.testically.org/">test.ical.ly</a>, e até já mandei um <a href="https://github.com/iMastersDev/oportunidades/commit/2b86607230644a0eebc22fe9174ae27434d9a8ae">Pull Request</a> para o <a href="https://github.com/iMastersDev/oportunidades">Ophportunidades</a> sobre isso.</p>
+
+<p>Então foi um passo para criar um arquivo de configuração para o PHPUnit, já desde o começo um .dist.</p>
+
+<p><strong>Vantagem:</strong> agora para rodar o phpunit não é preciso entrar na pasta tests, é só rodar a partir da raiz. Outro ponto, não é mais necessário o arquivo AllTests.php, pois a definição da suíte de testes é feita também nesse arquivo de configuração.</p>
+
+<h3 id="php-codesniffer">PHP CodeSniffer</h3>
+
+<p>Uma task do Phing que não estava sendo executada era a de verificação do padrão de codificação, com o <a href="https://github.com/squizlabs/PHP_CodeSniffer">phpcs</a>. Pensei em colocar o padrão <a href="http://www.php-fig.org/psr/psr-2/">PSR2</a> logo de cara, mas como o projeto foi feito a muito tempo, muitos erros iriam aparecer. Preferi deixar com o padrão <a href="http://framework.zend.com/manual/1.12/en/coding-standard.coding-style.html">Zend</a> que foi provavelmente o que o Dohms e o Pascutti usaram.</p>
+
+<p>Na minha lista de tarefas está evoluir o padrão para PSR2.</p>
+
+<h3 id="outras-ferramentas">Outras ferramentas</h3>
+
+<p>Todas as ferramentas que estão sendo usadas para métricas, testes e build estão no <a href="https://github.com/rogeriopradoj/ManoWars/blob/master/composer.json">composer.json</a>, dê uma olhada lá, ok?</p>
+
+<h3 id="readme">README</h3>
+
+<p>E no LEIAME do projeto a principal mudança foi trocar o formato para <a href="https://daringfireball.net/projects/markdown/">Markdown</a> (na verdade o <a href="https://help.github.com/articles/github-flavored-markdown">GFM</a>) que é uma beleza para escrever e o GitHub já faz a renderização muito bem para HTML.</p>
+
+<h3 id="ferramentas-de-integra%C3%A7%C3%A3o-cont%C3%ADnua-online-travis-e-scrutinizer">Ferramentas de Integração Contínua Online (Travis e Scrutinizer)</h3>
+
+<p>Depois de todos os pequenos ajustes, era hora de mexer de verdade no projeto.</p>
+
+<p>A primeira coisa que percebi é que tinham poucos testes falhando. Tinha a ver com a API do PHPUnit ter mudado, e com um teste que esperava nulo, mas na verdade o método retornava um inteiro. Fiz o ajuste nos testes e eles passaram a funcionar.</p>
+
+<p>Agora era hora de resolver todos os outros problemas do código: padrão de codificação, aumentar cobertura de testes, complexidade, etc. etc., tudo relacionado a <a href="http://phpqatools.org/">QA/Garantia de Qualidade</a>. Também analisar os relatórios gerados, uma parte interessante que nunca tinha olhado mais de perto.</p>
+
+<p>Mas por que não ser <a href="https://poser.pugx.org/">um pouco poser e colocar um monte de badges no projeto</a>? Esses badges seriam para mostrar a evolução do projeto, e fui atrás das ferramentas online que me permitiriam isso</p>
+
+<h4 id="travis">Travis</h4>
+
+<p><a href="https://travis-ci.org/"><img src="assets/images/2013/09/travis-logo.png" alt="Logo do Travis" /></a></p>
+
+<p>Comecei pela mais conhecida, o <a href="https://travis-ci.org/">Travis-CI</a>, que já tinha usado em outros projetos. Nele começei colocando o PHPUnit para rodar, nas 3 últimas grandes versões do PHP, 5.3, 5.4 e 5.5.</p>
+
+<p>O Travis conta com um conceito interessante de <a href="https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix">matriz de build</a>, onde você cruza algumas configurações e o build é feito em todas as combinações dela. Isso me ajudou no passo seguinte.  O Travis já tem um executável do PHPUnit disponível para usarmos, mas eu gostaria de rodar o PHPUnit instalado pelo Composer também. Fácil: criei uma variável de ambiente RUN, que no primeiro momento era definida como phpunit, e no segundo momento como vendor/bin/phpunit. E o Travis se encarregou de rodar os builds 6 vezes (3 versões do PHP x 2 PHPUnit diferentes).</p>
+
+<p>No fim, coloquei mais uma definição para a variável de ambiente RUN como vendor/bin/phing, e o Phing inteiro foi rodado lá no Travis, muito bacana!</p>
+
+<h4 id="scrutinizer">Scrutinizer</h4>
+
+<p><a href="https://scrutinizer-ci.com/"><img src="assets/images/2013/09/scrutinizer-logo.png" alt="Logo do scrutinizer" /></a></p>
+
+<p>Só um problema: o Travis sozinho não avalia os relatórios gerados. Foi aí que peguei o <a href="https://scrutinizer-ci.com/">Scrutinizer-CI</a>, que já havia também <a href="https://scrutinizer-ci.com/g/rogeriopradoj/base-php-codingdojo-vagrant/inspections">usado anteriormente</a>, mas quando o <a href="http://eher.com.br/">Alexandre Eher</a> lembrou dele no <a href="http://phpsp.org.br/?s=phpub">PHPSPub de agosto/2013</a>, vi que era uma boa ideia usá-lo de verdade.</p>
+
+<p>Depois de bater um pouco de cabeça, consegui fazer a maioria das métricas serem executadas, e no fim, o que mais queria: os badges!!!</p>
+
+<p><a href="https://travis-ci.org/rogeriopradoj/ManoWars"><img src="https://travis-ci.org/rogeriopradoj/ManoWars.png?branch=master" alt="" /></a>
+<em>Travis</em></p>
+
+<p><a href="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/"><img src="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/quality-score.png?s=f1b7894e3ada78b8ea81da9f790ea7e3b89f8779" alt="" /></a>
+<em>Scrutinizer - Quality</em></p>
+
+<p><a href="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/"><img src="https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/coverage.png?s=ee15ca0f9e783a480f056ff32247a044477b00d6" alt="" /></a>
+<em>Scrutinizer - Coverage</em></p>
+
+<hr />
+
+<p>E para renderizar o README um pouco melhor, e lógico que usando outra ferramenta online, fui de <a href="https://documentup.com/rogeriopradoj/manowars">DocumentUp</a>.</p>
+
+<hr />
+
+<p>É isso aí, pessoal, escrevi bastante e tem bastante coisa para fazer ainda.</p>
+
+<p>Se quiser acompanhar, lá no <a href="https://github.com/rogeriopradoj/ManoWars">https://github.com/rogeriopradoj/ManoWars</a>.</p>
+
+<p>Até mais!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="https://rogeriopradoj.com">RogerioPradoJ.com</a>.</p>
+
+        </div>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Se gostou do artigo, compartilhe</small></legend>
+            <div class="buttons">
+                                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Frogeriopradoj.com%2F2013%2F09%2F10%2Fbuild-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci%2F%2F/" target="_blank"
+                   class="btn btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/share?url=https%3A%2F%2Frogeriopradoj.com%2F2013%2F09%2F10%2Fbuild-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci%2F%2F&text=Build%20e%20Integra%C3%A7%C3%A3o%20Cont%C3%ADnua%20no%20PHP%20com%20Composer%2C%20Phing%2C%20Travis-CI%20e%20Scrutinizer-CI&via=rogeriopradoj" target="_blank"
+                   class="btn btn-sm btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frogeriopradoj.com%2F2013%2F09%2F10%2Fbuild-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci%2F%2F&title=Build e Integração Contínua no PHP com Composer, Phing, Travis-CI e Scrutinizer-CI&source=https://rogeriopradoj.com" target="_blank"
+                   class="btn btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Gostou muito mesmo do conteúdo e quer apoiar financeiramente? É fácil! Use uma das opções abaixo:</small></legend>
+
+            <ul class="list">
+                <li><p><a href="https://rogeriopradoj.com/gift/">Gift / Apoie / Doe</a></p></li>
+                <li><p><a href="https://rogeriopradoj.com/livro/">Meu Livro: Modernização de Aplicações Legadas em PHP</a></p></li>
+            </ul>
+
+        </fieldset>
+
+        <hr>
+
+        <ul class="list-unstyled">
+                            <li class="categories-list">
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Geral/">Geral</a>
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/PHP/">PHP</a>
+                                    </li>
+                                        <li class="tags-list">
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/composer/">composer</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/phing/">phing</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/php/">php</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/phpcs/">phpcs</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/scrutinizer/">scrutinizer</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/travis/">travis</a>
+                                    </li>
+                        <li class="clearfix"></li>
+        </ul>
+
+                    <nav class="well">
+                <ul class="list-unstyled other-articles row">
+                    <li class="col-sm-6 col-xs-12">
+                                                    <a class="previous" href="https://rogeriopradoj.com/2013/05/02/python-e-virtualenv-no-mac-os-x-mountain-lion-10-8//">
+                                <i class="fa fa-angle-double-left"></i>
+                                <span class="title">Python e Virtualenv no Mac OS X Mountain Lion 10.8</span>
+                            </a>
+                                            </li>
+                    <li class="col-sm-6 col-xs-12 text-right">
+                                                    <a class="next" href="https://rogeriopradoj.com/2014/11/01/testando-rapidamente-php-com-vagrant-ou-docker-ou-servidor-web-embutido//">
+                                <span class="title">Testando rapidamente projetos PHP, ou com Vagrant, ou com Docker ou com Servidor Web embutido</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                            </li>
+                </ul>
+            </nav>
+        
+                    <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rogeriopradojcom';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            </article>
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        <a target="_blank" href="https://rogeriopradoj.com/">
+    <img src="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" class="thumbnail">
+</a>
+<ul class="list-unstyled social-list">
+    <a target="_blank" href="https://www.linkedin.com/in/rogeriopradoj">
+        <li class="social-element" id="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </li>
+    </a>
+    <a target="_blank" href="http://www.zend.com/en/yellow-pages/ZEND024088">
+        <li class="social-element" id="php">
+            <i class="fa fa-code"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://github.com/rogeriopradoj/">
+        <li class="social-element" id="github">
+            <i class="fa fa-github-alt"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://plus.google.com/+RogerioPradoDeJesus?rel=author">
+        <li class="social-element" id="google">
+            <i class="fa fa-google-plus"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://twitter.com/rogeriopradoj">
+        <li class="social-element" id="twitter">
+            <i class="fa fa-twitter"></i>
+        </li>
+    </a>
+    <a href="https://rogeriopradoj.com/feed/">
+        <li class="social-element" id="rss">
+            <i class="fa fa-rss"></i>
+        </li>
+    </a>
+</ul>
+
+<div class="well">
+    <h4>
+        <p>ROGERIO PRADO J | rogeriopradoj.com</p>
+        <small>Desenvolvimento e TI em geral</small>    </h4>
+</div>
+<div class="well">
+    <h4>Arquivo</h4>
+    <ul class="nav">
+        <li><a class="btn btn-block btn-xs btn-info" href="https://rogeriopradoj.com/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="https://rogeriopradoj.com/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+    </ul>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c5c04e17cf662208c9474ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+    &copy; 2020 <a target="_blank" href="https://rogeriopradoj.com/">Rogerio Prado de Jesus</a>
+    <span class="pull-right">
+        Source code on <a target="_blank" href="https://github.com/rogeriopradoj/rogeriopradoj.com">GitHub</a> - Powered by <a target="_blank" href="https://sculpin.io">Sculpin</a>
+    </span>
+</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/readingTime.min.js"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+                    </body>
+</html>

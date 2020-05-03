@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral</title>
+
+        <base href="https://rogeriopradoj.com/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral">
+            <meta name="description" content="Olá, pessoal!
+
+Passando rápido aqui para falar que criei meu primeiro plugin para Vagrant: é o vagrant-ip-show.
+
+Ele faz uma coisa muito simples: mostra os IPs de uma VM.
+
+
+
+
+Ah, Rogério, mas porque um plugin para algo tão simples? Não tem jeito de fazer isso na mão?
+
+
+-- Alguém por aí ;-)
+
+
+Então, tem uma série ...">
+    <meta name="keywords" content="rogeriopradoj, , gem, github, plugin, vagrant" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Meu primeiro plugin para o Vagrant mostra a lista de IPs da VM! vagrant-ip-show" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" />
+    <meta property="og:url" content="https://rogeriopradoj.com/2015/10/08/meu-primeiro-plugin-para-o-vagrant-mostra-a-lista-de-ips-da-vm-vagrant-ip-show/" />
+    <meta property="og:description" content="Olá, pessoal!
+
+Passando rápido aqui para falar que criei meu primeiro plugin para Vagrant: é o vagrant-ip-show.
+
+Ele faz uma coisa muito simples: mostra os IPs de uma VM.
+
+
+
+
+Ah, Rogério, mas porque um plugin para algo tão simples? Não tem jeito de fazer isso na mão?
+
+
+-- Alguém por aí ;-)
+
+
+Então, tem uma série ..." />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+    <meta name="twitter:image:src" content="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg">
+    <meta name="twitter:title" content="Meu primeiro plugin para o Vagrant mostra a lista de IPs da VM! vagrant-ip-show" />
+    <meta name="twitter:description" content="Olá, pessoal!
+
+Passando rápido aqui para falar que criei meu primeiro plugin para Vagrant: é o vagrant-ip-show.
+
+Ele faz uma coisa muito simples: mostra os IPs de uma VM.
+
+
+
+
+Ah, Rogério, mas porque um plugin para algo tão simples? Não tem jeito de fazer isso na mão?
+
+
+-- Alguém por aí ;-)
+
+
+Então, tem uma série ..." />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
+
+        <link rel="search" href="https://rogeriopradoj.com/search.xml" type="application/opensearchdescription+xml" title="ROGERIO PRADO J | rogeriopradoj.com"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="https://rogeriopradoj.com/atom.xml" title="ROGERIO PRADO J | rogeriopradoj.com activity feed" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23860787-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23860787-1', { 'optimize_id': 'GTM-K94X8R5'});
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container header-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand async" href="https://rogeriopradoj.com/">Blog</a>
+            <div class="preloader"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about/">Sobre / About / Acerca</a></li>
+                <li><a href="slides/">Slides</a></li>
+                <li><a href="pradoj-com/">PradoJ.com</a></li>
+                <li><a href="contato/">Contato / Contact</a></li>
+                <li><a href="gift/">Gift / Apoie / Doe</a></li>
+                <li><a href="livro/">Meu Livro</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" id="search-form" role="search" method="get" action="https://rogeriopradoj.com/search/">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" name="q">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="#top" class="to-top hidden">
+                        <i class="fa fa-arrow-up"></i> To top
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="https://rogeriopradoj.com/">ROGERIO PRADO J | rogeriopradoj.com</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                            <article class="post">
+        <header>
+            <h2 class="post-title">Meu primeiro plugin para o Vagrant mostra a lista de IPs da VM! vagrant-ip-show</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://rogeriopradoj.com/about">Rogerio Prado de Jesus</a> em <time datetime="2015-10-08T05:59:37+00:00" pubdate><span>08/10/2015</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div class="post-content">
+            <p>Olá, pessoal!</p>
+
+<p>Passando rápido aqui para falar que criei meu primeiro plugin para Vagrant: é o <a href="https://github.com/rogeriopradoj/vagrant-ip-show">vagrant-ip-show</a>.</p>
+
+<p>Ele faz uma coisa muito simples: mostra os IPs de uma VM.</p>
+
+<p><img src="assets/images/2015/10/Vagrant-ip-show_by_rogeriopradoj.png" alt="site vagrant-ip-show" /></p>
+
+<blockquote>
+Ah, Rogério, mas porque um plugin para algo tão simples? Não tem jeito de fazer isso na mão?
+<br>
+<br>
+-- Alguém por aí ;-)
+</blockquote>
+
+<p>Então, tem uma série de formas buscar essa informação. Você poderia conectar na VM (<code>vagrant ssh</code>) e rodar um comando <code>ifconfig</code>. Ou então olhar no seu Vagrantfile as configurações de rede que tiver feito. Ou ainda, entrar na configuração do Virtualbox (ou qual seja o provider que estiver usando) e tentar localizar a faixa de IPs que ele está usando e partir daí para rodar no seu <em>host</em> alguns comandos de rede...</p>
+
+<p>Caramba, quanta coisa! Mas se tem um jeito fácil, porque não usar! Fui atrás de uma linha mágica, já tratada para trazer apenas a listinha de IPs, é ela é essa:</p>
+
+<pre><code>$ ifconfig | grep 'inet addr:' | grep -v 127.0.0.1 | sed -e 's/Bcast//' | cut -d: -f2
+</code></pre>
+
+<p>No seu computador, você poderia passar via <code>vagrant ssh</code> o comando direto para dentro da VM e receber o resultado assim:</p>
+
+<pre><code>$ vagrant ssh -- ifconfig | grep 'inet addr:' | grep -v 127.0.0.1 | sed -e 's/Bcast//' | cut -d: -f2
+</code></pre>
+
+<p>Mas o jeito mais fácil, depois que o plugin está instalado, é só rodar esse comando aqui:</p>
+
+<pre><code>$ vagrant ip-show
+</code></pre>
+
+<p>Quer instalar o plugin? É fácil:</p>
+
+<pre><code>$ vagrant plugin install vagrant-ip-show
+</code></pre>
+
+<p>Depois disso você pode usar o comando <code>vagrant ip-show</code> em qualquer um dos seus projetos.</p>
+
+<h2 id="motiva%C3%A7%C3%A3o">Motivação</h2>
+
+<blockquote>
+Mas vale a pena criar um plugin para o Vagrant? Não dá muito trabalho?
+<br>
+<br>
+-- Alguém por aí ;-)
+</blockquote>
+
+<p>Agora estou enxergando uma pergunta mais interessante! No meu caso, criar um plugin para o Vagrant era um desafio, que até que enfim consegui realizar. Então sim, vale a pena! Sempre acompanhei o brasileiro <a href="http://fabiorehm.com/">Fábio Rehm</a> criando <a href="http://fabiorehm.com/blog/2013/12/12/so-i-released-a-lot-of-vagrant-plugins-now-what-s-next/">uma porrada deles</a>, e pensava: poxa, teria que ficar fera em Ruby antes de conseguir um dia criar um plugin... Mesmo estudando um monte sobre Vagrant e seus plugins, não parecia tarefa fácil.</p>
+
+<iframe src="https://www.youtube.com/embed/niQvLXI1z9I" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+<p><em>Youtube Video: <a href="https://youtu.be/niQvLXI1z9I?t=3m14s">https://youtu.be/niQvLXI1z9I?t=3m14s</a></em></p>
+
+<hr />
+
+<p>Mas acreditava que talvez pudessse ser igual como usar o Vagrant, que é construído em Ruby, mas você pode usá-lo sem ter o mínimo de proficiência na linguagem. Se eu achasse um "be-a-bá" de como começar, deveria conseguir. E, como disse, era um desafio e a necessidade que tive de descobrir os IP de uma VM mexeu comigo. Pensei: é isso, já sei a necessidade. Se não houver nenhum plugin para isso, é esse que vou criar!</p>
+
+<p>Na minha busca, achei apenas <a href="https://github.com/mkuzmin/vagrant-guestip">um plugin</a> que não entregava o que precisava.</p>
+
+<p><img src="assets/images/2015/10/2__rogerio_RgoMBP____contribs_mercado_sup__zsh_.png" alt="vagrant-guestip inconsistente" /></p>
+
+<p>Infelizmente, ele trazia apenas um IP: o que estava configurado como hostonly na interface de rede do VirtualBox. E esse IP é geralmente o que não precisamos saber :-) . O que geralmente queremos são os IPs configurados como <a href="https://docs.vagrantup.com/v2/networking/index.html">private_network ou public_network</a>, sejam eles estáticos ou recebidos por DHCP. O ifconfig/ipconfig traz isso tudo para nós, então o meu plugin devia trazer pelo menos TODOS OS IPs.</p>
+
+<h2 id="base-te%C3%B3rica">Base teórica</h2>
+
+<p>Aí que o artigo <a href="https://www.noppanit.com/create-simple-vagrant-plugin/">How to Create a Simple Vagrant Plugin</a> do Noppanit (Toy), que eu já tinha lido alguns meses atrás, veio como uma mão na roda. Nele o autor fala sobre como fez num passo a passo para criar o plugin dele (se tem curiosidade, acesse lá que vale a pena :-) ). Dessa vez, como já tinha com a necessidade clara, coloquei a mão na massa e o projeto saiu!</p>
+
+<p><img src="assets/images/2015/10/2__rogerio_RgoMBP____contribs_mercado_sup__zsh_-2.png" alt="vagrant-ip-show install and usage" /></p>
+
+<h2 id="tive-que-ficar-fera-em-ruby%3F">Tive que ficar fera em Ruby?</h2>
+
+<p>Com certeza não. Mas tive que entender um pouquinho mais sobre o site <a href="http://rubygems.org/">http://rubygems.org/</a>, pois o plugin é publicado lá como uma Ruby Gem. Aprendi que aparentemente no mundo Ruby os badges de versões para projetos open source são liberados no <a href="https://badge.fury.io/">https://badge.fury.io/</a> (no mundo PHP, que estou mais acostumado, é comum usar o <a href="https://poser.pugx.org/">https://poser.pugx.org/</a>. Aprendi um pouco mais também no código fonte do <a href="https://github.com/p0deje/vagrant-exec">plugin vagrant-exec</a> sobre como funciona um plugin um pouco mais elaborado. E tudo isso foi ótimo!</p>
+
+<p>Testem o plugin se acharem interessante, deêm o feedback e fiquem à vontade para conversar sobre o assunto.</p>
+
+<p>É isso aí, pessoal, até a próxima!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="http://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+
+        </div>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Se gostou do artigo, compartilhe</small></legend>
+            <div class="buttons">
+                                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Frogeriopradoj.com%2F2015%2F10%2F08%2Fmeu-primeiro-plugin-para-o-vagrant-mostra-a-lista-de-ips-da-vm-vagrant-ip-show%2F%2F/" target="_blank"
+                   class="btn btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/share?url=https%3A%2F%2Frogeriopradoj.com%2F2015%2F10%2F08%2Fmeu-primeiro-plugin-para-o-vagrant-mostra-a-lista-de-ips-da-vm-vagrant-ip-show%2F%2F&text=Meu%20primeiro%20plugin%20para%20o%20Vagrant%20mostra%20a%20lista%20de%20IPs%20da%20VM%21%20vagrant-ip-show&via=rogeriopradoj" target="_blank"
+                   class="btn btn-sm btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frogeriopradoj.com%2F2015%2F10%2F08%2Fmeu-primeiro-plugin-para-o-vagrant-mostra-a-lista-de-ips-da-vm-vagrant-ip-show%2F%2F&title=Meu primeiro plugin para o Vagrant mostra a lista de IPs da VM! vagrant-ip-show&source=https://rogeriopradoj.com" target="_blank"
+                   class="btn btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Gostou muito mesmo do conteúdo e quer apoiar financeiramente? É fácil! Use uma das opções abaixo:</small></legend>
+
+            <ul class="list">
+                <li><p><a href="https://rogeriopradoj.com/gift/">Gift / Apoie / Doe</a></p></li>
+                <li><p><a href="https://rogeriopradoj.com/livro/">Meu Livro: Modernização de Aplicações Legadas em PHP</a></p></li>
+            </ul>
+
+        </fieldset>
+
+        <hr>
+
+        <ul class="list-unstyled">
+                            <li class="categories-list">
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Geral/">Geral</a>
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Vagrant/">Vagrant</a>
+                                    </li>
+                                        <li class="tags-list">
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/gem/">gem</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/github/">github</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/plugin/">plugin</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/vagrant/">vagrant</a>
+                                    </li>
+                        <li class="clearfix"></li>
+        </ul>
+
+                    <nav class="well">
+                <ul class="list-unstyled other-articles row">
+                    <li class="col-sm-6 col-xs-12">
+                                                    <a class="previous" href="https://rogeriopradoj.com/2015/09/28/o-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github//">
+                                <i class="fa fa-angle-double-left"></i>
+                                <span class="title">O guia para iniciantes sobre como contribuir com um projeto no GitHub</span>
+                            </a>
+                                            </li>
+                    <li class="col-sm-6 col-xs-12 text-right">
+                                                    <a class="next" href="https://rogeriopradoj.com/2015/11/04/becoming-a-contributor-open-sourcer-and-beyond-palestra-do-tdc-2014-trilha-php//">
+                                <span class="title">Becoming a Contributor, Open Sourcer and Beyond: Palestra do TDC 2014 na Trilha PHP</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                            </li>
+                </ul>
+            </nav>
+        
+                    <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rogeriopradojcom';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            </article>
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        <a target="_blank" href="https://rogeriopradoj.com/">
+    <img src="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" class="thumbnail">
+</a>
+<ul class="list-unstyled social-list">
+    <a target="_blank" href="https://www.linkedin.com/in/rogeriopradoj">
+        <li class="social-element" id="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </li>
+    </a>
+    <a target="_blank" href="http://www.zend.com/en/yellow-pages/ZEND024088">
+        <li class="social-element" id="php">
+            <i class="fa fa-code"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://github.com/rogeriopradoj/">
+        <li class="social-element" id="github">
+            <i class="fa fa-github-alt"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://plus.google.com/+RogerioPradoDeJesus?rel=author">
+        <li class="social-element" id="google">
+            <i class="fa fa-google-plus"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://twitter.com/rogeriopradoj">
+        <li class="social-element" id="twitter">
+            <i class="fa fa-twitter"></i>
+        </li>
+    </a>
+    <a href="https://rogeriopradoj.com/feed/">
+        <li class="social-element" id="rss">
+            <i class="fa fa-rss"></i>
+        </li>
+    </a>
+</ul>
+
+<div class="well">
+    <h4>
+        <p>ROGERIO PRADO J | rogeriopradoj.com</p>
+        <small>Desenvolvimento e TI em geral</small>    </h4>
+</div>
+<div class="well">
+    <h4>Arquivo</h4>
+    <ul class="nav">
+        <li><a class="btn btn-block btn-xs btn-info" href="https://rogeriopradoj.com/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="https://rogeriopradoj.com/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+    </ul>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c5c04e17cf662208c9474ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+    &copy; 2020 <a target="_blank" href="https://rogeriopradoj.com/">Rogerio Prado de Jesus</a>
+    <span class="pull-right">
+        Source code on <a target="_blank" href="https://github.com/rogeriopradoj/rogeriopradoj.com">GitHub</a> - Powered by <a target="_blank" href="https://sculpin.io">Sculpin</a>
+    </span>
+</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/readingTime.min.js"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+                    </body>
+</html>

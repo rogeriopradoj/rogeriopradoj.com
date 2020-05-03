@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral</title>
+
+        <base href="https://rogeriopradoj.com/">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ROGERIO PRADO J | rogeriopradoj.com &mdash; Desenvolvimento e TI em geral">
+            <meta name="description" content="
+    
+    Sim, é possível!
+
+
+Fala pessoal, tudo bem?
+
+É muito comum durante nossa jornada de cursos no tema de Big Data, Analytics, Data Science, IA e afins sermos apresentados à plataforma Jupyter e aos seus notebooks, não é mesmo?
+
+
+  Jupyter: The Jupyter Notebook is ...">
+    <meta name="keywords" content="rogeriopradoj, , php, jupyter, data science, big data, big data analytics, ia, jupyter notebook, jupyter php" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Notebooks Jupyter em PHP, além do Python? Sim, é possível: veja como fazer!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://rogeriopradoj.com/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-01.png" />
+    <meta property="og:url" content="https://rogeriopradoj.com/2019/05/13/notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer/" />
+    <meta property="og:description" content="
+    
+    Sim, é possível!
+
+
+Fala pessoal, tudo bem?
+
+É muito comum durante nossa jornada de cursos no tema de Big Data, Analytics, Data Science, IA e afins sermos apresentados à plataforma Jupyter e aos seus notebooks, não é mesmo?
+
+
+  Jupyter: The Jupyter Notebook is ..." />
+    <meta property="article:author" content="https://www.facebook.com/rogeriopradoj" />
+    <meta property="article:publisher" content="https://www.facebook.com/rogeriopradojcom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />    
+    <meta name="twitter:image:src" content="https://rogeriopradoj.com/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-01.png">
+    <meta name="twitter:title" content="Notebooks Jupyter em PHP, além do Python? Sim, é possível: veja como fazer!" />
+    <meta name="twitter:description" content="
+    
+    Sim, é possível!
+
+
+Fala pessoal, tudo bem?
+
+É muito comum durante nossa jornada de cursos no tema de Big Data, Analytics, Data Science, IA e afins sermos apresentados à plataforma Jupyter e aos seus notebooks, não é mesmo?
+
+
+  Jupyter: The Jupyter Notebook is ..." />
+    <meta name="twitter:creator" content="@rogeriopradoj" />
+    <meta name="twitter:site" content="@rogeriopradoj" />
+
+        <link rel="search" href="https://rogeriopradoj.com/search.xml" type="application/opensearchdescription+xml" title="ROGERIO PRADO J | rogeriopradoj.com"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- build:css assets/css/main.min.css -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/components/highlightjs/styles/default.css" rel="stylesheet" />
+        <link href="assets/components/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+        <!-- /build -->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="alternate" type="application/atom+xml" href="https://rogeriopradoj.com/atom.xml" title="ROGERIO PRADO J | rogeriopradoj.com activity feed" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23860787-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23860787-1', { 'optimize_id': 'GTM-K94X8R5'});
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container header-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand async" href="https://rogeriopradoj.com/">Blog</a>
+            <div class="preloader"></div>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about/">Sobre / About / Acerca</a></li>
+                <li><a href="slides/">Slides</a></li>
+                <li><a href="pradoj-com/">PradoJ.com</a></li>
+                <li><a href="contato/">Contato / Contact</a></li>
+                <li><a href="gift/">Gift / Apoie / Doe</a></li>
+                <li><a href="livro/">Meu Livro</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" id="search-form" role="search" method="get" action="https://rogeriopradoj.com/search/">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" name="q">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="#top" class="to-top hidden">
+                        <i class="fa fa-arrow-up"></i> To top
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>        </header>
+
+        <div id="wrap">
+            <div id="brand">
+                <div class="container">
+                    <h1><a href="https://rogeriopradoj.com/">ROGERIO PRADO J | rogeriopradoj.com</a></h1>
+                </div>
+            </div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-9">
+                            <article class="post">
+        <header>
+            <h2 class="post-title">Notebooks Jupyter em PHP, além do Python? Sim, é possível: veja como fazer!</h2>
+            <div class="post-meta-text">
+                <small>Por <a class="author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person" href="https://rogeriopradoj.com/about">Rogerio Prado de Jesus</a> em <time datetime="2019-05-13T13:30:00+00:00" pubdate><span>13/05/2019</span></time>.</small>
+                <div class="post-reading">
+                    <small><i><span class="post-reading-time"></span> de leitura (<span class="post-word-count"></span> palavras).</i></small>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div class="post-content">
+            <figure>
+    <img title="Sim, é possível!" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-01.png" alt="Sim, é possível!">
+    <figcaption>Sim, é possível!</figcaption>
+</figure>
+
+<p>Fala pessoal, tudo bem?</p>
+
+<p>É muito comum durante nossa jornada de cursos no tema de Big Data, Analytics, Data Science, IA e afins sermos apresentados à plataforma Jupyter e aos seus notebooks, não é mesmo?</p>
+
+<blockquote>
+  <p><a href="https://jupyter.org/">Jupyter</a>: The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.</p>
+</blockquote>
+
+<p>E, acredito que se você já mexeu nessa plataforma, o padrão é usar a linguagem de programação Python, certo? Talvez R também? E se te disser que é possível usar várias outras também? Sim, durante a escrita deste artigo, 2019/MAI, já são mais de 40 linguagens suportadas. E o mais impressionante: o PHP é sim uma dessas linguagens suportadas no Jupyter Notebook!</p>
+
+<p>Vamos conhecer então como fazer?</p>
+
+<h3 id="primeiro%3A-tenha-o-jupyter-dispon%C3%ADvel">Primeiro: tenha o Jupyter disponível</h3>
+
+<p>A maneira mais simples que conheço no Windows é tendo o Anaconda disponível. Você consegue mais informações acessando o site oficial: https://www.anaconda.com/distribution/</p>
+
+<blockquote>
+  <p><a href="https://www.anaconda.com/">Anaconda</a>: The World's Most Popular Python/R Data Science Platform</p>
+</blockquote>
+
+<h3 id="tenha-o-php-e-o-composer-com-as-depend%C3%AAncias-instaladas">Tenha o PHP e o Composer com as dependências instaladas</h3>
+
+<p>Em <a href="https://windows.php.net/">https://windows.php.net/</a> você consegue pegar a última versão disponível do PHP. Para as coisas funcionarem você precisa pelo menos da versão PHP 7.2+. Vale a pena colocar a pasta do binário do php.exe na sua variável de ambiente PATH, assim, você pode chamar o comando php de qualquer terminal. Talvez te ajude: a versão que usei aqui no meu computador é a PHP 7.2.7 NTS x64.</p>
+
+<p>É necessário também ter instalado o gerenciador de dependências Composer. Mais informações no site oficial, <a href="https://getcomposer.org/">https://getcomposer.org/</a>. Se instalar ele certinho, vai poder ter o comando composer disponível de qualquer terminal.</p>
+
+<p>E, por último, é necessário que você tenha no PHP a extensão ZMQ. Para isso:</p>
+
+<ul>
+<li>baixe no site da extensão PECL, <a href="https://pecl.php.net/package/zmq/1.1.3/windows">https://pecl.php.net/package/zmq/1.1.3/windows</a>, a versão correspondente ao que você tem no seu computador (no meu caso, baixei a "7.2 Non Thread Safe (NTS) x64"). Quer saber qual sua versão do php? É fácil: no terminal, digite: <code>php -v</code>.</li>
+<li>na mesma pasta onde tem o arquivo php.exe, descompacte o arquivo libzmq.dll</li>
+<li>na pasta ext, descompacte o arquivo php_zmq.dll</li>
+<li>inclua no fim do seu arquivo php.ini a declaração <code>extension=php_zmq.dll</code></li>
+</ul>
+
+<p>Não sabe onde fica o arquivo php.ini? É fácil descobrir: só digitar no terminal: <code>php --ini</code>.</p>
+
+<p>Foi na pasta e não achou um arquivo php.ini? Tranquilo: faça uma cópia do arquivo php.ini-development como php.ini. E depois edite esse php.ini.</p>
+
+<p>Quer confirmar se a extensão ZMQ está instalada? Na linha de comando, pode executar o seguinte comando para mostrar todas as extensões disponíveis: <code>php -m</code>.</p>
+
+<h3 id="instale-o-componente-jupyter-php-o-kernel-de-php-para-o-jupyter">Instale o componente Jupyter-PHP (o kernel de PHP para o Jupyter)</h3>
+
+<p>No site oficial, <a href="https://litipk.github.io/Jupyter-PHP-Installer/">https://litipk.github.io/Jupyter-PHP-Installer/</a>, tem mais informações. Em resumo:</p>
+
+<ul>
+<li>baixar o instalador .phar, <a href="https://litipk.github.io/Jupyter-PHP-Installer/dist/jupyter-php-installer.phar">https://litipk.github.io/Jupyter-PHP-Installer/dist/jupyter-php-installer.phar</a>;</li>
+<li>entrar na pasta onde baixou, pelo terminal, e executar: <code>php jupyter-php-installer.phar install</code>.</li>
+</ul>
+
+<figure>
+    <img title="Resultado da instalação do Juptyer-notebook" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-03.png" alt="Resultado da instalação do Juptyer-notebook">
+    <figcaption>Resultado da instalação</figcaption>
+</figure>
+
+<p>E é isso! Se tiver problemas com o Composer não acessando a URL do Packagist, pode dar uma olhada nesse projeto aqui, <a href="https://github.com/rogeriopradoj/cntlm-proxy-windows">https://github.com/rogeriopradoj/cntlm-proxy-windows</a>, lá tem mais instruções!</p>
+
+<h3 id="agora-%C3%A9-s%C3%B3-usar%21">Agora é só usar!</h3>
+
+<p>Pronto, é só reiniciar o seu Jupyter, e quando for criar um Notebook, vai ter lá a opção de escolher PHP também (além dos outros que você já tinha, tipo o Python 3).</p>
+
+<p>Aqui vai um exemplo:</p>
+
+<figure>
+    <img title="Um exemplo de Jupyter Notebook usando o kernel PHP" src="/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-02.png" alt="Um exemplo de Jupyter Notebook usando o kernel PHP">
+    <figcaption>Um exemplo de Jupyter Notebook usando o kernel PHP</figcaption>
+</figure>
+
+<p>Se quiser testar no seu próprio ambiente, é só baixar em <a href="https://gist.github.com/rogeriopradoj/75a7e8ba3f58734c8510bd8f42d3e335">https://gist.github.com/rogeriopradoj/75a7e8ba3f58734c8510bd8f42d3e335</a>.</p>
+
+<p>É isso, pessoal!</p>
+
+<h3 id="mas-por-que-usar-php-nesse-mundo%3F%3F%3F-n%C3%A3o-era-para-estarmos-focando-mais-em-python%2C-r-e-outras%3F">Mas por que usar PHP nesse mundo??? Não era para estarmos focando mais em Python, R e outras?</h3>
+
+<p>Acho muito que é questão parecida com o que eu via no passado quando estava bastante envolvido com comunidades e Meetups, e já ouvia assim: "poxa, Golang seria uma opção muito melhor para IA, por ser mais rápida, etc etc". Mas o Python já tinha ganhado a briga pois os algoritmos matemáticos todos já tinham sido implementados nele, e em Golang não".</p>
+
+<p>Hoje, pela pesquisa rápida que fiz, Golang ainda não tem ecossistema que se compara ao de R ou Python... <a href="https://news.ycombinator.com/item?id=16883877">https://news.ycombinator.com/item?id=16883877</a>. Mas, não quer dizer que não tenha suas vantagens, né?</p>
+
+<p>Especificamente do PHP, quais pontos positivos acredito em também usá-lo para ML e afins, aqui lá no "Banco X":</p>
+
+<ul>
+<li>linguagem madura, e cada vez mais rápida desde a versão 7.0 (hoje está na 7.3): <a href="https://kinsta.com/pt/blog/benchmarks-definitivos-do-php/">https://kinsta.com/pt/blog/benchmarks-definitivos-do-php/</a></li>
+<li>ótimo ecossistema, ainda ativa (e muito! ) , utilizada por diversas grandes empresas, suporte da comunidade e de muitos players, seja para integrações e também para infra</li>
+<li>ainda é a mais usada de toda a web (79% em 2019/MAI, <a href="https://w3techs.com/technologies/overview/programming_language/all">https://w3techs.com/technologies/overview/programming_language/all</a>)</li>
+<li>é uma das plataformas oficialmente homologada no "Banco X"</li>
+<li>tem suporte em toda a infra do "Banco X" atual (desde os servidores IIS com Fastcgi ou Linux Apache nos ambientes descentralizados, ou mesmo da infra de Openshift, Docker etc. do ambiente centralizado)</li>
+<li>vai permitir que os colegas que já tenham um certo domínio do PHP e seu ecossistema de usar esse conhecimento para esse novo mundo do Data Science, Analytics, IA, Machine Learning etc.</li>
+</ul>
+
+<p>E você, o que anda fazendo aí na sua área? Bora testar mais essa opção?</p>
+
+<p>O mais importante é: compartilhe o que está fazendo, assim todos podemos ganhar e a empresa também!</p>
+
+<p>Até a próxima, e podem me chamar para conversar em todos os canais, ok!</p>
+
+<p>Abraços!</p>
+
+<hr />
+
+<p>Este artigo foi publicado originalmente em <a href="https://rogeriopradoj.com/">RogerioPradoJ.com</a>.</p>
+
+        </div>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Se gostou do artigo, compartilhe</small></legend>
+            <div class="buttons">
+                                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Frogeriopradoj.com%2F2019%2F05%2F13%2Fnotebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer%2F%2F/" target="_blank"
+                   class="btn btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/share?url=https%3A%2F%2Frogeriopradoj.com%2F2019%2F05%2F13%2Fnotebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer%2F%2F&text=Notebooks%20Jupyter%20em%20PHP%2C%20al%C3%A9m%20do%20Python%3F%20Sim%2C%20%C3%A9%20poss%C3%ADvel%3A%20veja%20como%20fazer%21&via=rogeriopradoj" target="_blank"
+                   class="btn btn-sm btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frogeriopradoj.com%2F2019%2F05%2F13%2Fnotebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer%2F%2F&title=Notebooks Jupyter em PHP, além do Python? Sim, é possível: veja como fazer!&source=https://rogeriopradoj.com" target="_blank"
+                   class="btn btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="share">
+            <legend><small class="text-muted">Gostou muito mesmo do conteúdo e quer apoiar financeiramente? É fácil! Use uma das opções abaixo:</small></legend>
+
+            <ul class="list">
+                <li><p><a href="https://rogeriopradoj.com/gift/">Gift / Apoie / Doe</a></p></li>
+                <li><p><a href="https://rogeriopradoj.com/livro/">Meu Livro: Modernização de Aplicações Legadas em PHP</a></p></li>
+            </ul>
+
+        </fieldset>
+
+        <hr>
+
+        <ul class="list-unstyled">
+                            <li class="categories-list">
+                                            <a class="label label-info" href="https://rogeriopradoj.com/category/Data%20Science/">Data Science</a>
+                                    </li>
+                                        <li class="tags-list">
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/php/">php</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/jupyter/">jupyter</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/data%20science/">data science</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/big%20data/">big data</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/big%20data%20analytics/">big data analytics</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/ia/">ia</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/jupyter%20notebook/">jupyter notebook</a>
+                                            <a class="label label-primary" href="https://rogeriopradoj.com/tag/jupyter%20php/">jupyter php</a>
+                                    </li>
+                        <li class="clearfix"></li>
+        </ul>
+
+                    <nav class="well">
+                <ul class="list-unstyled other-articles row">
+                    <li class="col-sm-6 col-xs-12">
+                                                    <a class="previous" href="https://rogeriopradoj.com/2018/03/20/estou-no-glitch//">
+                                <i class="fa fa-angle-double-left"></i>
+                                <span class="title">Estou no Glitch.com</span>
+                            </a>
+                                            </li>
+                    <li class="col-sm-6 col-xs-12 text-right">
+                                                    <a class="next" href="https://rogeriopradoj.com/2019/07/14/como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode//">
+                                <span class="title">Como tirar acentos de string no Python? Transliterate, Unicodedata e Unidecode</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                            </li>
+                </ul>
+            </nav>
+        
+                    <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rogeriopradojcom';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            </article>
+                    </div>
+                    <div class="col-md-3 sidebar">
+                        <a target="_blank" href="https://rogeriopradoj.com/">
+    <img src="https://rogeriopradoj.com/assets/images/rogerio/rogerio-1920x1920.jpg" class="thumbnail">
+</a>
+<ul class="list-unstyled social-list">
+    <a target="_blank" href="https://www.linkedin.com/in/rogeriopradoj">
+        <li class="social-element" id="linkedin">
+            <i class="fa fa-linkedin"></i>
+        </li>
+    </a>
+    <a target="_blank" href="http://www.zend.com/en/yellow-pages/ZEND024088">
+        <li class="social-element" id="php">
+            <i class="fa fa-code"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://github.com/rogeriopradoj/">
+        <li class="social-element" id="github">
+            <i class="fa fa-github-alt"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://plus.google.com/+RogerioPradoDeJesus?rel=author">
+        <li class="social-element" id="google">
+            <i class="fa fa-google-plus"></i>
+        </li>
+    </a>
+    <a target="_blank" href="https://twitter.com/rogeriopradoj">
+        <li class="social-element" id="twitter">
+            <i class="fa fa-twitter"></i>
+        </li>
+    </a>
+    <a href="https://rogeriopradoj.com/feed/">
+        <li class="social-element" id="rss">
+            <i class="fa fa-rss"></i>
+        </li>
+    </a>
+</ul>
+
+<div class="well">
+    <h4>
+        <p>ROGERIO PRADO J | rogeriopradoj.com</p>
+        <small>Desenvolvimento e TI em geral</small>    </h4>
+</div>
+<div class="well">
+    <h4>Arquivo</h4>
+    <ul class="nav">
+        <li><a class="btn btn-block btn-xs btn-info" href="https://rogeriopradoj.com/categories/">Categorias</a></li>
+        <li><ul class="list-unstyled">
+            <li class="categories-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+        <li>&nbsp;</li>
+        <li><a  class="btn btn-block btn-xs btn-primary" href="https://rogeriopradoj.com/tags/">Tags</a></li>
+        <li><ul class="list-unstyled">
+            <li class="tags-list">
+                            </li>
+            <li class="clearfix"></li>
+        </ul></li>
+    </ul>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c5c04e17cf662208c9474ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+    &copy; 2020 <a target="_blank" href="https://rogeriopradoj.com/">Rogerio Prado de Jesus</a>
+    <span class="pull-right">
+        Source code on <a target="_blank" href="https://github.com/rogeriopradoj/rogeriopradoj.com">GitHub</a> - Powered by <a target="_blank" href="https://sculpin.io">Sculpin</a>
+    </span>
+</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- build:js assets/js/main.min.js -->
+        <script src="assets/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/uri.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/readingTime.min.js"></script>
+        <script src="assets/js/highlight.pack.js"></script>
+        <script src="assets/js/acelayablog.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- /build -->
+
+                    </body>
+</html>
