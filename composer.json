@@ -1,5 +1,6 @@
 {
     "name": "rogeriopradoj/rogeriopradoj.com",
+    "license": "proprietary",
     "require": {
         "mavimo/sculpin-redirect-bundle": "@dev",
         "sharkpp/sculpin-calendarian-bundle": "dev-master",
