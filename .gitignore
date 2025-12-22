@@ -4,3 +4,18 @@
 /app/config/sculpin_site_*.yml
 /app/logs/*
 /output_*/
+
+# Hugo build output
+/hugo/public/
+/hugo/resources/
+
+# Hugo server lock
+.hugo_build.lock
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Node (se algum dia usar)
+node_modules/

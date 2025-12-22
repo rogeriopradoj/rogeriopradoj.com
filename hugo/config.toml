@@ -1,0 +1,74 @@
+baseURL = "https://rogeriopradoj.com/"
+languageCode = "pt-br"
+title = "Rogerio Prado"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = true
+buildFuture = true
+buildExpired = true
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "Rogerio Prado"
+  description = "Desenvolvimento, Infraestrutura e Engenharia de Software"
+  author = "Rogerio Prado de Jesus"
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  DateFormat = "2006-01-02"
+
+  [params.homeInfoParams]
+    Title = "👋 Olá, eu sou o Rogerio"
+    Content = """
+Blog técnico sobre Linux, Redes, DevOps, Cloud e Engenharia de Software.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/rogeriopradoj"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/rogeriopradoj/"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "/about/"
+    weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.highlight]
+    noClasses = false
