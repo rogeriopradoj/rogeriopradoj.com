@@ -1,6 +1,6 @@
 baseURL = "https://rogeriopradoj.com/"
 languageCode = "pt-br"
-title = "Rogerio Prado"
+title = "Rogerio Prado J"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -17,8 +17,8 @@ buildExpired = true
 
 [params]
   env = "production"
-  title = "Rogerio Prado"
-  description = "Desenvolvimento, Infraestrutura e Engenharia de Software"
+  title = "Rogerio Prado J"
+  description = "Desenvolvimento, Data Analytics e TI em geral"
   author = "Rogerio Prado de Jesus"
 
   ShowReadingTime = true
@@ -34,10 +34,14 @@ buildExpired = true
 
   DateFormat = "2006-01-02"
 
+  [params.fuseOpts]
+    threshold = 0.2
+    minMatchCharLength = 3
+
   [params.homeInfoParams]
     Title = "👋 Olá, eu sou o Rogerio"
     Content = """
-Blog técnico sobre Linux, Redes, DevOps, Cloud e Engenharia de Software.
+Blog técnico sobre Desenvolvimento, Data Analytics e TI em geral.
 """
 
   [[params.socialIcons]]
@@ -49,10 +53,15 @@ Blog técnico sobre Linux, Redes, DevOps, Cloud e Engenharia de Software.
     url = "https://www.linkedin.com/in/rogeriopradoj/"
 
   [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/rogeriopradoj"
+
+  [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
 
 [menu]
+
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
@@ -61,9 +70,45 @@ Blog técnico sobre Linux, Redes, DevOps, Cloud e Engenharia de Software.
 
   [[menu.main]]
     identifier = "about"
-    name = "Sobre"
+    name = "Sobre / About / Acerca"
     url = "/about/"
     weight = 2
+
+  [[menu.main]]
+    identifier = "slides"
+    name = "Slides"
+    url = "/slides/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "pradoj"
+    name = "PradoJ.com"
+    url = "/pradoj-com/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "contato"
+    name = "Contato / Contact"
+    url = "/contato/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "gift"
+    name = "Gift / Apoie / Doe"
+    url = "/gift/"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "livro"
+    name = "Meu Livro"
+    url = "/livro/"
+    weight = 7
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Pesquisar"
+    url = "/search/"
+    weight = 99
 
 [markup]
   [markup.goldmark]
@@ -72,3 +117,9 @@ Blog técnico sobre Linux, Redes, DevOps, Cloud e Engenharia de Software.
 
   [markup.highlight]
     noClasses = false
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
