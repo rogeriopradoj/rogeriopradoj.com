@@ -37,6 +37,9 @@ jobs:
         with:
           path: hugo/public
 
+      - name: Debug output
+        run: ls -lah public
+
   deploy:
     environment:
       name: github-pages
