@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/categories/</link>
+    <description>Recent content in Categories on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Administração</title>
+      <link>https://rogeriopradoj.com/categories/administra%C3%A7%C3%A3o/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/administra%C3%A7%C3%A3o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science</title>
+      <link>https://rogeriopradoj.com/categories/data-science/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geral</title>
+      <link>https://rogeriopradoj.com/categories/geral/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/geral/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>30contribs</title>
+      <link>https://rogeriopradoj.com/categories/30contribs/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/30contribs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mac</title>
+      <link>https://rogeriopradoj.com/categories/mac/</link>
+      <pubDate>Mon, 26 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/mac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://rogeriopradoj.com/categories/docker/</link>
+      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vagrant</title>
+      <link>https://rogeriopradoj.com/categories/vagrant/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/vagrant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Versionamento</title>
+      <link>https://rogeriopradoj.com/categories/versionamento/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/versionamento/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PHP</title>
+      <link>https://rogeriopradoj.com/categories/php/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/categories/php/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

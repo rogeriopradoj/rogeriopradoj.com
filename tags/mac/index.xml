@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/mac/</link>
+    <description>Recent content in Mac on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 02 May 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python e Virtualenv no Mac OS X Mountain Lion 10.8</title>
+      <link>https://rogeriopradoj.com/2013/05/02/python-e-virtualenv-no-mac-os-x-mountain-lion-10-8/</link>
+      <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2013/05/02/python-e-virtualenv-no-mac-os-x-mountain-lion-10-8/</guid>
+      <description>&lt;p&gt;Este artigo é uma tradução livre de &lt;em&gt;Python and Virtualenv on Mac OS X Mountain Lion 10.8&lt;/em&gt;, do &lt;a href=&#34;https://github.com/justinmayer&#34;&gt;Justin Mayer&lt;/a&gt;, disponível em &lt;a href=&#34;http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/&#34;&gt;http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;A instalação do Python e do Virtualenv no Mac OS X 10.8 Mountain Lion pode ser feita de muitas formas. Embora não exista uma configuração perfeita, esse tutorial te guiará no processo de configuração de uma instalação padrão do Mountain Lion num ótimo sistema para desenvolvimento Python.&lt;/p&gt;&#xA;&lt;h3 id=&#34;primeiros-passos&#34;&gt;Primeiros passos&lt;/h3&gt;&#xA;&lt;p&gt;Esse guia pressupõe que você já tenha instalado o Xcode e o Homebrew. Para detalhes, siga os passos do &lt;a href=&#34;http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/&#34;&gt;Mountain Lion Configuration Guide&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Como atualizar a versão do PHP no Mac OSX Mountain Lion</title>
+      <link>https://rogeriopradoj.com/2012/11/20/como-atualizar-a-versao-do-php-no-mac-osx-mountain-lion/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2012/11/20/como-atualizar-a-versao-do-php-no-mac-osx-mountain-lion/</guid>
+      <description>&lt;p&gt;Olá, pessoal Venho usando o Vagrant (&lt;a href=&#34;http://vagrantup.com/&#34;&gt;oficial&lt;/a&gt;, &lt;a href=&#34;https:/friendsofvagrant.github.io/&#34;&gt;tradução&lt;/a&gt; e &lt;a href=&#34;https://github.com/search?q=username%3Arogeriopradoj+vagrant&amp;amp;repo&amp;amp;langOverride&amp;amp;start_value=1&amp;amp;type=Repositories&amp;amp;language&#34;&gt;meu github&lt;/a&gt;) faz um tempo, para diminuir o número de coisas instaladas no meu notebook, mas precisava atualizar a versão do PHP que tinha instalado por padrão no meu Mac OSX.&lt;/p&gt;&#xA;&lt;p&gt;Participando do projeto do &lt;a href=&#34;http://imasters.com.br/&#34;&gt;iMasters&lt;/a&gt;, &lt;a href=&#34;https://github.com/iMastersDev/oportunidades&#34;&gt;oPHPortunidades&lt;/a&gt; (&lt;a href=&#34;https://plus.google.com/+imasters/posts&#34;&gt;veja os hangouts&lt;/a&gt;), precisei rodar alguns comandos básicos no console, usando o excelente &lt;a href=&#34;http://getcomposer.org/&#34;&gt;Composer&lt;/a&gt;, mas por não ter a última versão do PHP ficava difícil acompanhar o pessoal. Principalmente pela funcionalidade do &lt;a href=&#34;http://php.net/manual/pt_BR/features.commandline.webserver.php&#34;&gt;servidor web embutido no PHP 5.4&lt;/a&gt;, que economiza bastante tempo para não precisar de configurar um Apache apenas para teste de uma aplicação.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

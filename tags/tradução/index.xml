@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tradução on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/tradu%C3%A7%C3%A3o/</link>
+    <description>Recent content in Tradução on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 24 Sep 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/tradu%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vagrant: O que, Por que e Como</title>
+      <link>https://rogeriopradoj.com/2012/09/24/vagrant-o-que-por-que-e-como/</link>
+      <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2012/09/24/vagrant-o-que-por-que-e-como/</guid>
+      <description>&lt;p&gt;Tradução livre de Vagrant: What, Why, and How, disponível em &lt;a href=&#34;http://net.tutsplus.com/tutorials/php/vagrant-what-why-and-how/&#34;&gt;http://net.tutsplus.com/tutorials/php/vagrant-what-why-and-how/&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Este artigo te ajudará a usar o &lt;a href=&#34;http://vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; para administrar suas instâncias de máquinas virtuais e explicará como se beneficiar do &lt;a href=&#34;http://puppetlabs.com/puppet/puppet-enterprise/&#34;&gt;Puppet&lt;/a&gt; para fazer a provisão de vários recursos como o PHP e o PostgreSQL.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2012/07/Vagrant-Virtualized-development-for-the-masses..png&#34; alt=&#34;garoto propaganda do vagrant&#34;&gt;&#xA;&lt;em&gt;Garoto propaganda :-) da ferramenta Vagrant - &lt;a href=&#34;http://vagrantup.com&#34;&gt;http://vagrantup.com&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introdução&#34;&gt;Introdução&lt;/h3&gt;&#xA;&lt;p&gt;Os desenvolvedores tem à disposição um grande número de maneiras de construir seu ambiente de desenvolvimento web. Podem ser usadas opções &amp;ldquo;locais&amp;rdquo;, do tipo dos servidores &amp;ldquo;tudo em um&amp;quot;como o Zend Server, XAMPP, MAMP, WAMP etc; ou ainda como você instalando os componentes a partir dos fontes ou via um sistema de gerenciamento de pacotes, como o Homebrew, o Apt ou o Yum.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

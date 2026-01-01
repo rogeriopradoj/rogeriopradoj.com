@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plugin on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/plugin/</link>
+    <description>Recent content in Plugin on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 08 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meu primeiro plugin para o Vagrant mostra a lista de IPs da VM! vagrant-ip-show</title>
+      <link>https://rogeriopradoj.com/2015/10/08/meu-primeiro-plugin-para-o-vagrant-mostra-a-lista-de-ips-da-vm-vagrant-ip-show/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2015/10/08/meu-primeiro-plugin-para-o-vagrant-mostra-a-lista-de-ips-da-vm-vagrant-ip-show/</guid>
+      <description>&lt;p&gt;Olá, pessoal!&lt;/p&gt;&#xA;&lt;p&gt;Passando rápido aqui para falar que criei meu primeiro plugin para Vagrant: é o &lt;a href=&#34;https://github.com/rogeriopradoj/vagrant-ip-show&#34;&gt;vagrant-ip-show&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Ele faz uma coisa muito simples: mostra os IPs de uma VM.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2015/10/Vagrant-ip-show_by_rogeriopradoj.png&#34; alt=&#34;site vagrant-ip-show&#34;&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;Ah, Rogério, mas porque um plugin para algo tão simples? Não tem jeito de fazer isso na mão?&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;-- Alguém por aí ;-)&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Então, tem uma série de formas buscar essa informação. Você poderia conectar na VM (&lt;code&gt;vagrant ssh&lt;/code&gt;) e rodar um comando &lt;code&gt;ifconfig&lt;/code&gt;. Ou então olhar no seu Vagrantfile as configurações de rede que tiver feito. Ou ainda, entrar na configuração do Virtualbox (ou qual seja o provider que estiver usando) e tentar localizar a faixa de IPs que ele está usando e partir daí para rodar no seu &lt;em&gt;host&lt;/em&gt; alguns comandos de rede&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

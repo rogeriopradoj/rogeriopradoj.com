@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boot2docker on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/boot2docker/</link>
+    <description>Recent content in Boot2docker on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 20 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/boot2docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gerenciamento de Recursos de Hardware no Docker e Como Instalar Pacotes de Sistema Operacional no docker-machine</title>
+      <link>https://rogeriopradoj.com/2016/03/20/gerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine/</link>
+      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2016/03/20/gerenciamento-recursos-hardware-docker-e-como-instalar-pacotes-de-sistema-operacional-no-docker-machine/</guid>
+      <description>&lt;p&gt;Olá pessoal!&lt;/p&gt;&#xA;&lt;p&gt;Se quiser ir direto para a resposta a pergunta título, vá para &lt;a href=&#34;{{ site.url }}{{ page.url }}/#acessando-a-vm-via-docker-machine-ssh&#34;&gt;essa parte do artigo&lt;/a&gt;. Primeiro eu vou contar por que precisei aprender a fazer isso.&lt;/p&gt;&#xA;&lt;h3 id=&#34;de-onde-surgiu-a-necessidade&#34;&gt;De onde surgiu a necessidade?&lt;/h3&gt;&#xA;&lt;p&gt;Estava vendo os slides do Wellington Silva da apresentação &lt;a href=&#34;https://speakerdeck.com/wsilva/12-factor-melhor-com-docker&#34;&gt;Aplicações 12 Fatores - Melhor com Docker&lt;/a&gt; que ele fez no &lt;a href=&#34;https://br.darkmiratour.com/&#34;&gt;Darkmira Tour PHP 2016&lt;/a&gt;, onde ele faz de forma exemplar as relações entre a &lt;a href=&#34;http://12factor.net/&#34;&gt;metodologia 12 factor&lt;/a&gt;, da galera da Heroku, com o &lt;a href=&#34;https://www.docker.com/&#34;&gt;docker&lt;/a&gt;. Como estou cada dia mais conhecendo docker, me espantei quando ele mostrou dois comandos: &lt;code&gt;docker run ... --memory=512M&lt;/code&gt; e &lt;code&gt;docker update --memory=1GB ...&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

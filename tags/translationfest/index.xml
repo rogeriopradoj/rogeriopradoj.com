@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Translationfest on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/translationfest/</link>
+    <description>Recent content in Translationfest on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 30 Nov 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/translationfest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como acompanhar as listas de discussão oficiais do PHP.net</title>
+      <link>https://rogeriopradoj.com/2014/11/30/como-acompanhar-as-listas-de-discussao-oficiais-do-php-net/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2014/11/30/como-acompanhar-as-listas-de-discussao-oficiais-do-php-net/</guid>
+      <description>&lt;p&gt;Olá, pessoal,&lt;/p&gt;&#xA;&lt;p&gt;Hoje vamos falar sobre as listas de discussões oficiais do PHP, as famosas &lt;a href=&#34;http://php.net/mailing-lists.php&#34;&gt;&lt;em&gt;mailing lists&lt;/em&gt; do PHP.net&lt;/a&gt; (só como adendo, &lt;a href=&#34;http://php.net&#34;&gt;PHP.net&lt;/a&gt; é o site da linguagem que hospeda também muitos projetos relacionados, como os conhecidos &lt;a href=&#34;http://pear.php.net/&#34;&gt;PEAR.php.net&lt;/a&gt; e &lt;a href=&#34;http://pecl.php.net/&#34;&gt;PECL.php.net&lt;/a&gt;, o repositório &lt;a href=&#34;http://git.php.net/&#34;&gt;GIT.php.net&lt;/a&gt;, até o muitas vezes desconhecido &lt;a href=&#34;http://people.php.net/&#34;&gt;PEOPLE.php.net&lt;/a&gt;. Para conhecer mais, use a &lt;a href=&#34;https://wiki.php.net/&#34;&gt;WIKI.php.net&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;h2 id=&#34;para-que-servem-as-mailing-lists&#34;&gt;Para que servem as mailing lists?&lt;/h2&gt;&#xA;&lt;p&gt;As listas de discussão são onde conseguimos ter as informações mais recentes, interessantes muitas vezes, e provavelmente inéditas sobre vários assuntos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

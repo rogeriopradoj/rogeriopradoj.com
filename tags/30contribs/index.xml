@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>30contribs on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/30contribs/</link>
+    <description>Recent content in 30contribs on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 26 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/30contribs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs</title>
+      <link>https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/</link>
+      <pubDate>Mon, 26 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/</guid>
+      <description>&lt;p&gt;Olá pessoal, tudo bem? Como andam as contribuições?&lt;/p&gt;&#xA;&lt;p&gt;&lt;sub&gt;*Se quiser saber mais sobre como contribuir com projetos open source, &lt;a href=&#34;2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade&#34;&gt;veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hoje vamos ver como contribuir criando um novo pacote para o &lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt;, que é um ótimo gerenciador de pacotes para o macOS (similar ao &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg&#34;&gt;apt-get, yum, dnf&lt;/a&gt; ou &lt;a href=&#34;https://chocolatey.org/&#34;&gt;chocolatey&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2016/09/homebrew-page.png&#34; alt=&#34;homebrew website&#34;&gt;&#xA;&lt;em&gt;Homebrew website: &lt;a href=&#34;http://brew.sh&#34;&gt;http://brew.sh&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resultado da ação #30contribs/phpx2016 - Eu contribuo e quero ir na faixa para a PHP Experience 2016</title>
+      <link>https://rogeriopradoj.com/2016/03/14/resultado-da-acao-30contribs-phpx-eu-contribuo-e-quero-ir-na-faixa-para-a-php-experience-2016/</link>
+      <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2016/03/14/resultado-da-acao-30contribs-phpx-eu-contribuo-e-quero-ir-na-faixa-para-a-php-experience-2016/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2016/03/phpexperience-capa.jpg&#34; alt=&#34;PHP Experience capa&#34;&gt;&#xA;&lt;em&gt;Fonte: &lt;a href=&#34;http://phpexperience2016.imasters.com.br/&#34;&gt;http://phpexperience2016.imasters.com.br/&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;No dia 07 de março de 2016 foi lançada a &lt;a href=&#34;%5D(https://30contribs.github.io/phpx2016/)&#34;&gt;ação #30contribs/phpx2016&lt;/a&gt;. Nesse dia o &lt;a href=&#34;https://github.com/hussani&#34;&gt;Hussani Oliveira&lt;/a&gt; e o &lt;a href=&#34;https://rogeriopradoj.com/&#34;&gt;Rogerio Prado de Jesus&lt;/a&gt;, evangelistas do &lt;a href=&#34;http://phpsp.org.br/&#34;&gt;PHPSP&lt;/a&gt;, derem o passo inicial para incentivar mais pessoas a contribuir com projetos open source, na pegada do &lt;a href=&#34;https://rogeriopradoj.com/2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade/&#34;&gt;#30contribs&lt;/a&gt; e do saudoso &lt;a href=&#34;https://rogeriopradoj.com/2011/11/30/sou-phpsp-e-contribuo-com-projetos-open-source/&#34;&gt;#SouPHPSP&lt;/a&gt;!&lt;/p&gt;&#xA;&lt;p&gt;A ação, que incentivou 60+ contribuições para projetos open source num período de duas semanas, sorteou ingressos para o &lt;a href=&#34;http://phpexperience2016.imasters.com.br/&#34;&gt;iMasters PHP Experience 2016&lt;/a&gt;, e aqui nos mostramos o resultado:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

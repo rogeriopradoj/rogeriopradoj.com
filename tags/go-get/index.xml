@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go-Get on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/go-get/</link>
+    <description>Recent content in Go-Get on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 26 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/go-get/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como Contribuir com o Homebrew para macOS e Feliz Aniversário Rodrigo #30contribs</title>
+      <link>https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/</link>
+      <pubDate>Mon, 26 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2016/09/26/como-contribuir-com-o-homebrew-para-macos-e-feliz-aniversario-rodrigo-30contribs/</guid>
+      <description>&lt;p&gt;Olá pessoal, tudo bem? Como andam as contribuições?&lt;/p&gt;&#xA;&lt;p&gt;&lt;sub&gt;*Se quiser saber mais sobre como contribuir com projetos open source, &lt;a href=&#34;2015/06/24/30contribs-cheguei-nos-30-e-quero-de-presente-pull-requests-e-contribuicoes-para-projetos-open-source-e-da-comunidade&#34;&gt;veja o artigo #30contribs - Cheguei nos 30! E quero de presente Pull Requests e contribuições para projetos open source e da comunidade!&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hoje vamos ver como contribuir criando um novo pacote para o &lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt;, que é um ótimo gerenciador de pacotes para o macOS (similar ao &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg&#34;&gt;apt-get, yum, dnf&lt;/a&gt; ou &lt;a href=&#34;https://chocolatey.org/&#34;&gt;chocolatey&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2016/09/homebrew-page.png&#34; alt=&#34;homebrew website&#34;&gt;&#xA;&lt;em&gt;Homebrew website: &lt;a href=&#34;http://brew.sh&#34;&gt;http://brew.sh&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Big Data on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/big-data/</link>
+    <description>Recent content in Big Data on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notebooks Jupyter em PHP, além do Python? Sim, é possível: veja como fazer!</title>
+      <link>https://rogeriopradoj.com/2019/05/13/notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2019/05/13/notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer/</guid>
+      <description>&lt;figure&gt;&#xA;    &lt;img title=&#34;Sim, é possível!&#34; src=&#34;https://rogeriopradoj.com/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-01.png&#34; alt=&#34;Sim, é possível!&#34;&gt;&#xA;    &lt;figcaption&gt;Sim, é possível!&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Fala pessoal, tudo bem?&lt;/p&gt;&#xA;&lt;p&gt;É muito comum durante nossa jornada de cursos no tema de Big Data, Analytics, Data Science, IA e afins sermos apresentados à plataforma Jupyter e aos seus notebooks, não é mesmo?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;: The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

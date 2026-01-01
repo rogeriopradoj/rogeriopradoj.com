@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/categories/data-science/</link>
+    <description>Recent content in Data Science on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop</title>
+      <link>https://rogeriopradoj.com/2019/09/08/maquina-virtual-windows-10-com-vagrant-e-virtualbox-para-power-bi-desktop/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2019/09/08/maquina-virtual-windows-10-com-vagrant-e-virtualbox-para-power-bi-desktop/</guid>
+      <description>&lt;figure&gt;&#xA;    &lt;img title=&#34;Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop&#34; src=&#34;https://rogeriopradoj.com/assets/images/2019/09/08-maquina-virtual-windows-10-com-vagrant-e-virtualbox-para-power-bi-desktop.png&#34; alt=&#34;Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop&#34;&gt;&#xA;    &lt;figcaption&gt;Máquina virtual Windows 10 com Vagrant e VirtualBox para Power BI Desktop&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Olá, pessoal.&lt;/p&gt;&#xA;&lt;p&gt;Nesse mundo de aprendizagem sobre Data Science Analytics, as ferramentas de self-service BI e visualização são essenciais. Dentre elas, o Power BI Desktop, da Microsoft, é uma das opções profissionais mais usadas. Dois motivos me fizeram buscar mais conhecimento sobre ela e me capacitar com treinamentos: ser gratuita para uso básico em sua máquina pessoal e por ser um dos aplicativos homologados na empresa onde trabalho.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Como tirar acentos de string no Python? Transliterate, Unicodedata e Unidecode</title>
+      <link>https://rogeriopradoj.com/2019/07/14/como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode/</link>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2019/07/14/como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode/</guid>
+      <description>&lt;figure&gt;&#xA;    &lt;img title=&#34;Como tirar acentos de string no Python?&#34; src=&#34;https://rogeriopradoj.com/assets/images/2019/07/14-como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode.png&#34; alt=&#34;Como tirar acentos de string no Python?&#34;&gt;&#xA;    &lt;figcaption&gt;Como tirar acentos de string no Python?&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Olá, galera, tudo certinho?&lt;/p&gt;&#xA;&lt;p&gt;Nesse caminho do Data Science, em específico no tratamento de textos e processamento de linguagem natural (PLN, ou NLP do inglês Natural Language Processing), muitos e muitos tratamentos em string são necessários. E um deles que me apareceu: como fazer para retirar acentos de uma cadeia de caracteres e olhar um texto mais puro?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notebooks Jupyter em PHP, além do Python? Sim, é possível: veja como fazer!</title>
+      <link>https://rogeriopradoj.com/2019/05/13/notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2019/05/13/notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer/</guid>
+      <description>&lt;figure&gt;&#xA;    &lt;img title=&#34;Sim, é possível!&#34; src=&#34;https://rogeriopradoj.com/assets/images/2019/05/13-notebooks-jupyter-em-php-alem-do-python-sim-e-possivel-veja-como-fazer-01.png&#34; alt=&#34;Sim, é possível!&#34;&gt;&#xA;    &lt;figcaption&gt;Sim, é possível!&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Fala pessoal, tudo bem?&lt;/p&gt;&#xA;&lt;p&gt;É muito comum durante nossa jornada de cursos no tema de Big Data, Analytics, Data Science, IA e afins sermos apresentados à plataforma Jupyter e aos seus notebooks, não é mesmo?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;: The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

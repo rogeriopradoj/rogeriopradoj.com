@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/categories/php/</link>
+    <description>Recent content in PHP on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 30 Nov 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como acompanhar as listas de discussão oficiais do PHP.net</title>
+      <link>https://rogeriopradoj.com/2014/11/30/como-acompanhar-as-listas-de-discussao-oficiais-do-php-net/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2014/11/30/como-acompanhar-as-listas-de-discussao-oficiais-do-php-net/</guid>
+      <description>&lt;p&gt;Olá, pessoal,&lt;/p&gt;&#xA;&lt;p&gt;Hoje vamos falar sobre as listas de discussões oficiais do PHP, as famosas &lt;a href=&#34;http://php.net/mailing-lists.php&#34;&gt;&lt;em&gt;mailing lists&lt;/em&gt; do PHP.net&lt;/a&gt; (só como adendo, &lt;a href=&#34;http://php.net&#34;&gt;PHP.net&lt;/a&gt; é o site da linguagem que hospeda também muitos projetos relacionados, como os conhecidos &lt;a href=&#34;http://pear.php.net/&#34;&gt;PEAR.php.net&lt;/a&gt; e &lt;a href=&#34;http://pecl.php.net/&#34;&gt;PECL.php.net&lt;/a&gt;, o repositório &lt;a href=&#34;http://git.php.net/&#34;&gt;GIT.php.net&lt;/a&gt;, até o muitas vezes desconhecido &lt;a href=&#34;http://people.php.net/&#34;&gt;PEOPLE.php.net&lt;/a&gt;. Para conhecer mais, use a &lt;a href=&#34;https://wiki.php.net/&#34;&gt;WIKI.php.net&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;h2 id=&#34;para-que-servem-as-mailing-lists&#34;&gt;Para que servem as mailing lists?&lt;/h2&gt;&#xA;&lt;p&gt;As listas de discussão são onde conseguimos ter as informações mais recentes, interessantes muitas vezes, e provavelmente inéditas sobre vários assuntos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build e Integração Contínua no PHP com Composer, Phing, Travis-CI e Scrutinizer-CI</title>
+      <link>https://rogeriopradoj.com/2013/09/10/build-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2013/09/10/build-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci/</guid>
+      <description>&lt;p&gt;Olá, pessoal,&lt;/p&gt;&#xA;&lt;p&gt;Há tempos que não fazia uma limpeza no &lt;a href=&#34;https://github.com/rogeriopradoj&#34;&gt;meu GitHub&lt;/a&gt;, seja para excluir projetos que não fazem mais sentido, forks que não ia mais utilizar, ou mesmo para atualizar algum repositório e me lembrar de tudo que venho estudando desde que conheci o GitHub (segundo o site dos caras, outubro de 2010).&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/rogeriopradoj/ManoWars&#34;&gt;&lt;img src=&#34;https://travis-ci.org/rogeriopradoj/ManoWars.png?branch=master&#34; alt=&#34;&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/&#34;&gt;&lt;img src=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/quality-score.png?s=f1b7894e3ada78b8ea81da9f790ea7e3b89f8779&#34; alt=&#34;&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/&#34;&gt;&lt;img src=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/coverage.png?s=ee15ca0f9e783a480f056ff32247a044477b00d6&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;E foi no meio dessa limpeza (na verdade bem no começo mesmo :-) ) que achei o &lt;a href=&#34;https://github.com/rogeriopradoj/ManoWars&#34;&gt;https://github.com/rogeriopradoj/ManoWars&lt;/a&gt;, fork de um projeto criado pelo &lt;a href=&#34;https://github.com/rdohms&#34;&gt;Rafael Dohms&lt;/a&gt; e pelo &lt;a href=&#34;https://github.com/augustohp&#34;&gt;Augusto Pascutti&lt;/a&gt; há muito tempo para ensinar sobre Testes Unitários e Integração Contínua.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Como atualizar a versão do PHP no Mac OSX Mountain Lion</title>
+      <link>https://rogeriopradoj.com/2012/11/20/como-atualizar-a-versao-do-php-no-mac-osx-mountain-lion/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2012/11/20/como-atualizar-a-versao-do-php-no-mac-osx-mountain-lion/</guid>
+      <description>&lt;p&gt;Olá, pessoal Venho usando o Vagrant (&lt;a href=&#34;http://vagrantup.com/&#34;&gt;oficial&lt;/a&gt;, &lt;a href=&#34;https:/friendsofvagrant.github.io/&#34;&gt;tradução&lt;/a&gt; e &lt;a href=&#34;https://github.com/search?q=username%3Arogeriopradoj+vagrant&amp;amp;repo&amp;amp;langOverride&amp;amp;start_value=1&amp;amp;type=Repositories&amp;amp;language&#34;&gt;meu github&lt;/a&gt;) faz um tempo, para diminuir o número de coisas instaladas no meu notebook, mas precisava atualizar a versão do PHP que tinha instalado por padrão no meu Mac OSX.&lt;/p&gt;&#xA;&lt;p&gt;Participando do projeto do &lt;a href=&#34;http://imasters.com.br/&#34;&gt;iMasters&lt;/a&gt;, &lt;a href=&#34;https://github.com/iMastersDev/oportunidades&#34;&gt;oPHPortunidades&lt;/a&gt; (&lt;a href=&#34;https://plus.google.com/+imasters/posts&#34;&gt;veja os hangouts&lt;/a&gt;), precisei rodar alguns comandos básicos no console, usando o excelente &lt;a href=&#34;http://getcomposer.org/&#34;&gt;Composer&lt;/a&gt;, mas por não ter a última versão do PHP ficava difícil acompanhar o pessoal. Principalmente pela funcionalidade do &lt;a href=&#34;http://php.net/manual/pt_BR/features.commandline.webserver.php&#34;&gt;servidor web embutido no PHP 5.4&lt;/a&gt;, que economiza bastante tempo para não precisar de configurar um Apache apenas para teste de uma aplicação.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vagrant: O que, Por que e Como</title>
+      <link>https://rogeriopradoj.com/2012/09/24/vagrant-o-que-por-que-e-como/</link>
+      <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2012/09/24/vagrant-o-que-por-que-e-como/</guid>
+      <description>&lt;p&gt;Tradução livre de Vagrant: What, Why, and How, disponível em &lt;a href=&#34;http://net.tutsplus.com/tutorials/php/vagrant-what-why-and-how/&#34;&gt;http://net.tutsplus.com/tutorials/php/vagrant-what-why-and-how/&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Este artigo te ajudará a usar o &lt;a href=&#34;http://vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; para administrar suas instâncias de máquinas virtuais e explicará como se beneficiar do &lt;a href=&#34;http://puppetlabs.com/puppet/puppet-enterprise/&#34;&gt;Puppet&lt;/a&gt; para fazer a provisão de vários recursos como o PHP e o PostgreSQL.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2012/07/Vagrant-Virtualized-development-for-the-masses..png&#34; alt=&#34;garoto propaganda do vagrant&#34;&gt;&#xA;&lt;em&gt;Garoto propaganda :-) da ferramenta Vagrant - &lt;a href=&#34;http://vagrantup.com&#34;&gt;http://vagrantup.com&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introdução&#34;&gt;Introdução&lt;/h3&gt;&#xA;&lt;p&gt;Os desenvolvedores tem à disposição um grande número de maneiras de construir seu ambiente de desenvolvimento web. Podem ser usadas opções &amp;ldquo;locais&amp;rdquo;, do tipo dos servidores &amp;ldquo;tudo em um&amp;quot;como o Zend Server, XAMPP, MAMP, WAMP etc; ou ainda como você instalando os componentes a partir dos fontes ou via um sistema de gerenciamento de pacotes, como o Homebrew, o Apt ou o Yum.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Criando um ambiente de teste PHP no Ubuntu</title>
+      <link>https://rogeriopradoj.com/2010/06/30/criando-um-ambiente-de-teste-php-no-ubuntu/</link>
+      <pubDate>Wed, 30 Jun 2010 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2010/06/30/criando-um-ambiente-de-teste-php-no-ubuntu/</guid>
+      <description>&lt;p&gt;Esse post é originalmente de meu outro blog, originalmente colocado no ar em junho de 2010, após participar do PHPTESTFEST organizado pelo pessoal do &lt;a href=&#34;http://phpsp.org.br/&#34;&gt;PHPSP&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Início das migrações para cá ;-)&lt;/p&gt;&#xA;&lt;p&gt;Tradução livre do site &lt;a href=&#34;http://wiki.php.net/qa/testfest-2010/ubuntu-test-environment&#34;&gt;http://wiki.php.net/qa/testfest-2010/ubuntu-test-environment&lt;/a&gt;, acesso em 05 de junho de 2010.&lt;/p&gt;&#xA;&lt;p&gt;As seguintes instruções foram escritas para o Ubuntu 9.10 testadas nele. É possível que estas instruções também funcionem em outras versões do Ubuntu. Por favor atualize todos os pacotes já instalados antes de começar a criar seu ambiente de teste.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

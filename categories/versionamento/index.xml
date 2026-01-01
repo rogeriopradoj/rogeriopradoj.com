@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Versionamento on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/categories/versionamento/</link>
+    <description>Recent content in Versionamento on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 28 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/categories/versionamento/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O guia para iniciantes sobre como contribuir com um projeto no GitHub</title>
+      <link>https://rogeriopradoj.com/2015/09/28/o-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2015/09/28/o-guia-para-iniciantes-sobre-como-contribuir-com-um-projeto-no-github/</guid>
+      <description>&lt;p&gt;Eu já estou há alguns meses tentando escrever um guia com dicas sobre como contribuir com open source &lt;a href=&#34;https://gist.github.com/rogeriopradoj/9c2208b50bcb1f047d19&#34;&gt;nesse meu gist&lt;/a&gt;, mas até agora não consegui terminar&amp;hellip; Quem sabe daqui um tempo tenhamos essas &lt;em&gt;Dicas de como contribuir com open source by &lt;a href=&#34;https://github.com/rogeriopradoj&#34;&gt;@rogeriopradoj&lt;/a&gt; ;-).&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;No entanto, em 24/09/2015 o Rob Allen, mais conhecido no Twitter como &lt;a href=&#34;https://twitter.com/akrabat&#34;&gt;@akrabat&lt;/a&gt;, escreveu um artigo sobre o tema: &lt;a href=&#34;http://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/&#34;&gt;The beginner&amp;rsquo;s guide to contributing to a GitHub project&lt;/a&gt;. Conversei com ele para pedir a autorização para traduzir seu texto em português do Brasil aqui no &lt;a href=&#34;http://rogeriopradoj.com&#34;&gt;RogerioPradoJ.com&lt;/a&gt;, e a resposta foi positiva!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

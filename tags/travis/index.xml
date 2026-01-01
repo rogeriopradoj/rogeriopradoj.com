@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travis on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/travis/</link>
+    <description>Recent content in Travis on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Tue, 10 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/travis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build e Integração Contínua no PHP com Composer, Phing, Travis-CI e Scrutinizer-CI</title>
+      <link>https://rogeriopradoj.com/2013/09/10/build-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2013/09/10/build-e-integracao-continua-no-php-com-composer-phing-travis-ci-e-scrutinizer-ci/</guid>
+      <description>&lt;p&gt;Olá, pessoal,&lt;/p&gt;&#xA;&lt;p&gt;Há tempos que não fazia uma limpeza no &lt;a href=&#34;https://github.com/rogeriopradoj&#34;&gt;meu GitHub&lt;/a&gt;, seja para excluir projetos que não fazem mais sentido, forks que não ia mais utilizar, ou mesmo para atualizar algum repositório e me lembrar de tudo que venho estudando desde que conheci o GitHub (segundo o site dos caras, outubro de 2010).&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/rogeriopradoj/ManoWars&#34;&gt;&lt;img src=&#34;https://travis-ci.org/rogeriopradoj/ManoWars.png?branch=master&#34; alt=&#34;&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/&#34;&gt;&lt;img src=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/quality-score.png?s=f1b7894e3ada78b8ea81da9f790ea7e3b89f8779&#34; alt=&#34;&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/&#34;&gt;&lt;img src=&#34;https://scrutinizer-ci.com/g/rogeriopradoj/ManoWars/badges/coverage.png?s=ee15ca0f9e783a480f056ff32247a044477b00d6&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;E foi no meio dessa limpeza (na verdade bem no começo mesmo :-) ) que achei o &lt;a href=&#34;https://github.com/rogeriopradoj/ManoWars&#34;&gt;https://github.com/rogeriopradoj/ManoWars&lt;/a&gt;, fork de um projeto criado pelo &lt;a href=&#34;https://github.com/rdohms&#34;&gt;Rafael Dohms&lt;/a&gt; e pelo &lt;a href=&#34;https://github.com/augustohp&#34;&gt;Augusto Pascutti&lt;/a&gt; há muito tempo para ensinar sobre Testes Unitários e Integração Contínua.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

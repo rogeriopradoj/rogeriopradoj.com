@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nintendo-64 on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/nintendo-64/</link>
+    <description>Recent content in Nintendo-64 on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 24 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/nintendo-64/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configurando Hotkeys no Nintendo 64 do Retropie</title>
+      <link>https://rogeriopradoj.com/2016/10/24/configurando-hotkeys-no-nintendo-64-do-retropie/</link>
+      <pubDate>Mon, 24 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2016/10/24/configurando-hotkeys-no-nintendo-64-do-retropie/</guid>
+      <description>&lt;p&gt;Olá pessoal!&lt;/p&gt;&#xA;&lt;p&gt;Essa dica é para quem usa o Retropie para emular videogames antigos no Raspberry Pi e está tendo problemas para sair de um jogo dentro do emulador de Nintendo 64 e também não consegue salvar seu progresso para carregá-lo posteriormente.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://retropie.org.uk/&#34;&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2016/10/RetroPieWebsiteLogo.png&#34; alt=&#34;Logo Retropie&#34;&gt;&lt;/a&gt;&#xA;&lt;em&gt;Fonte: &lt;a href=&#34;https://retropie.org.uk/&#34;&gt;https://retropie.org.uk/&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Por padrão, o Retropie tem uma lista de hotkeys (que são os atalhos especiais feitos no joystick para alguma ação do emulador):&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://retropie.org.uk/&#34;&gt;&lt;img src=&#34;https://rogeriopradoj.com/assets/images/2016/10/hotkeys-retropie.png&#34; alt=&#34;tabela hotkeys retropie&#34;&gt;&lt;/a&gt;&#xA;&lt;em&gt;Fonte: &lt;a href=&#34;https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#default-joypad-hotkeys&#34;&gt;https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#default-joypad-hotkeys&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

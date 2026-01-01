@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Rogerio Prado J</title>
+    <link>https://rogeriopradoj.com/tags/python/</link>
+    <description>Recent content in Python on Rogerio Prado J</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 14 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rogeriopradoj.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como tirar acentos de string no Python? Transliterate, Unicodedata e Unidecode</title>
+      <link>https://rogeriopradoj.com/2019/07/14/como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode/</link>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2019/07/14/como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode/</guid>
+      <description>&lt;figure&gt;&#xA;    &lt;img title=&#34;Como tirar acentos de string no Python?&#34; src=&#34;https://rogeriopradoj.com/assets/images/2019/07/14-como-tirar-acentos-de-string-no-python-transliterate-unicodedata-e-unidecode.png&#34; alt=&#34;Como tirar acentos de string no Python?&#34;&gt;&#xA;    &lt;figcaption&gt;Como tirar acentos de string no Python?&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Olá, galera, tudo certinho?&lt;/p&gt;&#xA;&lt;p&gt;Nesse caminho do Data Science, em específico no tratamento de textos e processamento de linguagem natural (PLN, ou NLP do inglês Natural Language Processing), muitos e muitos tratamentos em string são necessários. E um deles que me apareceu: como fazer para retirar acentos de uma cadeia de caracteres e olhar um texto mais puro?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python e Virtualenv no Mac OS X Mountain Lion 10.8</title>
+      <link>https://rogeriopradoj.com/2013/05/02/python-e-virtualenv-no-mac-os-x-mountain-lion-10-8/</link>
+      <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
+      <guid>https://rogeriopradoj.com/2013/05/02/python-e-virtualenv-no-mac-os-x-mountain-lion-10-8/</guid>
+      <description>&lt;p&gt;Este artigo é uma tradução livre de &lt;em&gt;Python and Virtualenv on Mac OS X Mountain Lion 10.8&lt;/em&gt;, do &lt;a href=&#34;https://github.com/justinmayer&#34;&gt;Justin Mayer&lt;/a&gt;, disponível em &lt;a href=&#34;http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/&#34;&gt;http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;A instalação do Python e do Virtualenv no Mac OS X 10.8 Mountain Lion pode ser feita de muitas formas. Embora não exista uma configuração perfeita, esse tutorial te guiará no processo de configuração de uma instalação padrão do Mountain Lion num ótimo sistema para desenvolvimento Python.&lt;/p&gt;&#xA;&lt;h3 id=&#34;primeiros-passos&#34;&gt;Primeiros passos&lt;/h3&gt;&#xA;&lt;p&gt;Esse guia pressupõe que você já tenha instalado o Xcode e o Homebrew. Para detalhes, siga os passos do &lt;a href=&#34;http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/&#34;&gt;Mountain Lion Configuration Guide&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
