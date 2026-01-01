@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,16 +22,16 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.154.0'
           extended: true
 
       - name: Build site
+        working-directory: hugo
         run: hugo --minify
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./public
-          cname: rogeriopradoj.com
+          publish_dir: ./hugo/public
+          force_orphan: true
