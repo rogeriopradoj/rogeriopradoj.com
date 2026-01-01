@@ -1,7 +1,9 @@
 baseURL = "https://rogeriopradoj.com/"
 languageCode = "pt-br"
-title = "Rogerio Prado J"
+title = "ROGERIO PRADO J | rogeriopradoj.com"
 theme = "PaperMod"
+
+googleAnalytics = "G-Y92QJ02HX2"
 
 enableRobotsTXT = true
 buildDrafts = true
@@ -17,7 +19,7 @@ buildExpired = true
 
 [params]
   env = "production"
-  title = "Rogerio Prado J"
+  title = "ROGERIO PRADO J | rogeriopradoj.com"
   description = "Desenvolvimento, Data Analytics e TI em geral"
   author = "Rogerio Prado de Jesus"
 
