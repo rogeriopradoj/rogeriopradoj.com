@@ -4,6 +4,7 @@ title = "ROGERIO PRADO J | rogeriopradoj.com"
 theme = "PaperMod"
 
 googleAnalytics = "G-Y92QJ02HX2"
+disqusShortname = "rogeriopradojcom"
 
 enableRobotsTXT = true
 buildDrafts = true
