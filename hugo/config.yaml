@@ -1,0 +1,94 @@
+baseURL: https://rogeriopradoj.com/
+languageCode: pt-br
+title: ROGERIO PRADO J | rogeriopradoj.com
+theme: PaperMod
+googleAnalytics: G-Y92QJ02HX2
+disqusShortname: rogeriopradojcom
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: true
+buildExpired: true
+pagination:
+  pagerSize: 10
+minify:
+  disableXML: true
+  minifyOutput: true
+params:
+  env: production
+  title: ROGERIO PRADO J | rogeriopradoj.com
+  description: Desenvolvimento, Data Analytics e TI em geral
+  author: Rogerio Prado de Jesus
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  DateFormat: 2006-01-02
+  fuseOpts:
+    threshold: 0.2
+    minMatchCharLength: 3
+  homeInfoParams:
+    Title: 👋 Olá, eu sou o Rogerio
+    Content: |
+      Blog técnico sobre Desenvolvimento, Data Analytics e TI em geral.
+  socialIcons:
+    - name: github
+      url: https://github.com/rogeriopradoj
+    - name: linkedin
+      url: https://www.linkedin.com/in/rogeriopradoj/
+    - name: twitter
+      url: https://twitter.com/rogeriopradoj
+    - name: rss
+      url: /index.xml
+  comments: true
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 1
+    - identifier: about
+      name: Sobre / About / Acerca
+      url: /about/
+      weight: 2
+    - identifier: slides
+      name: Slides
+      url: /slides/
+      weight: 3
+    - identifier: pradoj
+      name: PradoJ.com
+      url: /pradoj-com/
+      weight: 4
+    - identifier: contato
+      name: Contato / Contact
+      url: /contato/
+      weight: 5
+    - identifier: gift
+      name: Gift / Apoie / Doe
+      url: /gift/
+      weight: 6
+    - identifier: livro
+      name: Meu Livro
+      url: /livro/
+      weight: 7
+    - identifier: search
+      name: Pesquisar
+      url: /search/
+      weight: 99
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+permalinks:
+  posts: /:year/:month/:day/:slug/
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
