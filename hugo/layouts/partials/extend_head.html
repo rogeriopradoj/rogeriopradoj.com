@@ -3,3 +3,7 @@
     <link rel="stylesheet" href="{{ . | relURL }}">
   {{ end }}
 {{ end }}
+{{- if hugo.IsProduction }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7518068256340054"
+     crossorigin="anonymous"></script>
+{{- end }}
